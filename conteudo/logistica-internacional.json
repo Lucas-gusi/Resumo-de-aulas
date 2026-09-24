@@ -1,0 +1,1348 @@
+{
+ "slug": "logistica-internacional",
+ "nome": "Logística Internacional",
+ "nomeCompleto": "Logística Internacional",
+ "professor": "Prof. Luiz Carlos Roque Junior",
+ "avaliacao": "P1 (28/09/2026) · Aulas 1 a 8",
+ "atualizadoEm": "24/09/2026",
+ "fontes": "plano de ensino, slides da aula 01, texto \"Unidade de Estudo 8 – Logística Internacional\", apresentação \"Rotas de Integração\", PNL 2035, apresentação do TRS (Time Release Study), brief da IATA sobre carga aérea 2025 e imagem-resumo \"Jornada da Logística Internacional\" (Classroom)",
+ "quickView": [
+  {
+   "topico": "Logística e SCM",
+   "texto": "logística é **planejar, implementar e controlar** o fluxo e a armazenagem de produtos, serviços e informações da origem ao consumo (Ballou). Ela é uma parte do **SCM**, que integra toda a cadeia, do fornecedor original ao usuário final."
+  },
+  {
+   "topico": "Modais de transporte",
+   "texto": "**aquaviário** (marítimo, fluvial, lacustre), **terrestre** (rodoviário, ferroviário) e **aéreo**. O marítimo leva cerca de **90%** das cargas do mundo e tem o melhor custo × benefício. O aéreo é rápido, mas o frete custa cerca de **3 vezes** o marítimo."
+  },
+  {
+   "topico": "Atores (players)",
+   "texto": "a logística internacional depende de muitos atores interdependentes. Os principais são **armador**, **NVOCC** (\"armador sem navio\"), **freight forwarder**, **agência marítima**, **trading**, **despachante aduaneiro** e **broker**."
+  },
+  {
+   "topico": "Documentos e unitização",
+   "texto": "o **B/L** (marítimo) e o **AWB** (aéreo) comprovam o embarque e são o contrato de transporte. A **unitização** (pallet, contêiner, big bag) agrupa volumes para reduzir custos, avarias e tempo."
+  },
+  {
+   "topico": "Rotas e infraestrutura",
+   "texto": "o Brasil planeja **5 rotas de integração sul-americana** e as **rotas bioceânicas** (Atlântico–Pacífico), para chegar mais rápido à Ásia. O **PNL 2035** é o plano estratégico que integra todos os modais."
+  },
+  {
+   "topico": "Processos e tempo",
+   "texto": "o **TRS** mede quanto tempo leva para liberar uma carga importada. A Receita Federal responde por **menos de 10%** do tempo; o importador pode responder por quase **80%**. O **OEA** é **32%** mais ágil."
+  },
+  {
+   "topico": "Risco, cenários e decisão",
+   "texto": "a decisão logística equilibra **custo, tempo e risco** para entregar o **nível de serviço**. **Cenários prospectivos** ajudam a decidir sob incerteza, e o **ESG** entra como critério."
+  }
+ ],
+ "secoes": [
+  {
+   "id": "logistica-scm-e-logistica",
+   "titulo": "Logística, SCM e logística internacional",
+   "pergunta": "de onde veio a logística e o que ela faz hoje?",
+   "emUmaFrase": "logística é levar a coisa certa ao lugar certo, no prazo, na quantidade e no preço certos, e a internacional faz isso entre países.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "A palavra tem **origem militar**: transporte, abastecimento e alojamento de tropas (Brasileiro, 2010). A logística tem **3 níveis**: estratégico, tático e operacional."
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Conceito (Ballou, 2006):** planejar, implementar e controlar o fluxo e a armazenagem de produtos, serviços e informações, **da origem (fornecedores) até o consumo final (clientes)**."
+    },
+    {
+     "tipo": "texto",
+     "texto": "**6 pressupostos da logística (Ballou):**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Entregar…",
+      ""
+     ],
+     "linhas": [
+      [
+       "no lugar certo",
+       "no prazo combinado"
+      ],
+      [
+       "na qualidade correta",
+       "na quantidade correta"
+      ],
+      [
+       "no preço correto",
+       "na especificação técnica correta"
+      ]
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Conceito",
+      "O que é"
+     ],
+     "linhas": [
+      [
+       "Logística",
+       "Parte do SCM que planeja, implementa e controla fluxo e estoque da origem ao consumo"
+      ],
+      [
+       "SCM",
+       "Integração dos processos de negócio, do usuário final até os fornecedores originais"
+      ],
+      [
+       "Logística internacional",
+       "Surgiu como ferramenta de gestão após a 2ª Guerra Mundial (exportações e importações)"
+      ],
+      [
+       "Logística aduaneira",
+       "Gestão dos processos documentais junto às aduanas (Receita Federal) em portos, aeroportos, fronteiras e armazéns alfandegados"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "Dois marcos do pós-guerra:"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "o **avião** passa a ligar o globo em cerca de dois dias;",
+      "o **contêiner**, no fim dos anos 50, revolucionou o marítimo porque trouxe padronização."
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "logística **não** é sinônimo de SCM. Logística é **parte** do SCM."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "na prova, \"da origem ao consumo\" = logística. \"Do usuário final ao fornecedor original\" = SCM."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "analogia",
+     "texto": "o SCM é o time inteiro. A logística é quem faz a bola (a carga) chegar ao lugar certo."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Logística",
+       "verso": "planejar, implementar e controlar fluxo e armazenagem da origem ao consumo"
+      },
+      {
+       "frente": "SCM",
+       "verso": "integração da cadeia do usuário final aos fornecedores originais"
+      },
+      {
+       "frente": "Logística aduaneira",
+       "verso": "gestão documental junto à aduana"
+      },
+      {
+       "frente": "Contêiner",
+       "verso": "trouxe a padronização ao transporte marítimo (fim dos anos 50)"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Em que período a logística internacional ganha força como ferramenta de gestão?",
+     "respostaEsperada": "No pós-Segunda Guerra, com o avião em larga escala e, depois, o contêiner."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quais são os 3 níveis da logística?",
+     "respostaEsperada": "Estratégico, tático e operacional (herança militar)."
+    }
+   ]
+  },
+  {
+   "id": "modais-de-transporte",
+   "titulo": "Modais de transporte",
+   "pergunta": "qual modal escolher para cada tipo de carga?",
+   "emUmaFrase": "cada modal troca custo por velocidade, e a escolha depende do valor e da urgência da carga.",
+   "blocos": [
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Sistema",
+      "Modais"
+     ],
+     "linhas": [
+      [
+       "Aquaviário",
+       "marítimo, fluvial, lacustre"
+      ],
+      [
+       "Terrestre",
+       "rodoviário, ferroviário"
+      ],
+      [
+       "Aéreo",
+       "aéreo"
+      ]
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Modal",
+      "Destaques do material"
+     ],
+     "linhas": [
+      [
+       "Marítimo",
+       "Por navios em mares e oceanos. **Cabotagem** (águas nacionais) ou **longo curso**. Cerca de **90%** das cargas do globo e melhor custo × benefício. Aceita carga fracionada, solta ou em contêiner"
+      ],
+      [
+       "Fluvial / lacustre",
+       "Fluvial em rios; lacustre em lagos, ligando cidades e países vizinhos"
+      ],
+      [
+       "Rodoviário",
+       "Privilegiado desde os anos 50 (governo JK). Cerca de **63%** das cargas na logística doméstica. Liga portos e aeroportos"
+      ],
+      [
+       "Ferroviário",
+       "Não divide via com outros modais e não para por trânsito. No Brasil, cerca de **80%** da malha é herança colonial e as **bitolas diferentes** impedem a integração"
+      ],
+      [
+       "Aéreo",
+       "Rapidez e agilidade. Limite para cargas fora de padrão. Frete cerca de **3 vezes** o marítimo. Indicado para **alto valor agregado** (eletroeletrônicos, informática, automotivo)"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Carga aérea em números (IATA, 2025):**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "menos de **1%** do comércio mundial em **peso**, mas quase **1/3** em **valor** (29,5% numa amostra de 42 países);",
+      "cerca de **60%** dos produtos quase nunca vão de avião: pouco valor por quilo, sem urgência ou sem segurança;",
+      "mais de **99%** do comércio de chips de memória e de ouro vai por avião."
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "cabotagem é navegação **na costa do país** (águas nacionais), não entre países. Longo curso é a internacional."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "em 2025, o aéreo permitiu antecipar importações para os EUA antes de tarifas novas (**frontloading**) e levou cerca de 3/4 dos bens ligados à IA."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "pergunta sobre \"urgência + alto valor\" → aéreo. Sobre \"grande volume + menor custo\" → marítimo."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Cabotagem",
+       "verso": "navegação na costa do próprio país"
+      },
+      {
+       "frente": "Longo curso",
+       "verso": "navegação marítima internacional"
+      },
+      {
+       "frente": "Bitola",
+       "verso": "largura dos trilhos (bitolas diferentes impedem a integração das ferrovias)"
+      },
+      {
+       "frente": "Frontloading",
+       "verso": "antecipar embarques para fugir de tarifas futuras"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que o ferroviário brasileiro é pouco integrado?",
+     "respostaEsperada": "Grande parte da malha é antiga (herança colonial) e as bitolas são diferentes."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "O aéreo representa quanto do comércio mundial em peso e em valor?",
+     "respostaEsperada": "Menos de 1% do peso e cerca de 1/3 do valor, porque leva bens caros e urgentes."
+    }
+   ]
+  },
+  {
+   "id": "atores-players-da-logistica",
+   "titulo": "Atores (players) da logística internacional",
+   "pergunta": "quem faz a carga andar, e o que cada um faz?",
+   "emUmaFrase": "é uma rede de players interdependentes, e muitos deles trabalham com inteligência, não com ativos próprios.",
+   "blocos": [
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Ator",
+      "O que faz",
+      "Tem ativos?"
+     ],
+     "linhas": [
+      [
+       "Armador (shipping line)",
+       "Dono do navio, opera rotas com frequência regular",
+       "Sim"
+      ],
+      [
+       "Companhia aérea",
+       "Dona da aeronave, opera rotas",
+       "Sim"
+      ],
+      [
+       "Transportadora rodoviária Mercosul",
+       "Caminhões (siders, baús, carretas) no Mercosul; precisa de autorização da **ANTT**",
+       "Sim"
+      ],
+      [
+       "NVOCC",
+       "\"Armador sem navio\": consolida **cargas fracionadas** marítimas. O armador atende o \"atacado\" e o NVOCC o \"varejo\"",
+       "Não"
+      ],
+      [
+       "Agência marítima",
+       "Representa o armador: vende frete e faz a \"reserva de praça\" (espaço no navio)",
+       "Não"
+      ],
+      [
+       "Trading company",
+       "Intermediário comercial que prospecta clientes e fornecedores; comissão de **5% a 10%**",
+       "Não"
+      ],
+      [
+       "Freight forwarder",
+       "Provedor global: transporte aéreo, marítimo e rodoviário, desembaraço, armazenagem, consultoria; usa CRM e rastreamento. Consegue gerir um SCM integrado",
+       "Não"
+      ],
+      [
+       "Despachante aduaneiro (customs broker)",
+       "Pessoa física, representa a empresa na Receita (Radar); classifica produtos e registra DI/RE no Siscomex (Decreto 6.759/2009, art. 808)",
+       "—"
+      ],
+      [
+       "Broker (agente intermediário)",
+       "Pessoa física com bom relacionamento, intermedeia commodities (café, soja, aço…)",
+       "Não"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "O mapa-resumo do professor também cita **embarcador**, **operador logístico**, **terminal/porto/aeroporto**, **aduana** e **importador/distribuição** como atores e stakeholders."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "NVOCC × freight forwarder. O NVOCC foca na consolidação marítima de carga fracionada. O freight forwarder oferece praticamente todos os serviços, em todos os modais."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "despachante aduaneiro (trâmite na Receita) × broker (negociação comercial de commodities)."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "analogia",
+     "texto": "o armador é a companhia de ônibus; o NVOCC compra lugares e revende para quem só tem \"uma mala\"."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "NVOCC",
+       "verso": "armador sem navio, consolida carga fracionada"
+      },
+      {
+       "frente": "Freight forwarder",
+       "verso": "provedor logístico global sem ativos, integra o SCM"
+      },
+      {
+       "frente": "Agência marítima",
+       "verso": "vende frete e faz reserva de praça para o armador"
+      },
+      {
+       "frente": "Trading",
+       "verso": "intermediário comercial com comissão de 5 a 10%"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual ator precisa de autorização da ANTT?",
+     "respostaEsperada": "A transportadora rodoviária que opera no Mercosul."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "O que é \"reserva de praça\"?",
+     "respostaEsperada": "A reserva de espaço no navio, feita pela agência marítima."
+    }
+   ]
+  },
+  {
+   "id": "documentos-unitizacao-embalagem-seguro",
+   "titulo": "Documentos, unitização, embalagem, seguro e Incoterms",
+   "pergunta": "o que acompanha a carga e como ela é preparada?",
+   "emUmaFrase": "o documento comprova o embarque, a unitização padroniza a carga e o seguro protege contra perdas.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**Conhecimento de embarque:** comprova o embarque e a posse da carga pelo consignatário. É também o **contrato de transporte**."
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Documento",
+      "Modal",
+      "Traz"
+     ],
+     "linhas": [
+      [
+       "B/L (Bill of Lading)",
+       "Marítimo",
+       "Portos de origem, destino e transbordo; navio; exportador e importador; frete; taxas"
+      ],
+      [
+       "AWB (Airway Bill)",
+       "Aéreo",
+       "Aeroportos, exportador e importador, frete, taxas"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Unitização:** agrupar vários volumes num só para facilitar manuseio, armazenagem e transporte. As vantagens incluem:"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "menos volumes e movimentos;",
+      "uso de mecanização;",
+      "menos avarias;",
+      "custos menores de embarque, embalagem e seguro;",
+      "serviço **door to door**."
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Recipiente",
+      "Destaque"
+     ],
+     "linhas": [
+      [
+       "Pallet",
+       "Estrado (madeira, alumínio, plástico…); muito usado no aéreo"
+      ],
+      [
+       "Contêiner",
+       "Padrão ISO. **20'** tem 6.058 mm de comprimento; **40'** tem 12.192 mm (largura 2.438 mm e altura 2.591 mm nos dois)"
+      ],
+      [
+       "Big bag",
+       "Polipropileno com alças, para granel; cerca de **2 toneladas**"
+      ],
+      [
+       "Barris e tambores",
+       "Produtos específicos, como suco concentrado"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Embalagem** tem 3 funções:"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Função",
+      "Para quê"
+     ],
+     "linhas": [
+      [
+       "Protetiva",
+       "Proteger o produto e manter a qualidade"
+      ],
+      [
+       "Mercadológica",
+       "Aparência atraente e segura"
+      ],
+      [
+       "Econômica",
+       "Primária (direto no produto) × secundária (junta várias primárias)"
+      ]
+     ]
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "**Seguro internacional:** operação entre segurado e segurador. O marítimo foi o precursor. Muitas PMEs brasileiras não fazem seguro. As multinacionais costumam ter uma **apólice aberta** global.",
+      "**Incoterms × logística:** os Incoterms definem direitos e obrigações de exportador e importador, e isso impacta os **custos logísticos** de cada lado."
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "o B/L não é só um recibo. Ele é também o **contrato de transporte**."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "\"reduzir avarias, custo e tempo de embarque\" → vantagens da **unitização**."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "B/L",
+       "verso": "conhecimento de embarque marítimo"
+      },
+      {
+       "frente": "AWB",
+       "verso": "conhecimento de embarque aéreo"
+      },
+      {
+       "frente": "Unitização",
+       "verso": "agrupar volumes num único volume"
+      },
+      {
+       "frente": "Big bag",
+       "verso": "embalagem de polipropileno para granel (cerca de 2 t)"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual a diferença entre embalagem primária e secundária?",
+     "respostaEsperada": "A primária fica direto no produto; a secundária agrupa várias primárias."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que o contêiner mudou o comércio?",
+     "respostaEsperada": "Padronizou tudo: navios, caminhões, guindastes e equipamentos portuários se adaptaram a ele."
+    }
+   ]
+  },
+  {
+   "id": "rotas-corredores-e-planejamento",
+   "titulo": "Rotas, corredores e planejamento (PNL)",
+   "pergunta": "por onde a carga passa e quem planeja isso?",
+   "emUmaFrase": "a infraestrutura cria possibilidades e as rotas criam caminhos. O Brasil planeja integrar a América do Sul e chegar ao Pacífico.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**As 5 Rotas de Integração Sul-Americana:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Rota",
+      "Nome"
+     ],
+     "linhas": [
+      [
+       "1",
+       "Ilha das Guianas"
+      ],
+      [
+       "2",
+       "Amazônica"
+      ],
+      [
+       "3",
+       "Quadrante Rondon"
+      ],
+      [
+       "4",
+       "Bioceânica de Capricórnio"
+      ],
+      [
+       "5",
+       "Porto Alegre–Coquimbo"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "Linha do tempo do projeto:"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "partiu do **Consenso de Brasília (maio de 2023)**;",
+      "o **Decreto 12.034/2024** criou a Comissão Interministerial para a Infraestrutura e o Planejamento da Integração da América do Sul;",
+      "o **Novo PAC** prevê **190 projetos** de integração (rodovias, aeroportos, hidrovias, portos, ferrovias, infovias, linhas de transmissão);",
+      "há **US$ 10 bilhões** de financiamento (BNDES, CAF, BID e Fonplata)."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Redes bioceânicas:** hoje as alternativas são Canal do Panamá, Estreito de Magalhães e Oceano Índico. As rotas bioceânicas servem para:"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "reduzir distância e tempo de viagem até a Ásia;",
+      "aumentar a competitividade dos produtos brasileiros e sul-americanos;",
+      "ampliar intercâmbios e laços culturais com os vizinhos."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**PNL 2035 (Plano Nacional de Logística):**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "feito pela **EPL** com o Ministério da Infraestrutura;",
+      "planejamento **estratégico** que integra **todos os modos** de transporte, para cargas e pessoas;",
+      "é **atualizado a cada 4 anos** e alimenta os **planos setoriais** (Terrestre, Portuário, Hidroviário e Aeroviário Nacional);",
+      "entre os princípios estão respeito à vida, eficiência logística, infraestrutura sustentável e integração e cooperação internacional."
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "a ponte binacional entre **Porto Murtinho (MS)** e **Carmelo Peralta (Paraguai)** faz parte da Rota 4, a Bioceânica de Capricórnio."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "o PNL é **estratégico** (o que fazer). Os planos setoriais detalham o **como fazer**."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "o material usa \"intermodalidade\" para a relação operacional entre modos. O \"multimodal de cargas\" tem definição em lei (Lei 9.611)."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Rotas bioceânicas",
+       "verso": "ligação Atlântico–Pacífico para encurtar o caminho à Ásia"
+      },
+      {
+       "frente": "Decreto 12.034/2024",
+       "verso": "criou a Comissão Interministerial de integração sul-americana"
+      },
+      {
+       "frente": "PNL 2035",
+       "verso": "plano estratégico integrado de transportes (EPL)"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Cite 3 das 5 rotas de integração.",
+     "respostaEsperada": "Qualquer uma: Ilha das Guianas, Amazônica, Quadrante Rondon, Bioceânica de Capricórnio, Porto Alegre–Coquimbo."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "De quanto em quanto tempo o PNL é atualizado?",
+     "respostaEsperada": "A cada quatro anos."
+    }
+   ]
+  },
+  {
+   "id": "processos-e-tempo-trs",
+   "titulo": "Processos e tempo: TRS, OEA e facilitação",
+   "pergunta": "por que a carga demora para ser liberada e onde está o gargalo?",
+   "emUmaFrase": "medir o tempo de cada etapa mostra que o gargalo nem sempre é a aduana.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**O TRS:**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "é uma metodologia da **OMA** (Organização Mundial das Aduanas);",
+      "está ligado ao **Acordo de Facilitação de Comércio** (art. 7.6.1);",
+      "o estudo brasileiro cobriu **importações** de **junho e julho de 2019**, nos modais aéreo, marítimo e rodoviário, somando **262.787 declarações**."
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Achado do TRS Brasil",
+      "Número"
+     ],
+     "linhas": [
+      [
+       "Canal verde sem licenciamento",
+       "87,25% das declarações"
+      ],
+      [
+       "Tempo atribuído à Receita Federal",
+       "menos de 10%"
+      ],
+      [
+       "Tempo que pode ser do importador",
+       "quase 80%"
+      ],
+      [
+       "OEA",
+       "32% mais ágil"
+      ],
+      [
+       "Despacho sobre águas",
+       "72% mais veloz"
+      ],
+      [
+       "Controles em sequência (não em paralelo)",
+       "dobram o tempo"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "Soluções em desenvolvimento citadas no estudo:"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "registro antecipado da **Duimp**;",
+      "novo controle de cargas aéreo;",
+      "gerenciamento de riscos antecipado;",
+      "**paralelismo** entre controles, com janela única de inspeção;",
+      "pagamento centralizado de tributos;",
+      "OEA integrado."
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "não é a Receita que \"trava\" a importação. Ela responde por menos de 10% do tempo."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "analogia",
+     "texto": "é como uma fila de banco em que cada guichê só começa quando o anterior termina (sequencialismo). Atender em paralelo corta o tempo pela metade."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "TRS",
+       "verso": "Time Release Study, estudo da OMA que mede o tempo de liberação de cargas"
+      },
+      {
+       "frente": "OEA",
+       "verso": "Operador Econômico Autorizado, operador certificado com despacho mais ágil"
+      },
+      {
+       "frente": "Canal verde",
+       "verso": "canal de menor intervenção (87% das cargas sofrem intervenção estatal mínima)"
+      },
+      {
+       "frente": "Duimp",
+       "verso": "seu registro antecipado é uma das soluções em desenvolvimento"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "O que o TRS concluiu sobre o sequencialismo dos controles?",
+     "respostaEsperada": "Que ele dobra o tempo. A solução é fazer os controles em paralelo."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quanto mais rápido é o despacho sobre águas para o OEA?",
+     "respostaEsperada": "72% mais veloz."
+    }
+   ]
+  },
+  {
+   "id": "risco-cenarios-esg-e",
+   "titulo": "Risco, cenários, ESG e tomada de decisão",
+   "pergunta": "como decidir em logística quando o futuro é incerto?",
+   "emUmaFrase": "não existe a melhor opção absoluta; existe a melhor decisão para cada contexto, objetivo e nível de risco aceitável.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**Riscos:** o Relatório de Riscos Globais do **Fórum Econômico Mundial** alerta para riscos globais **interconectados**. Riscos de projeto citados em aula: transporte, terrorismo, acidentes, câmbio, atrasos."
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Cenários prospectivos:** método de planejamento estratégico que cria **várias versões plausíveis do futuro**. Eles:"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "se baseiam em suposições sobre tendências econômicas, tecnológicas e sociais;",
+      "ajudam a preparar para a **incerteza** e a decidir melhor hoje;",
+      "servem para negócios, políticas públicas e planejamento ambiental."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**ESG:** sigla em inglês de Environmental, Social and Governance. Em português é **ASG** (Ambiental, Social e Governança)."
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Trade-off fundamental (mapa-resumo):** custo + tempo + risco = **nível de serviço**."
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Eixo central da disciplina:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Elemento",
+      "Papel"
+     ],
+     "linhas": [
+      [
+       "Infraestrutura",
+       "cria possibilidades"
+      ],
+      [
+       "Rotas",
+       "criam caminhos"
+      ],
+      [
+       "Modais",
+       "viabilizam o transporte"
+      ],
+      [
+       "Atores",
+       "executam os processos"
+      ],
+      [
+       "Processos",
+       "produzem tempo e custo"
+      ],
+      [
+       "Decisões",
+       "constroem resultados"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "frases como \"a televisão não dará certo\" (NYT, 1939) mostram por que prever um único futuro é arriscado, e por isso se trabalha com cenários."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "numa dissertativa, cite **custo × tempo × serviço × risco** e diga que a melhor escolha depende do contexto."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Cenários prospectivos",
+       "verso": "várias versões plausíveis do futuro para decidir melhor"
+      },
+      {
+       "frente": "ESG / ASG",
+       "verso": "Ambiental, Social e Governança"
+      },
+      {
+       "frente": "Nível de serviço",
+       "verso": "resultado do equilíbrio entre custo, tempo e risco"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que usar cenários em vez de uma única previsão?",
+     "respostaEsperada": "Porque o futuro é incerto. Vários cenários preparam a empresa para diferentes resultados."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual o \"princípio final\" da disciplina?",
+     "respostaEsperada": "Não existe a melhor opção absoluta, e sim a melhor decisão para cada contexto e nível de risco."
+    }
+   ]
+  }
+ ],
+ "revisaoRapida": [
+  {
+   "se": "Qual conceito é \"planejar, implementar e controlar o fluxo e a armazenagem da origem ao consumo\"?",
+   "entao": "Conceito de logística (Ballou)"
+  },
+  {
+   "se": "Como se chama a integração dos processos do usuário final até os fornecedores originais?",
+   "entao": "SCM (Supply Chain Management)"
+  },
+  {
+   "se": "Qual modal leva cerca de 90% das cargas do mundo?",
+   "entao": "Marítimo"
+  },
+  {
+   "se": "Carga urgente e de alto valor agregado (eletrônicos, informática): qual modal?",
+   "entao": "Modal aéreo"
+  },
+  {
+   "se": "Como se chama a navegação feita na costa do próprio país?",
+   "entao": "Cabotagem"
+  },
+  {
+   "se": "Quem é o \"armador sem navio\" que consolida carga fracionada?",
+   "entao": "NVOCC"
+  },
+  {
+   "se": "Que empresa oferece transporte, desembaraço, armazenagem e consultoria sem ter ativos próprios?",
+   "entao": "Freight forwarder"
+  },
+  {
+   "se": "Quem representa a empresa na Receita pelo Radar e registra DI/RE no Siscomex?",
+   "entao": "Despachante aduaneiro"
+  },
+  {
+   "se": "Qual é o conhecimento de embarque do marítimo? E o do aéreo?",
+   "entao": "B/L. Se for aéreo → AWB"
+  },
+  {
+   "se": "Como se chama agrupar vários volumes num único volume para facilitar o manuseio?",
+   "entao": "Unitização"
+  },
+  {
+   "se": "Que rotas ligam o Atlântico ao Pacífico por terra para chegar mais rápido à Ásia?",
+   "entao": "Rotas bioceânicas"
+  },
+  {
+   "se": "Qual plano federal integra todos os modais de transporte até 2035?",
+   "entao": "PNL 2035 (EPL / Ministério da Infraestrutura)"
+  },
+  {
+   "se": "Qual estudo da OMA mede o tempo de liberação de cargas?",
+   "entao": "TRS (Time Release Study)"
+  },
+  {
+   "se": "Segundo o TRS, quem mais consome tempo na importação?",
+   "entao": "O importador (quase 80%), e não a Receita (menos de 10%)"
+  },
+  {
+   "se": "Como se chama o método que cria várias versões plausíveis do futuro para decidir melhor?",
+   "entao": "Cenários prospectivos"
+  },
+  {
+   "se": "Qual é o trade-off fundamental da logística?",
+   "entao": "Custo + tempo + risco = nível de serviço"
+  }
+ ],
+ "miniProvas": [
+  {
+   "id": "mp1",
+   "titulo": "Mini prova 1: Logística e modais",
+   "secoes": [
+    "logistica-scm-e-logistica",
+    "modais-de-transporte"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma empresa descreve sua área como \"responsável por planejar, implementar e controlar o fluxo e a armazenagem de produtos e informações, do fornecedor até o cliente final\". Esse é o conceito de:",
+     "opcoes": [
+      "SCM",
+      "Logística",
+      "Logística aduaneira",
+      "Unitização"
+     ],
+     "correta": 1,
+     "explicacao": "é o conceito de logística de Ballou (da origem ao consumo). SCM é a integração da cadeia inteira; logística aduaneira é só a parte documental junto à aduana."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma fabricante de smartphones precisa entregar um lote urgente de alto valor na Europa. O modal mais indicado é:",
+     "opcoes": [
+      "Marítimo de longo curso",
+      "Cabotagem",
+      "Aéreo",
+      "Ferroviário"
+     ],
+     "correta": 2,
+     "explicacao": "o aéreo é recomendado para alto valor agregado e urgência. O frete é caro (cerca de 3 vezes o marítimo), mas compensa. Cabotagem é navegação nacional."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Um navio leva contêineres de Santos (SP) a Manaus (AM) pela costa brasileira. Essa navegação é:",
+     "opcoes": [
+      "Longo curso",
+      "Cabotagem",
+      "Lacustre",
+      "Fluvial internacional"
+     ],
+     "correta": 1,
+     "explicacao": "cabotagem é navegação em águas nacionais, na costa do país. Longo curso é entre países."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Qual afirmação sobre o ferroviário no Brasil está de acordo com o material?",
+     "opcoes": [
+      "É o modal que mais leva carga no país",
+      "Tem malha moderna e totalmente integrada",
+      "Grande parte da malha é antiga e as bitolas diferentes dificultam a integração",
+      "Compartilha as vias com os caminhões"
+     ],
+     "correta": 2,
+     "explicacao": "cerca de 80% da malha é herança colonial e as bitolas não se comunicam. Quem leva mais carga no país é o rodoviário (cerca de 63%)."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Segundo a IATA, o transporte aéreo representa no comércio mundial:",
+     "opcoes": [
+      "Maior parte do peso e do valor",
+      "Menos de 1% do peso e cerca de 1/3 do valor",
+      "Cerca de 50% do peso",
+      "Menos de 1% do valor"
+     ],
+     "correta": 1,
+     "explicacao": "o aéreo leva pouco peso mas muito valor: bens caros e urgentes, como chips e remédios."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Explique a diferença entre logística e SCM e dê um exemplo de cada.",
+     "respostaEsperada": "logística é a parte do SCM que planeja, implementa e controla o fluxo e a armazenagem de bens, serviços e informações da origem ao consumo (Ballou). Exemplo: organizar o transporte e o armazém de uma exportação. SCM é a integração de todos os processos da cadeia, do usuário final aos fornecedores originais, envolvendo exportadores, importadores, armadores, cias aéreas e transportadoras. Exemplo: coordenar fornecedores, fábrica, distribuidores e clientes de vários países.",
+     "criterios": [
+      "logística é parte do SCM",
+      "da origem ao consumo",
+      "integração da cadeia",
+      "players internacionais"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mp2",
+   "titulo": "Mini prova 2: Atores, documentos e unitização",
+   "secoes": [
+    "atores-players-da-logistica",
+    "documentos-unitizacao-embalagem-seguro"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma empresa consolida cargas fracionadas de vários exportadores num contêiner e vende esse espaço, sem ter navio. Ela é um:",
+     "opcoes": [
+      "Armador",
+      "NVOCC",
+      "Broker",
+      "Despachante aduaneiro"
+     ],
+     "correta": 1,
+     "explicacao": "o NVOCC é o \"armador sem navio\", focado no \"varejo\" da carga fracionada. O armador tem o navio; o broker negocia commodities; o despachante cuida do trâmite na Receita."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Quem registra a Declaração de Importação no Siscomex e acompanha o canal de parametrização em nome da empresa?",
+     "opcoes": [
+      "Trading company",
+      "Agência marítima",
+      "Despachante aduaneiro",
+      "Freight forwarder"
+     ],
+     "correta": 2,
+     "explicacao": "é atividade do despachante aduaneiro (Decreto 6.759/2009, art. 808), que representa a empresa na Receita via Radar."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma trading prospecta um comprador na Ásia e fecha a venda de soja de um produtor brasileiro. Normalmente, ela é remunerada por:",
+     "opcoes": [
+      "Frete marítimo",
+      "Comissão de 5% a 10%",
+      "Taxa fixa da ANTT",
+      "Honorários indexados ao salário mínimo"
+     ],
+     "correta": 1,
+     "explicacao": "a trading ganha comissão de 5% a 10% sobre o valor negociado. Honorários indexados ao salário mínimo são do despachante."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Qual documento é o conhecimento de embarque do modal aéreo?",
+     "opcoes": [
+      "B/L",
+      "AWB",
+      "DI",
+      "RE"
+     ],
+     "correta": 1,
+     "explicacao": "o AWB (Airway Bill) é o aéreo; o B/L é o marítimo. DI e RE são declarações aduaneiras, não conhecimento de embarque."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma empresa passa a agrupar caixas pequenas em pallets. Qual NÃO é uma vantagem esperada?",
+     "opcoes": [
+      "Menos avarias",
+      "Menos movimentos de manuseio",
+      "Aumento do custo de embalagem",
+      "Uso de mecanização"
+     ],
+     "correta": 2,
+     "explicacao": "a unitização **reduz** o custo de embalagem. As outras opções são vantagens citadas."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Compare NVOCC e freight forwarder.",
+     "respostaEsperada": "os dois são intermediários sem ativos próprios de transporte. O NVOCC é o \"armador sem navio\", focado em consolidar carga fracionada no marítimo e atuando como uma espécie de agente de vendas do armador. O freight forwarder é um provedor global que oferece praticamente todos os serviços (aéreo, marítimo, rodoviário, desembaraço, armazenagem, consultoria), usa ferramentas de TI como CRM e rastreamento e pode gerenciar um SCM integrado.",
+     "criterios": [
+      "sem ativos",
+      "consolidação de carga fracionada (NVOCC)",
+      "serviços em todos os modais (forwarder)",
+      "gestão integrada / SCM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mp3",
+   "titulo": "Mini prova 3: Rotas, processos e decisão",
+   "secoes": [
+    "rotas-corredores-e-planejamento",
+    "processos-e-tempo-trs",
+    "risco-cenarios-esg-e"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "O objetivo principal das rotas bioceânicas é:",
+     "opcoes": [
+      "Substituir o transporte marítimo",
+      "Ligar o Atlântico ao Pacífico, reduzindo distância e tempo até a Ásia",
+      "Integrar somente o Norte do Brasil",
+      "Reduzir o uso de contêineres"
+     ],
+     "correta": 1,
+     "explicacao": "o material diz que elas reduzem distância e tempo até a Ásia, aumentam a competitividade e ampliam os laços com os vizinhos."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "A ponte entre Porto Murtinho (MS) e Carmelo Peralta (Paraguai) faz parte de qual rota?",
+     "opcoes": [
+      "Rota Amazônica",
+      "Ilha das Guianas",
+      "Bioceânica de Capricórnio",
+      "Porto Alegre–Coquimbo"
+     ],
+     "correta": 2,
+     "explicacao": "a ponte binacional aparece na Rota 4, a Bioceânica de Capricórnio."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Segundo o TRS, qual afirmação é correta sobre o tempo de importação no Brasil?",
+     "opcoes": [
+      "A Receita Federal responde pela maior parte do tempo",
+      "O importador pode responder por quase 80% do tempo",
+      "O OEA é mais lento que o despacho comum",
+      "Controles em sequência reduzem o tempo"
+     ],
+     "correta": 1,
+     "explicacao": "a Receita responde por menos de 10%. O OEA é 32% mais ágil, e o sequencialismo dobra o tempo."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "O PNL 2035 é melhor descrito como:",
+     "opcoes": [
+      "Um plano tático só do modal rodoviário",
+      "Um plano estratégico que integra todos os modos de transporte",
+      "Uma lei que define o transporte multimodal",
+      "Um acordo com o Paraguai"
+     ],
+     "correta": 1,
+     "explicacao": "o PNL é o planejamento estratégico integrado (EPL/Ministério da Infraestrutura) e alimenta os planos setoriais."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma empresa monta três visões do futuro (otimista, pessimista e intermediária) antes de escolher uma rota. Ela está usando:",
+     "opcoes": [
+      "Unitização",
+      "Cenários prospectivos",
+      "TRS",
+      "Cabotagem"
+     ],
+     "correta": 1,
+     "explicacao": "cenários prospectivos são versões alternativas plausíveis do futuro para decidir melhor sob incerteza."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Uma exportadora precisa escolher entre enviar uma carga por avião ou por navio. Explique como decidir usando o trade-off da disciplina.",
+     "respostaEsperada": "a decisão deve equilibrar custo, tempo e risco para chegar ao nível de serviço desejado. O aéreo é mais rápido e indicado para carga urgente e de alto valor, mas o frete é cerca de 3 vezes maior. O marítimo tem melhor custo × benefício para volume, mas é mais lento. Não há opção melhor em termos absolutos: a melhor decisão depende do contexto (valor da carga, urgência, prazo do cliente) e do nível de risco aceitável, e pode ser apoiada por análise de cenários.",
+     "criterios": [
+      "custo × tempo × risco",
+      "nível de serviço",
+      "características dos modais",
+      "contexto e nível de risco aceitável"
+     ]
+    }
+   ]
+  }
+ ],
+ "simulado": {
+  "titulo": "Simulado P1 completo",
+  "descricao": "todos os temas + dissertativa",
+  "questoes": [
+   {
+    "tipo": "multipla",
+    "enunciado": "Uma empresa quer entender o conceito de SCM. Qual definição está correta?",
+    "opcoes": [
+     "Transporte de carga por navio",
+     "Integração dos processos de negócio do usuário final até os fornecedores originais",
+     "Gestão documental junto à aduana",
+     "Agrupamento de volumes em pallets"
+    ],
+    "correta": 1,
+    "explicacao": "é a definição de SCM do material. A opção c é logística aduaneira e a d é unitização."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Qual modal movimenta aproximadamente 90% das cargas do mundo?",
+    "opcoes": [
+     "Aéreo",
+     "Rodoviário",
+     "Marítimo",
+     "Ferroviário"
+    ],
+    "correta": 2,
+    "explicacao": "o marítimo é o subsistema mais importante da logística internacional e tem o melhor custo × benefício."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Uma transportadora de caminhões vai operar entre Brasil e Argentina. Ela precisa de autorização prévia de qual órgão?",
+    "opcoes": [
+     "Receita Federal",
+     "ANTT",
+     "OMA",
+     "EPL"
+    ],
+    "correta": 1,
+    "explicacao": "as transportadoras do Mercosul precisam de autorização da ANTT (Agência Nacional de Transportes Terrestres)."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "A agência marítima é responsável por:",
+    "opcoes": [
+     "Registrar a DI no Siscomex",
+     "Vender fretes e fazer a reserva de praça para o armador",
+     "Consolidar cargas fracionadas sem ter navio",
+     "Negociar commodities como pessoa física"
+    ],
+    "correta": 1,
+    "explicacao": "a agência marítima representa o armador. A opção a é do despachante, a c do NVOCC e a d do broker."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "O contêiner foi considerado uma revolução porque:",
+    "opcoes": [
+     "Eliminou a necessidade de seguro",
+     "Trouxe padronização para navios, caminhões e equipamentos portuários",
+     "Substituiu o modal aéreo",
+     "Acabou com o conhecimento de embarque"
+    ],
+    "correta": 1,
+    "explicacao": "tudo passou a se adaptar à \"caixa de aço\" padronizada pela ISO."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Uma embalagem que protege o produto, chama a atenção do cliente e agrupa várias unidades cumpre, respectivamente, as funções:",
+    "opcoes": [
+     "protetiva, mercadológica e econômica (secundária)",
+     "econômica, protetiva e mercadológica",
+     "mercadológica, econômica e protetiva",
+     "só protetiva"
+    ],
+    "correta": 0,
+    "explicacao": "proteger = protetiva; atrair = mercadológica; agrupar primárias = econômica (embalagem secundária)."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Qual rota de integração NÃO faz parte das 5 rotas sul-americanas do material?",
+    "opcoes": [
+     "Quadrante Rondon",
+     "Ilha das Guianas",
+     "Rota da Seda",
+     "Porto Alegre–Coquimbo"
+    ],
+    "correta": 2,
+    "explicacao": "as 5 rotas são Ilha das Guianas, Amazônica, Quadrante Rondon, Bioceânica de Capricórnio e Porto Alegre–Coquimbo."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "O TRS é uma metodologia de qual organização?",
+    "opcoes": [
+     "OMC",
+     "OMA (Organização Mundial das Aduanas)",
+     "IATA",
+     "ANTT"
+    ],
+    "correta": 1,
+    "explicacao": "o TRS é da OMA e se relaciona com o Acordo de Facilitação de Comércio (art. 7.6.1)."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Qual achado do TRS explica por que fazer os controles em paralelo é uma solução?",
+    "opcoes": [
+     "A Receita responde por 90% do tempo",
+     "O sequencialismo dos controles dobra o tempo",
+     "O canal vermelho é o mais comum",
+     "O OEA é mais lento"
+    ],
+    "correta": 1,
+    "explicacao": "quando um órgão só age depois do outro, o tempo dobra; em paralelo, ele cai."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Em 2025, a carga aérea ajudou empresas a enviar produtos aos EUA antes de tarifas novas. Isso se chama:",
+    "opcoes": [
+     "Cabotagem",
+     "Frontloading",
+     "Unitização",
+     "Hinterland"
+    ],
+    "correta": 1,
+    "explicacao": "frontloading é antecipar embarques. Segundo a IATA, o aéreo foi decisivo nisso."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Segundo o mapa-resumo da disciplina, o nível de serviço resulta do equilíbrio entre:",
+    "opcoes": [
+     "custo, tempo e risco",
+     "preço, marca e embalagem",
+     "modal, rota e documento",
+     "exportador, importador e aduana"
+    ],
+    "correta": 0,
+    "explicacao": "é o trade-off fundamental: custo + tempo + risco = nível de serviço."
+   },
+   {
+    "tipo": "dissertativa",
+    "enunciado": "Explique o que são cenários prospectivos e por que são úteis na gestão de riscos da logística internacional.",
+    "respostaEsperada": "cenários prospectivos são um método de planejamento estratégico que cria várias versões alternativas e plausíveis do futuro, com base em suposições sobre tendências econômicas, avanços tecnológicos e mudanças sociais. Na logística internacional, cheia de riscos interconectados (os riscos globais apontados pelo Fórum Econômico Mundial, câmbio, acidentes, atrasos), eles ajudam a empresa a se preparar para a incerteza e a tomar decisões mais informadas no presente, em vez de apostar num único futuro.",
+    "criterios": [
+     "várias versões plausíveis do futuro",
+     "incerteza",
+     "riscos (ex.: câmbio, atrasos, riscos globais)",
+     "decisão melhor no presente"
+    ]
+   }
+  ]
+ }
+}

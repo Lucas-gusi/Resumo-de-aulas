@@ -9,11 +9,6 @@ async function loadJSON(url) {
   return r.json();
 }
 
-const store = {
-  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
-  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
-};
-
 function toast(msg) {
   const t = document.getElementById("toast");
   if (!t) return;
@@ -78,9 +73,11 @@ function Quiz(root, questoes, { modo = "estudo", numerar = true, placar = true, 
     const tag = { numerica: "Cálculo", dissertativa: "Dissertativa" }[q.tipo] || "";
     el.innerHTML = `${tag ? `<div class="tag">${tag}</div>` : ""}<p class="enun">${numerar ? `<span class="n">${i + 1}.</span>` : ""}${md(q.enunciado)}</p>`;
     const fb = document.createElement("div"); fb.className = "fb";
-    const mostra = (ok, extra = "") => {
-      fb.innerHTML = (ok === null ? "" : `<span class="res ${ok ? "ok" : "bad"}">${ok ? "✔ Certo!" : "✘ Não foi dessa vez."}</span> `) + extra;
+    const mostra = (ok, extra = "", titulo) => {
+      const t = titulo || (ok ? "✔ Certo!" : "✘ Não foi dessa vez.");
+      fb.innerHTML = (ok === null ? "" : `<span class="res ${ok ? "ok" : "bad"}">${t}</span>`) + extra;
       fb.classList.add("show");
+      if (ok !== null) fb.classList.add(ok ? "ok" : "bad");
     };
     let corrigir;
 
@@ -103,7 +100,7 @@ function Quiz(root, questoes, { modo = "estudo", numerar = true, placar = true, 
         btns.forEach((b, pos) => { b.disabled = true; b.classList.remove("sel");
           if (ordem[pos] === q.correta) b.classList.add("ok"); else if (ordem[pos] === escolha) b.classList.add("bad"); });
         estado[i] = { feito: true, certo: ok };
-        mostra(ok, md(q.explicacao || ""));
+        mostra(ok, md(q.explicacao || ""), escolha === null ? "✘ Sem resposta." : undefined);
         atualizaLive();
       };
     } else if (q.tipo === "numerica") {
@@ -111,6 +108,7 @@ function Quiz(root, questoes, { modo = "estudo", numerar = true, placar = true, 
       const ins = q.campos.map(c => {
         const lb = document.createElement("label"); lb.innerHTML = `<span>${md(c.rotulo)}</span>`;
         const inp = document.createElement("input"); inp.inputMode = "decimal"; inp.placeholder = "sua resposta";
+        inp.onkeydown = e => { if (e.key === "Enter" && modo === "estudo") corrigir(); };
         lb.appendChild(inp); box.appendChild(lb); return inp;
       });
       el.appendChild(box);
@@ -126,9 +124,10 @@ function Quiz(root, questoes, { modo = "estudo", numerar = true, placar = true, 
           const bom = ins[k].value.trim() !== "" && Math.abs(v - c.resposta) <= tol;
           ins[k].classList.add(bom ? "ok" : "bad"); ins[k].disabled = true; if (!bom) ok = false;
         });
+        const vazio = ins.every(x => x.value.trim() === "");
         estado[i] = { feito: true, certo: ok };
         const gab = q.campos.map(c => `${esc(c.rotulo)} = <b>${c.resposta.toLocaleString("pt-BR")}</b>`).join(" · ");
-        mostra(ok, `<div>${gab}</div>${q.explicacao ? `<div style="margin-top:6px">${md(q.explicacao)}</div>` : ""}`);
+        mostra(ok, `<div>Gabarito: ${gab}</div>${q.explicacao ? `<div style="margin-top:6px">${md(q.explicacao)}</div>` : ""}`, vazio ? "✘ Sem resposta." : undefined);
         el.querySelector(".btn")?.remove();
         atualizaLive();
       };
@@ -162,7 +161,7 @@ function Quiz(root, questoes, { modo = "estudo", numerar = true, placar = true, 
     const msg = pct >= 80 ? "Mandou bem! Você está pronto nesse conteúdo." : pct >= 50 ? "Quase lá. Releia as explicações das que errou." : "Vale voltar no resumo dessa parte e refazer.";
     if (onFim) onFim({ certos, total: objetivas, pct });
     if (!placar || (!objetivas && modo === "estudo")) return;
-    resultado.innerHTML = `<div class="card score">${objetivas ? `<div class="big">${certos}/${objetivas}</div><div class="msg">${pct}% · ${msg}</div>` : ""}
+    resultado.innerHTML = `<div class="score">${objetivas ? `<div class="big">${certos}/${objetivas}</div><div class="msg">${pct}% · ${msg}</div>` : ""}
       <button class="btn" data-r>Refazer</button></div>`;
     resultado.querySelector("[data-r]").onclick = () => { Quiz(root, questoes, { modo, numerar, placar, onFim }); root.scrollIntoView({ behavior: "smooth" }); };
   };

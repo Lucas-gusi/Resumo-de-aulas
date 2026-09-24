@@ -1,0 +1,1273 @@
+{
+ "slug": "mercado-financeiro",
+ "nome": "Mercado Financeiro",
+ "nomeCompleto": "Mercado Financeiro e de Capitais",
+ "professor": "Prof. Osmar Jr.",
+ "avaliacao": "P1 · Atividades 1 a 6 (Programa, Fundamentos da Economia, SFN, Políticas Econômicas, Tesouro Direto e Produtos do Mercado Financeiro)",
+ "atualizadoEm": "24/09/2026",
+ "fontes": "slides \"Programa e Conceitos Iniciais\", \"Fundamentos da Economia\", \"Sistema Financeiro Nacional\", \"Políticas Econômicas\", \"Tesouro Direto\", \"Produtos do Mercado Financeiro\" e \"Revisão P1\", além do documento da atividade de Políticas Econômicas (Classroom)",
+ "quickView": [
+  {
+   "topico": "PIB",
+   "texto": "é a **soma de todos os bens e serviços finais** produzidos numa economia num período (em geral, um ano). É um **indicador síntese**: mede o tamanho da economia, mas **não** mede distribuição de renda, saúde ou educação. O **PIB per capita** divide o PIB pelo número de habitantes."
+  },
+  {
+   "topico": "Inflação",
+   "texto": "aumento generalizado de preços que corrói o poder de compra. Por isso o PIB de um ano não pode ser comparado com o de outro sem descontar a **inflação**. A principal causa da inflação de longo prazo é o **excesso de dinheiro circulando** em relação à oferta real de bens e serviços."
+  },
+  {
+   "topico": "Sistema Financeiro Nacional (SFN)",
+   "texto": "organizado em **órgãos normativos** (fazem as regras: CMN, CNSP, CNPC), **supervisores** (fiscalizam: BACEN, CVM, SUSEP, PREVIC) e **operadores** (atendem o público: bancos, corretoras, seguradoras, fundos de pensão)."
+  },
+  {
+   "topico": "Políticas econômicas",
+   "texto": "o governo usa três \"pilares\". A **monetária** cuida de liquidez e juros, a **fiscal** de arrecadação e gastos, e a **cambial** da relação da moeda com o exterior. Os objetivos são emprego, inflação controlada, crescimento do PIB e estabilidade."
+  },
+  {
+   "topico": "Política monetária",
+   "texto": "afeta a **quantidade de dinheiro em circulação** e o **custo do dinheiro (juros)**. A finalidade principal é manter a **inflação baixa, estável e previsível**."
+  },
+  {
+   "topico": "Tesouro Direto",
+   "texto": "programa do **Tesouro Nacional** que vende **títulos públicos** a pessoas físicas. Quem compra **empresta dinheiro ao governo**. É **renda fixa**, e o IR segue a **tabela regressiva** (de 22,5% a 15%)."
+  },
+  {
+   "topico": "Produtos e FGC",
+   "texto": "poupança, CDB, LCI, LCA, CRI, CRA e fundos de investimento. O **FGC** é uma associação **privada**, mantida pelos bancos, que garante até **R$ 250.000 por CPF/CNPJ por instituição**."
+  }
+ ],
+ "comoCai": [
+  {
+   "parte": "Atividades em sala",
+   "formato": "Individuais e em equipe (as \"Ativ.\" de cada aula)",
+   "peso": "4,0 pontos",
+   "dica": "Entregar todas; a Revisão P1 pede um resumo de cada atividade e 5 questões por tema"
+  },
+  {
+   "parte": "Prova P1",
+   "formato": "Avaliação individual",
+   "peso": "6,0 pontos",
+   "dica": "Dominar os 6 temas das atividades: PIB e inflação, SFN, políticas econômicas, Tesouro Direto e produtos/FGC"
+  }
+ ],
+ "secoes": [
+  {
+   "id": "pib-o-tamanho-da",
+   "titulo": "PIB: o tamanho da economia",
+   "pergunta": "como medir quanto um país produz, e o que essa medida esconde?",
+   "emUmaFrase": "o PIB soma tudo o que foi produzido de bens e serviços finais num período, mas não diz se a população vive bem.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**PIB (Produto Interno Bruto):** somatória de todos os **bens e serviços finais** produzidos numa economia durante um período, geralmente **um ano**."
+    },
+    {
+     "tipo": "texto",
+     "texto": "A lógica do slide \"PIB, a medida de todas as coisas\":"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "produção maior leva a mais empregos;",
+      "mais empregos levam à tendência de aumento de renda e diminuição da pobreza."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**O que o PIB NÃO mede:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Ponto",
+      "Explicação"
+     ],
+     "linhas": [
+      [
+       "Limitação social",
+       "Mostra o tamanho da economia, mas não a distribuição de renda, a qualidade de vida, a educação ou a saúde"
+      ],
+      [
+       "O paradoxo",
+       "Um país pode ter PIB gigante e padrão de vida baixíssimo (e vice-versa)"
+      ],
+      [
+       "PIB per capita",
+       "PIB ÷ número de habitantes = riqueza média, que ainda esconde desigualdades individuais"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "PIB alto não quer dizer população rica. O PIB é um indicador síntese, não um certificado de bem-estar."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "analogia",
+     "texto": "o PIB é o faturamento de uma empresa. Ele não diz como o dinheiro foi dividido entre os funcionários."
+    },
+    {
+     "tipo": "exemplo",
+     "titulo": "PIB per capita",
+     "passos": [
+      "Divida o PIB pela população: 2.000.000.000.000 ÷ 200.000.000.",
+      "Resultado: R$ 10.000 por habitante."
+     ],
+     "enunciado": "um país tem PIB de R$ 2.000 bilhões e 200 milhões de habitantes. Qual o PIB per capita?",
+     "conclusao": "cada habitante \"teria\" R$ 10 mil em média, mas isso não mostra quem ganha muito e quem ganha pouco."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "PIB",
+       "verso": "soma dos bens e serviços finais produzidos num período"
+      },
+      {
+       "frente": "PIB per capita",
+       "verso": "PIB ÷ habitantes (média, esconde desigualdade)"
+      },
+      {
+       "frente": "Indicador síntese",
+       "verso": "resume a economia num número, sem medir bem-estar"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Cite 3 coisas que o PIB não mede.",
+     "respostaEsperada": "Distribuição de renda, qualidade de vida (saúde) e educação."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que o PIB per capita também é limitado?",
+     "respostaEsperada": "Porque é uma média: esconde as desigualdades entre as pessoas."
+    }
+   ]
+  },
+  {
+   "id": "inflacao-por-que-comparar",
+   "titulo": "Inflação: por que comparar PIBs exige cuidado",
+   "pergunta": "se o PIB passou de US$ 1.000 para US$ 1.100, o país cresceu 10%?",
+   "emUmaFrase": "não necessariamente, porque parte do aumento pode ser só alta de preços (inflação).",
+   "blocos": [
+    {
+     "tipo": "lista",
+     "itens": [
+      "O slide é direto: **não** é correto afirmar crescimento de 10%, porque há um fator que precisa ser considerado, a **inflação**.",
+      "A principal causa da inflação de **longo prazo** é o **excesso de dinheiro circulando** em relação à **oferta real de bens e serviços** (slide de política monetária).",
+      "A atividade pede para definir inflação e explicar suas causas, então vale saber isso de cor."
+     ]
+    },
+    {
+     "tipo": "exemplo",
+     "titulo": "variação nominal do PIB",
+     "passos": [
+      "Variação = (1.100 − 1.000) ÷ 1.000 = 0,10.",
+      "Variação nominal = 10%.",
+      "Parte desse aumento pode ser só preço (inflação), não produção."
+     ],
+     "enunciado": "o PIB foi de US$ 1.000 num ano e de US$ 1.100 no seguinte. Qual a variação nominal? Ela é o crescimento real?",
+     "conclusao": "10% é a variação nominal. O crescimento real só aparece depois de descontar a inflação."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "aumento do PIB em valores correntes ≠ aumento da produção."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "toda questão que comparar PIB de anos diferentes quer ouvir a palavra **inflação**."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Inflação",
+       "verso": "aumento generalizado de preços que reduz o poder de compra"
+      },
+      {
+       "frente": "Causa de longo prazo (material)",
+       "verso": "excesso de dinheiro vs. oferta real de bens"
+      },
+      {
+       "frente": "Variação nominal",
+       "verso": "variação sem descontar a inflação"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "O que é preciso considerar ao comparar o PIB de dois anos?",
+     "respostaEsperada": "A inflação, que infla os valores sem aumentar a produção."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual a principal causa da inflação de longo prazo, segundo o material?",
+     "respostaEsperada": "Excesso de dinheiro circulando em relação à oferta real de bens e serviços."
+    }
+   ]
+  },
+  {
+   "id": "sistema-financeiro-nacional-sfn",
+   "titulo": "Sistema Financeiro Nacional (SFN)",
+   "pergunta": "quem manda, quem fiscaliza e quem opera no mercado financeiro brasileiro?",
+   "emUmaFrase": "o SFN tem três camadas: quem faz as regras, quem fiscaliza e quem atende o público.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "Todo setor regulado tem uma entidade reguladora (energia, telecom, aviação…), e o mercado financeiro e de capitais tem **várias**."
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Camada",
+      "Papel",
+      "Analogia do professor"
+     ],
+     "linhas": [
+      [
+       "**Órgãos normativos**",
+       "Criam as regras gerais; pensam e decidem no nível macro; **não operam** diretamente",
+       "🧠 Cérebro"
+      ],
+      [
+       "**Supervisores**",
+       "Garantem que as regras sejam cumpridas",
+       "👀 Sentidos (veem e ouvem o mercado)"
+      ],
+      [
+       "**Operadores**",
+       "Instituições que oferecem serviços financeiros como **intermediárias** e têm contato direto com o público",
+       "❤️ Sistema circulatório (transportam o \"sangue\", o dinheiro)"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**O mapa completo do SFN:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "",
+      "Moeda, crédito e câmbio",
+      "Valores mobiliários",
+      "Seguros privados",
+      "Previdência fechada"
+     ],
+     "linhas": [
+      [
+       "**Normativo**",
+       "CMN",
+       "CMN",
+       "CNSP",
+       "CNPC"
+      ],
+      [
+       "**Supervisor**",
+       "BACEN",
+       "CVM",
+       "SUSEP",
+       "PREVIC"
+      ],
+      [
+       "**Operadores**",
+       "Bancos, cooperativas, instituições de pagamento",
+       "Bolsas, corretoras",
+       "Seguradoras, capitalização",
+       "Fundos de pensão"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "o **CMN** é normativo de **duas colunas** (moeda/crédito/câmbio **e** valores mobiliários). A CVM é supervisora, não normativa."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "o BACEN **fiscaliza**, quem cria as regras é o CMN."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "analogia",
+     "texto": "o CMN escreve as regras do jogo, o BACEN e a CVM apitam, e os bancos e corretoras jogam."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "CMN",
+       "verso": "órgão normativo de moeda, crédito, câmbio e valores mobiliários"
+      },
+      {
+       "frente": "BACEN",
+       "verso": "supervisor de moeda, crédito e câmbio (bancos, cooperativas)"
+      },
+      {
+       "frente": "CVM",
+       "verso": "supervisora de valores mobiliários (bolsas, corretoras)"
+      },
+      {
+       "frente": "CNSP / SUSEP",
+       "verso": "normativo / supervisor de seguros privados"
+      },
+      {
+       "frente": "CNPC / PREVIC",
+       "verso": "normativo / supervisor de previdência fechada"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quem supervisiona as corretoras e a bolsa?",
+     "respostaEsperada": "A CVM."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Na analogia do corpo humano, o que são os operadores?",
+     "respostaEsperada": "O sistema circulatório: levam o dinheiro e têm contato direto com o público."
+    }
+   ]
+  },
+  {
+   "id": "politicas-economicas-e-politica",
+   "titulo": "Políticas econômicas e política monetária",
+   "pergunta": "que ferramentas o governo usa para controlar a economia?",
+   "emUmaFrase": "são três políticas (monetária, fiscal e cambial) com objetivos de emprego, inflação baixa, crescimento e estabilidade.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**Principais objetivos da política econômica:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Objetivo",
+      "O que busca"
+     ],
+     "linhas": [
+      [
+       "Altos níveis de emprego",
+       "Inclusão produtiva da população ativa"
+      ],
+      [
+       "Reduzir e controlar a inflação",
+       "Preservar o poder de compra da moeda"
+      ],
+      [
+       "Estimular o crescimento do PIB",
+       "Aumentar a produção de riquezas e o nível de atividade"
+      ],
+      [
+       "Promover a estabilidade econômica",
+       "Evitar crises sistêmicas e flutuações bruscas"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "As decisões políticas afetam a **oferta e a procura** de bens e serviços, os **juros**, o **câmbio** e as políticas fiscal e monetária."
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Os três pilares de controle:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Política",
+      "Pilar",
+      "Foco"
+     ],
+     "linhas": [
+      [
+       "**Monetária**",
+       "Liquidez e juros",
+       "Controle do dinheiro em circulação e da inflação"
+      ],
+      [
+       "**Fiscal**",
+       "Sustentação e orçamento",
+       "Arrecadação e gastos do governo"
+      ],
+      [
+       "**Cambial**",
+       "Fronteira e valor",
+       "Relação da moeda nacional com o exterior (dólar)"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Política monetária (conceito):**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "É o conjunto de medidas para afetar a **liquidez** da economia: a **quantidade de dinheiro em circulação** e o **custo de captação (juros)**.",
+      "**Finalidade principal:** inflação **baixa, estável e previsível**."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "Na atividade da turma sobre o tema, os instrumentos citados foram:"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "controle da **Selic**;",
+      "**depósito compulsório**;",
+      "**operações de mercado aberto**."
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Situação",
+      "Ação monetária (atividade da turma)"
+     ],
+     "linhas": [
+      [
+       "Inflação alta",
+       "Aumentar os juros para reduzir o consumo e o dinheiro circulando"
+      ],
+      [
+       "Economia fraca",
+       "Baixar os juros, comprar títulos e reduzir o compulsório"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "a política monetária mexe com **dinheiro e juros**. Impostos e gastos são política **fiscal**."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "a turma analisou uma ata do **Copom** (comitê que decide a taxa básica de juros) na atividade de Políticas Econômicas."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Política monetária",
+       "verso": "controla dinheiro em circulação e juros"
+      },
+      {
+       "frente": "Liquidez",
+       "verso": "quantidade de dinheiro disponível na economia"
+      },
+      {
+       "frente": "Selic",
+       "verso": "taxa básica de juros (instrumento citado na atividade)"
+      },
+      {
+       "frente": "Copom",
+       "verso": "comitê que decide a taxa básica de juros"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual a finalidade principal da política monetária?",
+     "respostaEsperada": "Manter a inflação baixa, estável e previsível."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quais os 4 objetivos da política econômica?",
+     "respostaEsperada": "Emprego alto, inflação controlada, crescimento do PIB e estabilidade econômica."
+    }
+   ]
+  },
+  {
+   "id": "politica-fiscal-e-politica",
+   "titulo": "Política fiscal e política cambial",
+   "pergunta": "como o governo usa impostos, gastos e o câmbio?",
+   "emUmaFrase": "a fiscal mexe no orçamento do governo e a cambial no valor do real frente a outras moedas.",
+   "blocos": [
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "",
+      "Política fiscal",
+      "Política cambial"
+     ],
+     "linhas": [
+      [
+       "Foco (slide)",
+       "Arrecadação e gastos do governo",
+       "Relação da moeda nacional com o exterior (dólar)"
+      ],
+      [
+       "Atividade da turma",
+       "Trabalha com impostos e gastos públicos; se o Estado depende de financiamento, gera custos de juros",
+       "Controla o valor do real frente a outras moedas; afeta importação e exportação e, por consequência, preços internos"
+      ],
+      [
+       "Tipos (atividade)",
+       "—",
+       "**Fixo** (o governo fixa a taxa por um período) × **flutuante** (oferta e demanda definem a taxa todo dia)"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "câmbio **flutuante** não quer dizer \"sem banco central\". Na atividade, a turma registrou que o BC pode atuar vendendo dólar das reservas para conter a volatilidade."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "pergunta sobre exportação e importação → pense em **câmbio**."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Política fiscal",
+       "verso": "arrecadação (impostos) e gastos do governo"
+      },
+      {
+       "frente": "Política cambial",
+       "verso": "valor da moeda nacional frente ao exterior"
+      },
+      {
+       "frente": "Câmbio fixo",
+       "verso": "taxa definida pelo governo"
+      },
+      {
+       "frente": "Câmbio flutuante",
+       "verso": "taxa definida por oferta e demanda"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Um aumento de impostos para equilibrar o orçamento é que política?",
+     "respostaEsperada": "Fiscal."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que o câmbio afeta os preços internos?",
+     "respostaEsperada": "Porque muda o custo de importar e exportar mercadorias."
+    }
+   ]
+  },
+  {
+   "id": "tesouro-direto-e-tributacao",
+   "titulo": "Tesouro Direto e tributação",
+   "pergunta": "o que é investir em título público e quanto se paga de imposto?",
+   "emUmaFrase": "comprar título público é emprestar dinheiro ao governo, com rendimento de renda fixa e IR menor quanto mais tempo você fica.",
+   "blocos": [
+    {
+     "tipo": "lista",
+     "itens": [
+      "**Títulos do governo:** emitidos pelo **Tesouro Nacional** para **financiar as contas da União**. O governo vende o título e depois devolve o valor **com juros**. Quem investe está **emprestando dinheiro ao governo**.",
+      "**Tesouro Direto:** programa pelo qual o governo oferece títulos a **pessoas físicas**. Qualquer pessoa pode comprar.",
+      "**Renda fixa:** dá para **projetar os rendimentos** no momento da aplicação."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Tabela regressiva do IR (fonte: Receita Federal):**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Prazo da aplicação",
+      "Alíquota de IR"
+     ],
+     "linhas": [
+      [
+       "Até 180 dias",
+       "22,5%"
+      ],
+      [
+       "181 a 360 dias",
+       "20,0%"
+      ],
+      [
+       "361 a 720 dias",
+       "17,5%"
+      ],
+      [
+       "721 dias ou mais",
+       "15,0%"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "\"Quanto mais tempo você investe, menor é a fatia do Leão.\""
+    },
+    {
+     "tipo": "exemplo",
+     "titulo": "IR no Tesouro Direto",
+     "passos": [
+      "400 dias está na faixa de 361 a 720 dias, com alíquota de 17,5%.",
+      "IR = 1.000 × 0,175 = R$ 175.",
+      "Lucro líquido = 1.000 − 175 = R$ 825."
+     ],
+     "enunciado": "você teve lucro de R$ 1.000 num título e resgatou depois de 400 dias. Quanto paga de IR e quanto sobra?",
+     "conclusao": "IR = R$ 175 e lucro líquido = R$ 825. Se esperasse até 721 dias, pagaria 15% (R$ 150)."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "a alíquota incide sobre o **rendimento (lucro)**, não sobre o valor total aplicado."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "a tabela é **regressiva**: a alíquota **cai** com o tempo."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Título público",
+       "verso": "empréstimo do investidor ao governo"
+      },
+      {
+       "frente": "Tesouro Nacional",
+       "verso": "emissor dos títulos públicos"
+      },
+      {
+       "frente": "Tesouro Direto",
+       "verso": "programa de venda de títulos a pessoas físicas"
+      },
+      {
+       "frente": "Tabela regressiva",
+       "verso": "22,5% → 20% → 17,5% → 15%"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual a alíquota para resgate com 200 dias?",
+     "respostaEsperada": "20% (faixa de 181 a 360 dias)."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que o Tesouro Direto é renda fixa?",
+     "respostaEsperada": "Porque dá para projetar o rendimento no momento da aplicação."
+    }
+   ]
+  },
+  {
+   "id": "produtos-do-mercado-financeiro",
+   "titulo": "Produtos do mercado financeiro e FGC",
+   "pergunta": "quais produtos a disciplina cobre e quem protege o investidor se um banco quebrar?",
+   "emUmaFrase": "poupança, CDB, letras (LCI/LCA), certificados (CRI/CRA) e fundos, com o FGC como \"escudo\" de até R$ 250 mil.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**Produtos citados:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Sigla",
+      "Nome"
+     ],
+     "linhas": [
+      [
+       "—",
+       "Poupança"
+      ],
+      [
+       "CDB",
+       "Certificado de Depósito Bancário"
+      ],
+      [
+       "LCI",
+       "Letra de Crédito Imobiliário"
+      ],
+      [
+       "LCA",
+       "Letra de Crédito do Agronegócio"
+      ],
+      [
+       "CRI",
+       "Certificado de Recebíveis Imobiliários"
+      ],
+      [
+       "CRA",
+       "Certificado de Recebíveis do Agronegócio"
+      ],
+      [
+       "—",
+       "Fundo de investimento"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**FGC (Fundo Garantidor de Créditos):**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "**Origem:** autorizado por resolução do **CMN** em **agosto de 1995**.",
+      "**Natureza:** entidade **privada e sem fins lucrativos**, mantida pelas **próprias instituições financeiras**, e não pelo governo.",
+      "**Missão:** administrar a proteção a titulares de créditos, proteger contra **liquidações** de instituições e **evitar pânico e quebras sistêmicas**.",
+      "**Regra de ouro:** garante até **R$ 250.000 por CPF ou CNPJ, por instituição financeira**."
+     ]
+    },
+    {
+     "tipo": "exemplo",
+     "titulo": "cobertura do FGC",
+     "passos": [
+      "Limite por CPF por instituição = R$ 250.000.",
+      "Caso 1 (um banco): cobre R$ 250.000 e R$ 150.000 ficam descobertos.",
+      "Caso 2 (dois bancos): R$ 200.000 em cada, abaixo do limite em cada um, então cobre R$ 400.000."
+     ],
+     "enunciado": "Ana tem R$ 400.000 aplicados num único banco, que quebrou. Quanto o FGC cobre? E se ela tivesse dividido R$ 200.000 em cada um de dois bancos diferentes, e os dois quebrassem?",
+     "conclusao": "dividir entre instituições diferentes aumenta a proteção, porque o limite vale por instituição."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "não é o governo que paga o FGC. São os bancos que alimentam esse fundo preventivo."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "o professor levou para debate o impacto do caso Banco Master sobre o FGC."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "a atividade pede para explicar a **poupança** (funcionamento, taxas, remuneração). Revise isso na sua própria resposta da atividade, porque os slides não trazem os números."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "FGC",
+       "verso": "fundo privado mantido pelos bancos, garante até R$ 250 mil"
+      },
+      {
+       "frente": "Limite do FGC",
+       "verso": "por CPF/CNPJ, por instituição financeira"
+      },
+      {
+       "frente": "LCI / LCA",
+       "verso": "letras de crédito imobiliário / do agronegócio"
+      },
+      {
+       "frente": "CRI / CRA",
+       "verso": "certificados de recebíveis imobiliários / do agronegócio"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quem criou (autorizou) o FGC e quando?",
+     "respostaEsperada": "Uma resolução do CMN, em agosto de 1995."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "O limite do FGC é por pessoa no sistema todo?",
+     "respostaEsperada": "Não. É por CPF/CNPJ **por instituição financeira**."
+    }
+   ]
+  }
+ ],
+ "revisaoRapida": [
+  {
+   "se": "Como se chama a soma de todos os bens e serviços finais produzidos num período?",
+   "entao": "PIB"
+  },
+  {
+   "se": "Como se chama o PIB dividido pelo número de habitantes?",
+   "entao": "PIB per capita"
+  },
+  {
+   "se": "O PIB subiu de 1.000 para 1.100. Dá para dizer que o país cresceu 10%?",
+   "entao": "Não dá para afirmar crescimento real de 10%, é preciso descontar a inflação"
+  },
+  {
+   "se": "Um país tem PIB alto e baixa qualidade de vida. Qual limitação do PIB isso mostra?",
+   "entao": "Limitação do PIB: ele não mede distribuição de renda, saúde e educação"
+  },
+  {
+   "se": "Quem cria as regras do Sistema Financeiro Nacional?",
+   "entao": "Órgãos normativos (CMN, CNSP, CNPC). É o \"cérebro\""
+  },
+  {
+   "se": "Quem fiscaliza os bancos e o mercado de valores mobiliários?",
+   "entao": "BACEN e CVM (supervisores). São os \"sentidos\""
+  },
+  {
+   "se": "Quem são os operadores do SFN?",
+   "entao": "Operadores. São o \"sistema circulatório\""
+  },
+  {
+   "se": "Quem regula e quem fiscaliza os seguros privados?",
+   "entao": "CNSP (normativo) e SUSEP (supervisor)"
+  },
+  {
+   "se": "Quem regula e quem fiscaliza a previdência fechada (fundos de pensão)?",
+   "entao": "CNPC e PREVIC"
+  },
+  {
+   "se": "Qual política controla o dinheiro em circulação e os juros?",
+   "entao": "Política monetária"
+  },
+  {
+   "se": "Qual política cuida da arrecadação e dos gastos do governo?",
+   "entao": "Política fiscal"
+  },
+  {
+   "se": "Qual política cuida da relação do real com o dólar?",
+   "entao": "Política cambial"
+  },
+  {
+   "se": "Quem emite os títulos públicos federais?",
+   "entao": "Tesouro Nacional (vendidos pelo programa Tesouro Direto)"
+  },
+  {
+   "se": "Qual a alíquota de IR no resgate de um título após 721 dias ou mais?",
+   "entao": "Alíquota de IR de 15%"
+  },
+  {
+   "se": "Quem paga o FGC?",
+   "entao": "Os próprios bancos, não o governo"
+  },
+  {
+   "se": "Uma pessoa tinha R$ 400 mil num único banco que quebrou. Quanto o FGC garante?",
+   "entao": "O FGC garante só R$ 250 mil"
+  }
+ ],
+ "miniProvas": [
+  {
+   "id": "mp1",
+   "titulo": "Mini prova 1: PIB e inflação",
+   "secoes": [
+    "pib-o-tamanho-da",
+    "inflacao-por-que-comparar"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Um jornal afirma: \"O país X tem o 5º maior PIB do mundo, então sua população tem ótima qualidade de vida\". Segundo o material:",
+     "opcoes": [
+      "Está correto, porque PIB alto garante bem-estar",
+      "Está errado, porque o PIB não mede distribuição de renda, saúde ou educação",
+      "Está correto se o PIB per capita também for alto",
+      "Está errado, porque o PIB só mede exportações"
+     ],
+     "correta": 1,
+     "explicacao": "o PIB é um indicador síntese, não um certificado de bem-estar. Mesmo o PIB per capita (opção c) é uma média que esconde desigualdades. A opção d é falsa: o PIB soma todos os bens e serviços finais."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Qual a definição correta de PIB?",
+     "opcoes": [
+      "Soma de todos os impostos arrecadados num ano",
+      "Soma de todos os bens e serviços finais produzidos numa economia num período",
+      "Total de dinheiro em circulação",
+      "Valor das exportações menos importações"
+     ],
+     "correta": 1,
+     "explicacao": "é a definição do slide. As outras confundem PIB com arrecadação, liquidez ou balança comercial."
+    },
+    {
+     "tipo": "numerica",
+     "enunciado": "Um país tem PIB de R$ 900 bilhões e 30 milhões de habitantes. Qual o PIB per capita?",
+     "campos": [
+      {
+       "rotulo": "PIB per capita",
+       "resposta": 30000
+      }
+     ],
+     "explicacao": "900.000.000.000 ÷ 30.000.000 = 30.000."
+    },
+    {
+     "tipo": "numerica",
+     "enunciado": "O PIB nominal de um país passou de US$ 2.000 para US$ 2.100. Qual a variação nominal? É possível afirmar que a produção cresceu nessa proporção?",
+     "campos": [
+      {
+       "rotulo": "Variação nominal",
+       "resposta": 5
+      }
+     ],
+     "explicacao": "Não é possível afirmar. (2.100 − 2.000) ÷ 2.000 = 0,05 = 5%. Parte dessa alta pode ser inflação; o crescimento real exige descontá-la."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Segundo o material, a principal causa da inflação de longo prazo é:",
+     "opcoes": [
+      "Aumento das exportações",
+      "Excesso de dinheiro circulando em relação à oferta real de bens e serviços",
+      "Queda do PIB per capita",
+      "Criação do FGC"
+     ],
+     "correta": 1,
+     "explicacao": "é a frase do slide de política monetária. Por isso a política monetária controla o dinheiro em circulação."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Explique por que o PIB é chamado de \"indicador síntese\" e cite suas limitações.",
+     "respostaEsperada": "o PIB soma todos os bens e serviços finais produzidos num período e resume o tamanho da economia num único número. Por ser síntese, não mostra distribuição de renda, qualidade de vida, saúde ou educação, e um país pode ter PIB gigante e padrão de vida baixo. O PIB per capita tenta medir a riqueza média, mas ainda esconde as desigualdades. Além disso, comparar PIBs de anos diferentes exige descontar a inflação.",
+     "criterios": [
+      "soma dos bens e serviços finais",
+      "não mede distribuição de renda, saúde e educação",
+      "per capita esconde desigualdade",
+      "inflação na comparação"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mp2",
+   "titulo": "Mini prova 2: SFN e políticas econômicas",
+   "secoes": [
+    "sistema-financeiro-nacional-sfn",
+    "politicas-economicas-e-politica",
+    "politica-fiscal-e-politica"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma corretora de valores descumpre regras de negociação na bolsa. Quem deve fiscalizá-la?",
+     "opcoes": [
+      "CMN",
+      "BACEN",
+      "CVM",
+      "SUSEP"
+     ],
+     "correta": 2,
+     "explicacao": "a CVM supervisiona valores mobiliários (bolsas e corretoras). O CMN é normativo; o BACEN supervisiona moeda e crédito; a SUSEP, seguros."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Qual dupla \"normativo / supervisor\" está correta?",
+     "opcoes": [
+      "CNSP / PREVIC",
+      "CNPC / SUSEP",
+      "CNSP / SUSEP",
+      "CVM / BACEN"
+     ],
+     "correta": 2,
+     "explicacao": "seguros privados = CNSP (normativo) e SUSEP (supervisor). Previdência fechada = CNPC e PREVIC."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Na analogia do corpo humano usada em aula, os órgãos normativos são:",
+     "opcoes": [
+      "O sistema circulatório",
+      "Os sentidos",
+      "O cérebro",
+      "O coração"
+     ],
+     "correta": 2,
+     "explicacao": "normativos = cérebro (pensam e criam as regras, não operam). Supervisores = sentidos. Operadores = sistema circulatório."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "O governo corta gastos e aumenta impostos para equilibrar o orçamento. Isso é política:",
+     "opcoes": [
+      "Monetária",
+      "Fiscal",
+      "Cambial",
+      "Normativa"
+     ],
+     "correta": 1,
+     "explicacao": "a política fiscal cuida de arrecadação e gastos do governo. A monetária cuida de dinheiro e juros; a cambial, de moeda e exterior."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "A inflação está alta. Segundo a atividade da turma sobre política monetária, a ação típica do banco central é:",
+     "opcoes": [
+      "Reduzir os juros",
+      "Aumentar os juros para diminuir o consumo e o dinheiro circulando",
+      "Aumentar os gastos públicos",
+      "Fixar o câmbio"
+     ],
+     "correta": 1,
+     "explicacao": "juros mais altos reduzem o consumo e a liquidez, combatendo o excesso de dinheiro. Aumentar gastos é fiscal e pioraria a inflação."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Explique como o SFN é organizado, citando as três camadas e um exemplo de cada.",
+     "respostaEsperada": "o SFN se organiza em órgãos normativos, que criam as regras gerais sem operar (ex.: CMN, CNSP, CNPC); supervisores, que garantem que as regras sejam cumpridas (ex.: BACEN, CVM, SUSEP, PREVIC); e operadores, instituições que oferecem serviços financeiros como intermediárias e atendem o público (ex.: bancos, cooperativas, corretoras, seguradoras, fundos de pensão). Na analogia do professor: cérebro, sentidos e sistema circulatório.",
+     "criterios": [
+      "normativos + exemplo",
+      "supervisores + exemplo",
+      "operadores + exemplo",
+      "papel de cada camada"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mp3",
+   "titulo": "Mini prova 3: Tesouro Direto, produtos e FGC",
+   "secoes": [
+    "tesouro-direto-e-tributacao",
+    "produtos-do-mercado-financeiro"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Ao comprar um título do Tesouro Direto, o investidor está:",
+     "opcoes": [
+      "Comprando ações do governo",
+      "Emprestando dinheiro ao governo",
+      "Depositando na poupança",
+      "Comprando dólar"
+     ],
+     "correta": 1,
+     "explicacao": "o governo vende o título e devolve o valor com juros. É um empréstimo à União, não participação societária."
+    },
+    {
+     "tipo": "numerica",
+     "enunciado": "Lucro de R$ 2.000 num título resgatado após 150 dias. Calcule o IR e o lucro líquido.",
+     "campos": [
+      {
+       "rotulo": "IR",
+       "resposta": 450
+      },
+      {
+       "rotulo": "Lucro líquido",
+       "resposta": 1550
+      }
+     ],
+     "explicacao": "até 180 dias a alíquota é 22,5%. 2.000 × 0,225 = 450; 2.000 − 450 = 1.550."
+    },
+    {
+     "tipo": "numerica",
+     "enunciado": "Mesmo lucro de R$ 2.000, mas resgatado após 800 dias. Calcule o IR e o lucro líquido.",
+     "campos": [
+      {
+       "rotulo": "IR",
+       "resposta": 300
+      },
+      {
+       "rotulo": "Lucro líquido",
+       "resposta": 1700
+      }
+     ],
+     "explicacao": "721 dias ou mais é 15%. 2.000 × 0,15 = 300; 2.000 − 300 = 1.700. Esperar economizou R$ 150."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Sobre o FGC, é correto afirmar:",
+     "opcoes": [
+      "É um órgão público pago com impostos",
+      "É uma entidade privada, sem fins lucrativos, mantida pelas instituições financeiras",
+      "Garante valores ilimitados",
+      "Foi criado pela CVM em 2010"
+     ],
+     "correta": 1,
+     "explicacao": "o FGC foi autorizado pelo CMN em 1995 e é alimentado pelos próprios bancos. Garante até R$ 250 mil por CPF/CNPJ por instituição."
+    },
+    {
+     "tipo": "numerica",
+     "enunciado": "Pedro tem R$ 300.000 no Banco A e R$ 100.000 no Banco B. Os dois quebram. Quanto o FGC cobre no total?",
+     "campos": [
+      {
+       "rotulo": "Coberto",
+       "resposta": 350000
+      },
+      {
+       "rotulo": "Descoberto",
+       "resposta": 50000
+      }
+     ],
+     "explicacao": "no Banco A, o limite é R$ 250.000 (sobram R$ 50.000 descobertos). No Banco B, os R$ 100.000 estão abaixo do limite. Total coberto: 250.000 + 100.000 = 350.000."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Qual das siglas corresponde a um certificado ligado ao agronegócio?",
+     "opcoes": [
+      "LCI",
+      "CRI",
+      "CRA",
+      "CDB"
+     ],
+     "correta": 2,
+     "explicacao": "CRA = Certificado de Recebíveis do Agronegócio. A LCA também é do agro, mas é uma **letra de crédito**, não um certificado."
+    }
+   ]
+  }
+ ],
+ "simulado": {
+  "titulo": "Simulado P1 completo",
+  "descricao": "todos os temas + cálculos + dissertativa",
+  "questoes": [
+   {
+    "tipo": "multipla",
+    "enunciado": "\"Um país pode ter PIB gigante e padrão de vida baixíssimo.\" Essa frase ilustra:",
+    "opcoes": [
+     "O paradoxo do PIB",
+     "A tabela regressiva",
+     "O conceito de liquidez",
+     "O papel do FGC"
+    ],
+    "correta": 0,
+    "explicacao": "é o \"paradoxo\" citado no slide sobre o que o PIB não mede."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Quem é o órgão normativo responsável por moeda, crédito, câmbio e valores mobiliários?",
+    "opcoes": [
+     "BACEN",
+     "CVM",
+     "CMN",
+     "SUSEP"
+    ],
+    "correta": 2,
+    "explicacao": "o CMN é normativo dessas duas áreas. BACEN e CVM são supervisores."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Um fundo de pensão fechado é supervisionado por:",
+    "opcoes": [
+     "PREVIC",
+     "SUSEP",
+     "CVM",
+     "CNSP"
+    ],
+    "correta": 0,
+    "explicacao": "previdência fechada tem o CNPC (normativo) e a PREVIC (supervisora)."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Qual NÃO é um objetivo da política econômica citado no material?",
+    "opcoes": [
+     "Altos níveis de emprego",
+     "Controlar a inflação",
+     "Estimular o crescimento do PIB",
+     "Garantir lucro máximo aos bancos"
+    ],
+    "correta": 3,
+    "explicacao": "os objetivos são emprego, inflação controlada, crescimento do PIB e estabilidade."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "A política monetária busca afetar a liquidez da economia, ou seja:",
+    "opcoes": [
+     "Os impostos e os gastos públicos",
+     "A quantidade de dinheiro em circulação e o custo de captação (juros)",
+     "O valor do dólar apenas",
+     "O número de bancos"
+    ],
+    "correta": 1,
+    "explicacao": "é a definição do slide. A opção a é política fiscal; a c, cambial."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "No regime de câmbio flutuante:",
+    "opcoes": [
+     "O governo fixa a taxa por um período",
+     "A taxa é definida pela oferta e demanda",
+     "Não existe dólar",
+     "O FGC define a taxa"
+    ],
+    "correta": 1,
+    "explicacao": "na atividade da turma, câmbio flutuante = oferta e demanda; câmbio fixo = taxa definida pelo governo."
+   },
+   {
+    "tipo": "numerica",
+    "enunciado": "Lucro de R$ 800 em título do Tesouro resgatado com 300 dias. Qual o IR?",
+    "campos": [
+     {
+      "rotulo": "IR",
+      "resposta": 160
+     },
+     {
+      "rotulo": "Lucro líquido",
+      "resposta": 640
+     }
+    ],
+    "explicacao": "181 a 360 dias é 20%. 800 × 0,20 = 160; 800 − 160 = 640."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Por que se diz que a tabela do IR é \"regressiva\"?",
+    "opcoes": [
+     "Porque a alíquota aumenta com o tempo",
+     "Porque a alíquota diminui quanto mais tempo o dinheiro fica aplicado",
+     "Porque só vale para a poupança",
+     "Porque depende do valor aplicado"
+    ],
+    "correta": 1,
+    "explicacao": "vai de 22,5% (até 180 dias) a 15% (721 dias ou mais), e a faixa depende do prazo, não do valor."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Quem emite os títulos públicos federais?",
+    "opcoes": [
+     "BACEN",
+     "Tesouro Nacional",
+     "CVM",
+     "FGC"
+    ],
+    "correta": 1,
+    "explicacao": "os títulos são emitidos pelo Tesouro Nacional para financiar as contas da União e vendidos pelo programa Tesouro Direto."
+   },
+   {
+    "tipo": "numerica",
+    "enunciado": "Maria tem R$ 260.000 num único banco que foi liquidado. Quanto fica descoberto pelo FGC?",
+    "campos": [
+     {
+      "rotulo": "Coberto",
+      "resposta": 250000
+     },
+     {
+      "rotulo": "Descoberto",
+      "resposta": 10000
+     }
+    ],
+    "explicacao": "o limite é R$ 250.000 por CPF por instituição; 260.000 − 250.000 = 10.000."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "O FGC foi autorizado por qual órgão?",
+    "opcoes": [
+     "CVM",
+     "CMN",
+     "SUSEP",
+     "Receita Federal"
+    ],
+    "correta": 1,
+    "explicacao": "resolução do CMN de agosto de 1995."
+   },
+   {
+    "tipo": "dissertativa",
+    "enunciado": "Explique as três políticas econômicas (monetária, fiscal e cambial), com o foco de cada uma e um exemplo de medida.",
+    "respostaEsperada": "• **Monetária:** controla a liquidez, isto é, o dinheiro em circulação e os juros, com o objetivo principal de manter a inflação baixa, estável e previsível. Exemplo: aumentar a Selic para conter a inflação.\n• **Fiscal:** trata da arrecadação e dos gastos do governo (orçamento). Exemplo: aumentar impostos ou cortar gastos.\n• **Cambial:** cuida da relação da moeda nacional com o exterior (dólar). Pode ser câmbio fixo ou flutuante e afeta exportações, importações e preços internos. Exemplo: o banco central vender dólar das reservas para conter a volatilidade. Juntas, buscam emprego alto, inflação controlada, crescimento do PIB e estabilidade.",
+    "criterios": [
+     "monetária (dinheiro/juros/inflação)",
+     "fiscal (impostos/gastos)",
+     "cambial (moeda × dólar)",
+     "um exemplo de cada",
+     "objetivos da política econômica"
+    ]
+   }
+  ]
+ }
+}

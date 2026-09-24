@@ -23,7 +23,9 @@
 <script>
 (async () => {
   const grid = document.getElementById("grid");
-  const materias = await loadJSON("conteudo/materias.json");
+  let materias;
+  try { materias = await loadJSON("conteudo/materias.json"); }
+  catch (e) { grid.innerHTML = `<p class="muted">Não consegui carregar as matérias. Atualize a página.</p>`; return; }
   materias.forEach(m => {
     const pronto = m.status === "pronto";
     const b = document.createElement("button");

@@ -1,0 +1,1225 @@
+{
+ "slug": "direito-do-comercio-internacional",
+ "nome": "Direito do Comércio Internacional",
+ "nomeCompleto": "Direito do Comércio Internacional",
+ "professor": "Profa. Dra. Cíntia de Almeida Lanzoni",
+ "avaliacao": "P1 · Aulas de agosto a setembro de 2026 (jurisdição, imunidade, contratos e cláusulas)",
+ "atualizadoEm": "24/09/2026",
+ "fontes": "slides \"Jurisdição Internacional\" e \"Contratos Internacionais\", PDFs \"Cláusulas Essenciais nos Contratos Internacionais\" e \"Imunidade de Jurisdição no Direito Internacional\", \"Cartões para auxílio nos estudos – P1\" e \"Leitura essencial para P1\" (artigo Conjur sobre lei aplicável aos contratos) (Classroom)",
+ "quickView": [
+  {
+   "topico": "Contrato internacional",
+   "texto": "é o acordo de vontades **sujeito a dois ou mais sistemas jurídicos**. O grande desafio é saber **qual direito se aplica**, qual o **foro** e se haverá **arbitragem**."
+  },
+  {
+   "topico": "Lei aplicável e autonomia da vontade",
+   "texto": "a **autonomia da vontade** deixa as partes escolherem a lei e o foro, e até fracionar o contrato (**dépeçage**), respeitando a **ordem pública**. A LINDB (art. 9º) fala em lei do lugar de constituição da obrigação; o anteprojeto de lei de DIPr propõe aceitar a escolha das partes (art. 29)."
+  },
+  {
+   "topico": "Jurisdição internacional",
+   "texto": "são as regras sobre **quando o juiz brasileiro pode julgar**. Há **competência exclusiva** no CPC (art. 23: imóveis, sucessão e partilha de bens no Brasil). A LINDB (art. 12) dá competência ao Brasil quando o **réu é domiciliado aqui**."
+  },
+  {
+   "topico": "Imunidade de jurisdição",
+   "texto": "um Estado não é julgado por outro sem consentimento (**par in parem non habet judicium**). Hoje vale a **imunidade relativa**: atos **jure imperii** (soberanos) têm imunidade; atos **jure gestionis** (comerciais) não têm."
+  },
+  {
+   "topico": "Cláusulas padrão (boilerplate)",
+   "texto": "acordo integral, cessão, aditamento, sucessores, renúncia (no waiver), independência (severability), idioma e notificações. Dão **segurança jurídica** ao contrato."
+  },
+  {
+   "topico": "Cláusulas essenciais",
+   "texto": "**força maior** (impossibilidade), **hardship** (onerosidade excessiva, obriga a renegociar), **NDA** (sigilo), **arbitral** (neutralidade e Convenção de Nova York) e **preço e garantias** (L/C, on-demand bond, fiança, reserva de domínio)."
+  },
+  {
+   "topico": "Comércio internacional e padronização",
+   "texto": "a **CISG** (Convenção de Viena de 1980) rege a compra e venda entre países signatários. Os **Incoterms** são da **CCI**. O **tratamento nacional** da OMC proíbe discriminar o importado depois que ele entra no país."
+  }
+ ],
+ "secoes": [
+  {
+   "id": "contrato-internacional-e-elementos",
+   "titulo": "Contrato internacional e elementos de conexão",
+   "pergunta": "o que torna um contrato \"internacional\" e qual o problema que isso cria?",
+   "emUmaFrase": "o contrato é internacional quando pode ser regido por mais de um sistema jurídico, e aí surge a dúvida de qual lei vale.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**Duas visões do conceito:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Visão",
+      "Ideia"
+     ],
+     "linhas": [
+      [
+       "Ampla (Matter, 1927)",
+       "Duplo movimento de mercadorias, capitais ou serviços para o exterior: **fluxo e refluxo** além das fronteiras"
+      ],
+      [
+       "Flexível",
+       "Acordo de vontades **potencialmente sujeito a dois ou mais sistemas jurídicos**"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Questões típicas de todo contrato internacional:**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "Qual **direito** (costume ou lei) se aplica?",
+      "Qual o **foro** competente para as controvérsias?",
+      "Haverá **cláusula compromissória de arbitragem**?"
+     ],
+     "numerada": true
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Elementos de conexão:**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Tema",
+      "Regra"
+     ],
+     "linhas": [
+      [
+       "Capacidade da pessoa física",
+       "No Brasil, rege-se pelo **domicílio**. Também se consideram territorialidade e nacionalidade"
+      ],
+      [
+       "Pessoa jurídica",
+       "Obedece às leis do **Estado em que se constituiu** (LINDB, art. 11)"
+      ],
+      [
+       "Obrigações",
+       "Aspectos **extrínsecos** (a forma que torna a vontade visível) e **intrínsecos** (compreensão e genuinidade da declaração)"
+      ],
+      [
+       "Vontade das partes",
+       "**Princípio da autonomia**: ampla liberdade para escolher as regras"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "a capacidade da pessoa física no Brasil segue o **domicílio**, não a nacionalidade."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "analogia",
+     "texto": "se o contrato \"mora\" em dois países, é preciso combinar de qual \"casa\" são as regras."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Contrato internacional",
+       "verso": "sujeito a 2 ou mais sistemas jurídicos"
+      },
+      {
+       "frente": "Elementos de conexão (no material)",
+       "verso": "capacidade, obrigações e vontade das partes"
+      },
+      {
+       "frente": "LINDB art. 11",
+       "verso": "PJ segue a lei do Estado onde se constituiu"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quais as 3 questões típicas de um contrato internacional?",
+     "respostaEsperada": "Direito aplicável, foro competente e cláusula de arbitragem."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual lei rege uma sociedade constituída na Alemanha?",
+     "respostaEsperada": "A lei alemã, pois a PJ segue a lei do Estado em que se constituiu (LINDB, art. 11)."
+    }
+   ]
+  },
+  {
+   "id": "lei-aplicavel-autonomia-da",
+   "titulo": "Lei aplicável, autonomia da vontade e CISG",
+   "pergunta": "as partes podem escolher a lei do contrato?",
+   "emUmaFrase": "sim, pela autonomia da vontade, mas com limites (ordem pública e proteção de partes vulneráveis).",
+   "blocos": [
+    {
+     "tipo": "lista",
+     "itens": [
+      "**Autonomia da vontade:** as partes escolhem a legislação aplicável e o foro ou a arbitragem. Podem até **fracionar o contrato (dépeçage)**, submetendo cláusulas diferentes a leis diferentes, **respeitada a ordem pública** (cartão 7 da professora).",
+      "**LINDB, art. 9º:** as obrigações se regem pela lei do país **onde se constituíram**. Como o artigo não fala expressamente em autonomia da vontade, surgiu dúvida na doutrina.",
+      "**Anteprojeto de Lei de DIPr (2025), art. 29:**\n– **exceto se houver abuso**, o contrato internacional é regido pelo **direito escolhido pelas partes**;\n– a escolha pode ser **expressa ou tácita, desde que inequívoca**, e pode ser alterada respeitando terceiros;\n– limites: **ordem pública** brasileira e, em contratos de **trabalho e consumo**, a norma mais favorável ao trabalhador ou ao consumidor.",
+      "Outras bases citadas no artigo: **Convenção do México de 1994** (art. 7º, escolha expressa ou tácita) e a **Lei de Arbitragem, 9.307/96** (art. 2º, § 1º).",
+      "**CISG (Convenção de Viena de 1980):** convenção da ONU sobre compra e venda internacional de mercadorias. Se os dois países são signatários (ex.: **Brasil e México**), ela garante um regime **neutro, padronizado e previsível**."
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Norma",
+      "O que diz"
+     ],
+     "linhas": [
+      [
+       "LINDB art. 9º",
+       "Lei do lugar onde a obrigação se constituiu"
+      ],
+      [
+       "Anteprojeto art. 29",
+       "Vale a lei escolhida pelas partes, salvo abuso"
+      ],
+      [
+       "Convenção do México (1994) art. 7º",
+       "Escolha expressa ou tácita"
+      ],
+      [
+       "CISG (1980)",
+       "Regime uniforme de compra e venda entre signatários"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "autonomia não é ilimitada. A **ordem pública** sempre pode barrar a escolha."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "Brasil e México aplicariam a CISG porque os dois são signatários."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Autonomia da vontade",
+       "verso": "liberdade de escolher lei e foro"
+      },
+      {
+       "frente": "Dépeçage",
+       "verso": "fracionar o contrato entre leis diferentes"
+      },
+      {
+       "frente": "CISG",
+       "verso": "Convenção de Viena de 1980, compra e venda internacional de mercadorias"
+      },
+      {
+       "frente": "Ordem pública",
+       "verso": "limite a qualquer escolha de lei"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "O anteprojeto aceita escolha tácita da lei?",
+     "respostaEsperada": "Sim, desde que seja inequívoca (art. 29, § 1º)."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Em contrato de consumo, qual o limite à escolha?",
+     "respostaEsperada": "Aplica-se a norma mais favorável ao consumidor."
+    }
+   ]
+  },
+  {
+   "id": "jurisdicao-internacional",
+   "titulo": "Jurisdição internacional",
+   "pergunta": "quando o juiz brasileiro pode (ou deve) julgar um caso com elemento estrangeiro?",
+   "emUmaFrase": "cada Estado define por lei a competência de seus tribunais; o Brasil tem casos de competência exclusiva e concorrente.",
+   "blocos": [
+    {
+     "tipo": "lista",
+     "itens": [
+      "As normas de jurisdição são **direito público**: regulam a atividade jurisdicional do Estado, ligada à soberania.",
+      "O **direito processual internacional** também viabiliza a **cooperação** entre Estados: homologação de sentenças estrangeiras, cartas rogatórias, provas no exterior.",
+      "**Princípio da territorialidade.** Exemplo: a CF (art. 12, I, a) diz que quem nasce no Brasil é brasileiro, mas isso **não pode ser bilateralizado**; a nacionalidade italiana é definida pela lei italiana."
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Norma",
+      "Regra"
+     ],
+     "linhas": [
+      [
+       "CPC, art. 16",
+       "A jurisdição civil é exercida pelos juízes e tribunais em todo o território nacional"
+      ],
+      [
+       "CPC, art. 23",
+       "**Competência exclusiva** da justiça brasileira: (I) ações sobre **imóveis no Brasil**; (II) sucessão: confirmação de testamento, inventário e partilha de **bens no Brasil**; (III) divórcio ou dissolução de união estável: partilha de **bens no Brasil**, mesmo com titular estrangeiro ou domiciliado fora"
+      ],
+      [
+       "LINDB, art. 12",
+       "Autoridade brasileira competente quando o **réu é domiciliado no Brasil**"
+      ],
+      [
+       "Código Bustamante (1928), art. 314",
+       "A lei de cada Estado determina a competência dos seus tribunais, a organização, os julgamentos, a execução e os recursos"
+      ],
+      [
+       "Convenção Interamericana de Montevidéu (1979), art. 4º",
+       "Os recursos da lei processual do lugar do processo valem também quando se aplica a lei de outro Estado Parte"
+      ],
+      [
+       "Convenção de Roma (1980), art. 14",
+       "A lei do contrato também rege **presunções legais e ônus da prova** (mantido no Regulamento europeu 593/2008, art. 18, e nos Princípios da Haia de 2015, art. 9.1.f)"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "\"exclusiva\" quer dizer que só o Brasil julga. Imóvel situado no Brasil é caso de competência exclusiva, mesmo que as partes sejam estrangeiras."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "ônus da prova ligado ao mérito segue a **mesma lei aplicável ao mérito** (ex.: se a lei francesa rege a questão, ela define quem prova)."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Competência exclusiva (CPC 23)",
+       "verso": "imóveis, sucessão e partilha de bens situados no Brasil"
+      },
+      {
+       "frente": "LINDB art. 12",
+       "verso": "réu domiciliado no Brasil → juiz brasileiro competente"
+      },
+      {
+       "frente": "Carta rogatória",
+       "verso": "pedido de cooperação judicial entre países"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Um estrangeiro domiciliado em Paris deixa um apartamento em Curitiba. Quem faz o inventário desse bem?",
+     "respostaEsperada": "A justiça brasileira, com exclusividade (CPC, art. 23, II)."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "O que regula o art. 14 da Convenção de Roma?",
+     "respostaEsperada": "Que a lei do contrato rege as presunções legais e o ônus da prova."
+    }
+   ]
+  },
+  {
+   "id": "imunidade-de-jurisdicao-e",
+   "titulo": "Imunidade de jurisdição e imunidade tributária",
+   "pergunta": "um Estado estrangeiro pode ser processado ou tributado no Brasil?",
+   "emUmaFrase": "depende da natureza do ato. Ato soberano tem imunidade; ato comercial, não.",
+   "blocos": [
+    {
+     "tipo": "lista",
+     "itens": [
+      "**Conceito:** um Estado soberano não é submetido aos tribunais de outro **sem consentimento**. Fundamento: **soberania e igualdade** entre Estados. Máxima: **\"par in parem non habet judicium\"** (um igual não tem jurisdição sobre um igual).",
+      "**Evolução:** partiu da imunidade **absoluta** (Oppenheim). Ela gerava injustiças, como Estados que não pagavam dívidas comerciais. Chegou-se à imunidade **relativa (restrita)**, que olha a **natureza do ato**."
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Tipo de ato",
+      "Exemplos",
+      "Imunidade?"
+     ],
+     "linhas": [
+      [
+       "**Jure imperii** (soberano)",
+       "Passaportes, vistos, atos diplomáticos, leis, defesa",
+       "**Sim**"
+      ],
+      [
+       "**Jure gestionis** (comercial ou privado)",
+       "Compra e venda, investimentos, contratação de pessoal local, atividade com lucro",
+       "**Não**"
+      ]
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Bases e jurisprudência:**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "a **Convenção da ONU de 2004** (art. 10) veda imunidade em transações comerciais com particulares;",
+      "no caso **CIJ Alemanha × Itália (2012)**, a Corte manteve a imunidade mesmo com violação de **jus cogens**. A tensão entre as duas coisas segue em aberto;",
+      "os **organismos internacionais** (ONU, FMI, OMC) têm imunidade **funcional**, relativa e de interpretação **restrita**. Os limites ficam nos acordos de sede."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Imunidade tributária:**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "os Estados e suas representações diplomáticas são imunes em atos soberanos (Convenção de Viena de 1961);",
+      "em atividade **comercial**, pagam os tributos locais como qualquer empresa."
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "Veja a tabela abaixo.",
+     "titulo": "Exemplo (caso hipotético CEMPX × Embaixada)"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Quem",
+      "O que fez",
+      "Resultado"
+     ],
+     "linhas": [
+      [
+       "Embaixada",
+       "Comprou material para manter o prédio diplomático",
+       "Jure imperii → **imune**"
+      ],
+      [
+       "Estatal CEMPX",
+       "Importou máquinas para produzir com lucro",
+       "Jure gestionis → paga **II, ISS e IRPJ**"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "o critério é a **natureza do ato**, não quem o pratica. Uma estatal agindo como empresa é tratada como empresa."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "o Estado **não** tem imunidade quando pratica atos de gestão privada ou comercial (teoria da imunidade relativa).",
+     "titulo": "Dica (cartão 10)"
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Par in parem non habet judicium",
+       "verso": "um igual não julga outro igual"
+      },
+      {
+       "frente": "Jure imperii",
+       "verso": "ato soberano, com imunidade"
+      },
+      {
+       "frente": "Jure gestionis",
+       "verso": "ato comercial, sem imunidade"
+      },
+      {
+       "frente": "Imunidade funcional",
+       "verso": "a dos organismos internacionais, para cumprirem sua missão"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Qual teoria de imunidade predomina hoje?",
+     "respostaEsperada": "A relativa (restrita), que depende da natureza do ato."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "A imunidade dos organismos internacionais se baseia em quê?",
+     "respostaEsperada": "No princípio da funcionalidade, e não na soberania."
+    }
+   ]
+  },
+  {
+   "id": "clausulas-padrao-boilerplate",
+   "titulo": "Cláusulas padrão (boilerplate)",
+   "pergunta": "quais cláusulas \"de rotina\" aparecem em quase todo contrato internacional?",
+   "emUmaFrase": "são cláusulas padrão que evitam brigas sobre forma, alteração e interpretação do contrato.",
+   "blocos": [
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Cláusula",
+      "Em inglês",
+      "Para que serve"
+     ],
+     "linhas": [
+      [
+       "Acordo integral",
+       "Entire agreement",
+       "O contrato escrito é o entendimento **final e completo** e revoga negociações, cartas de intenção e acordos verbais anteriores"
+      ],
+      [
+       "Cessão",
+       "Assignment",
+       "Transferir direitos e obrigações a terceiros só com **consentimento prévio e por escrito** da outra parte"
+      ],
+      [
+       "Aditamento",
+       "Amendment",
+       "Qualquer alteração só vale **por escrito e assinada** por ambas as partes"
+      ],
+      [
+       "Sucessores",
+       "Successors",
+       "Direitos e obrigações passam a herdeiros e sucessores (fusão, reestruturação, falecimento)"
+      ],
+      [
+       "Renúncia",
+       "No waiver",
+       "Tolerar um descumprimento **não é renúncia nem novação**, é mera liberalidade"
+      ],
+      [
+       "Independência",
+       "Severability",
+       "Se uma cláusula for nula, **as demais continuam válidas**"
+      ],
+      [
+       "Idioma",
+       "Language",
+       "Define a versão que **prevalece** se as traduções divergirem"
+      ],
+      [
+       "Notificações",
+       "Notices",
+       "Listada entre as cláusulas padrão (o material não detalha)"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "**no waiver** × **severability**. O primeiro fala de tolerância (não perder o direito); o segundo fala de nulidade parcial (salvar o resto do contrato)."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "analogia",
+     "texto": "acordo integral é o \"vale o que está escrito\". Tudo o que ficou de fora do papel não conta."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Entire agreement",
+       "verso": "contrato escrito substitui entendimentos anteriores"
+      },
+      {
+       "frente": "No waiver",
+       "verso": "tolerância não é renúncia"
+      },
+      {
+       "frente": "Severability",
+       "verso": "nulidade de uma cláusula não derruba o resto"
+      },
+      {
+       "frente": "Amendment",
+       "verso": "alteração só por escrito e assinada"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Uma parte aceitou atrasos por meses e depois cobrou a multa. A outra disse que ela \"renunciou\". Qual cláusula resolve?",
+     "respostaEsperada": "A no waiver: tolerar não é renunciar."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Um tribunal anulou a cláusula de multa. O contrato cai?",
+     "respostaEsperada": "Não, se houver severability. As demais cláusulas continuam válidas."
+    }
+   ]
+  },
+  {
+   "id": "clausulas-essenciais-forca-maior",
+   "titulo": "Cláusulas essenciais: força maior, hardship, NDA, arbitral e garantias",
+   "pergunta": "como o contrato internacional lida com riscos, sigilo, disputas e pagamento?",
+   "emUmaFrase": "cada cláusula essencial trata de um risco diferente: impossibilidade, desequilíbrio, vazamento, litígio e calote.",
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "**Força maior × hardship (a diferença que mais cai):**"
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "",
+      "Força maior",
+      "Hardship"
+     ],
+     "linhas": [
+      [
+       "Problema",
+       "**Impossibilidade** de cumprir",
+       "**Onerosidade excessiva** superveniente: cumprir ainda é possível, mas ficou desequilibrado"
+      ],
+      [
+       "Efeito",
+       "Exonera ou **suspende** as obrigações; pode levar a **rescisão** se o impedimento durar demais",
+       "Obriga a **renegociar de boa-fé**; em último caso, rescisão ou revisão arbitral"
+      ],
+      [
+       "Exemplo do material",
+       "Exportadora de café × importador europeu: **embargo** inesperado (\"atos governamentais\") suspende as entregas sem multa",
+       "Construtora brasileira × usina na África: **crise cambial** torna ruinoso o preço fixado em dólar → renegociação sem rescindir"
+      ]
+     ]
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "**3 requisitos cumulativos da força maior:**\n– **exterioridade**: o evento é externo à vontade das partes;\n– **imprevisibilidade**: não dava para prever na assinatura;\n– **irresistibilidade**: os efeitos não podem ser evitados com diligência razoável.",
+      "**Procedimento da força maior:** notificação → suspensão → rescisão, se o impedimento se prolongar.",
+      "**Etapas do hardship:** gatilho (evento econômico, financeiro, político ou tecnológico) → notificação formal → renegociação de boa-fé (com mediador ou perito, se preciso) → rescisão ou revisão arbitral como último recurso."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**NDA (confidencialidade):**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "traz a definição precisa do que é confidencial, as obrigações (sigilo, proibição de uso alternativo, acesso só a quem precisa: *need-to-know*), a duração (pode passar do fim do contrato) e as penalidades (multa e indenização);",
+      "**Exceções:** informação já de **domínio público**; recebida licitamente de **terceiros** (ou que a receptora já tinha antes); ou cuja divulgação é **exigida por lei ou ordem judicial**."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Cláusula arbitral (compromissória):**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "os litígios vão para **arbitragem**, e não para tribunais estatais;",
+      "define a sede (ex.: Paris, Londres, Genebra, Nova York), a instituição (**CCI, LCIA, ICDR-AAA**), o número de árbitros (**1 ou 3**), o idioma e a lei aplicável;",
+      "vantagens: **neutralidade, especialização, celeridade, confidencialidade** e reconhecimento dos laudos em **170+ países** pela **Convenção de Nova York**."
+     ]
+    },
+    {
+     "tipo": "texto",
+     "texto": "**Preço e garantias:**"
+    },
+    {
+     "tipo": "lista",
+     "itens": [
+      "o **preço** pode ser fixo, reajustável ou por fórmula; o contrato define a **moeda e o câmbio**, as condições de pagamento e os **Incoterms**;",
+      "**Garantias:**"
+     ]
+    },
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Garantia",
+      "Como funciona"
+     ],
+     "linhas": [
+      [
+       "Carta de crédito (L/C)",
+       "O banco do comprador paga o vendedor contra documentos (fatura, B/L)"
+      ],
+      [
+       "Garantia à primeira demanda (on-demand bond)",
+       "O banco paga assim que o beneficiário pede, sem discutir o mérito"
+      ],
+      [
+       "Fiança corporativa",
+       "A empresa-mãe ou o grupo garante a obrigação"
+      ],
+      [
+       "Reserva de domínio",
+       "O vendedor continua dono do bem até o pagamento integral"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "exemplo",
+     "texto": "uma empresa alemã vende uma linha de montagem de € 5 milhões para uma fábrica brasileira. Pagamento: 20% adiantado, 40% contra B/L ou L/C e 40% após a instalação, com performance bond de 10%."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "pegadinha",
+     "texto": "se ainda dá para cumprir, só que ficou caríssimo, é **hardship**, não força maior."
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "arbitragem = \"neutralidade + Convenção de Nova York\". Incoterms = \"CCI\"."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Força maior",
+       "verso": "evento externo, imprevisível e irresistível que impede cumprir"
+      },
+      {
+       "frente": "Hardship",
+       "verso": "onerosidade excessiva que obriga a renegociar"
+      },
+      {
+       "frente": "NDA",
+       "verso": "contrato de confidencialidade (com exceções: domínio público, terceiros lícitos, ordem legal)"
+      },
+      {
+       "frente": "Convenção de Nova York",
+       "verso": "reconhecimento global de laudos arbitrais"
+      },
+      {
+       "frente": "L/C",
+       "verso": "banco paga contra documentos"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quais são os 3 requisitos da força maior?",
+     "respostaEsperada": "Exterioridade, imprevisibilidade e irresistibilidade (cumulativos)."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que empresas preferem arbitragem?",
+     "respostaEsperada": "Neutralidade, especialização dos árbitros, rapidez, sigilo e execução global da sentença."
+    }
+   ]
+  },
+  {
+   "id": "outros-pontos-dos-cartoes",
+   "titulo": "Outros pontos dos cartões: OMC, Incoterms e logística",
+   "pergunta": "que outros temas a professora destacou para a P1?",
+   "emUmaFrase": "princípios da OMC, quem cria os Incoterms e um caso prático de desembaraço.",
+   "blocos": [
+    {
+     "tipo": "tabela",
+     "cabecalho": [
+      "Tema",
+      "O que saber"
+     ],
+     "linhas": [
+      [
+       "Tratamento nacional (OMC)",
+       "O produto importado, depois de entrar no mercado interno, não pode ser discriminado nem tributado de forma pior que o nacional similar"
+      ],
+      [
+       "Incoterms",
+       "Feitos e atualizados pela **CCI**. Definem a divisão de custos, riscos de transporte, seguro e responsabilidades no desembaraço entre comprador e vendedor"
+      ],
+      [
+       "Porto para veículos",
+       "**Porto de Santos (SP)**: tem estrutura Ro-Ro (roll-on/roll-off) e está perto do maior mercado consumidor de automóveis do país"
+      ]
+     ]
+    },
+    {
+     "tipo": "destaque",
+     "estilo": "dica",
+     "texto": "tratamento nacional vale **depois** que o produto entrou no país. Não confunda com o imposto de importação cobrado na entrada."
+    },
+    {
+     "tipo": "flashcards",
+     "cards": [
+      {
+       "frente": "Tratamento nacional",
+       "verso": "importado não pode ser tratado pior que o nacional depois de entrar"
+      },
+      {
+       "frente": "Incoterms",
+       "verso": "regras da CCI sobre custos, riscos e responsabilidades"
+      },
+      {
+       "frente": "Ro-Ro",
+       "verso": "roll-on/roll-off, estrutura para navios de veículos"
+      }
+     ]
+    }
+   ],
+   "checkpoint": [
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Quem elabora os Incoterms?",
+     "respostaEsperada": "A Câmara de Comércio Internacional (CCI)."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Por que o Porto de Santos é indicado para desembaraçar veículos?",
+     "respostaEsperada": "Por ter estrutura Ro-Ro e ficar perto do maior mercado consumidor de carros."
+    }
+   ]
+  }
+ ],
+ "revisaoRapida": [
+  {
+   "se": "Como se chama o contrato sujeito a dois ou mais sistemas jurídicos?",
+   "entao": "Contrato internacional"
+  },
+  {
+   "se": "Qual princípio permite às partes escolher a lei e o foro do contrato?",
+   "entao": "Princípio da autonomia da vontade"
+  },
+  {
+   "se": "Como se chama submeter cláusulas diferentes do contrato a leis diferentes?",
+   "entao": "Dépeçage"
+  },
+  {
+   "se": "Uma ação sobre imóvel situado no Brasil pode ser julgada fora do país?",
+   "entao": "Competência exclusiva da justiça brasileira (CPC, art. 23)"
+  },
+  {
+   "se": "O réu é domiciliado no Brasil. O juiz brasileiro é competente?",
+   "entao": "Autoridade brasileira competente (LINDB, art. 12)"
+  },
+  {
+   "se": "Um Estado estrangeiro compra material para a sua embaixada. Tem imunidade?",
+   "entao": "Ato jure imperii, tem imunidade"
+  },
+  {
+   "se": "Uma estatal estrangeira importa máquinas para lucrar no Brasil. Tem imunidade?",
+   "entao": "Ato jure gestionis, sem imunidade e paga tributos"
+  },
+  {
+   "se": "Que tipo de imunidade têm a ONU, o FMI e a OMC?",
+   "entao": "Imunidade funcional, relativa e interpretada de forma restrita"
+  },
+  {
+   "se": "Qual cláusula diz que o contrato escrito substitui tudo o que foi negociado antes?",
+   "entao": "Cláusula de acordo integral (entire agreement)"
+  },
+  {
+   "se": "Qual cláusula mantém o resto do contrato válido se uma cláusula for anulada?",
+   "entao": "Severability (independência)"
+  },
+  {
+   "se": "Qual cláusula diz que tolerar um descumprimento não é abrir mão do direito?",
+   "entao": "No waiver (renúncia)"
+  },
+  {
+   "se": "Um evento externo, imprevisível e irresistível impede cumprir o contrato. Qual cláusula se aplica?",
+   "entao": "Força maior"
+  },
+  {
+   "se": "Cumprir o contrato ainda é possível, mas ficou ruinoso por uma mudança imprevisível. Qual cláusula se aplica?",
+   "entao": "Hardship (renegociar de boa-fé)"
+  },
+  {
+   "se": "Qual cláusula dá neutralidade, sigilo e execução da sentença em outros países?",
+   "entao": "Cláusula arbitral (Convenção de Nova York)"
+  },
+  {
+   "se": "Em qual garantia o banco paga o vendedor contra documentos como fatura e B/L?",
+   "entao": "Carta de crédito (L/C)"
+  },
+  {
+   "se": "Quem elabora os Incoterms?",
+   "entao": "CCI (Câmara de Comércio Internacional)"
+  }
+ ],
+ "miniProvas": [
+  {
+   "id": "mp1",
+   "titulo": "Mini prova 1: Contratos e lei aplicável",
+   "secoes": [
+    "contrato-internacional-e-elementos",
+    "lei-aplicavel-autonomia-da"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma empresa brasileira e uma mexicana assinam uma compra e venda de peças e não escolhem a lei aplicável. Os dois países são signatários de uma convenção da ONU sobre o tema. Qual regime tende a se aplicar?",
+     "opcoes": [
+      "Código Bustamante",
+      "CISG (Convenção de Viena de 1980)",
+      "Convenção de Nova York",
+      "Incoterms"
+     ],
+     "correta": 1,
+     "explicacao": "a CISG rege a compra e venda internacional entre signatários (cartão 1). A Convenção de Nova York trata de laudos arbitrais; os Incoterms são regras da CCI, não uma convenção."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "As partes decidem que as cláusulas de pagamento seguem a lei inglesa e as de entrega seguem a lei brasileira. Isso é:",
+     "opcoes": [
+      "Hardship",
+      "Dépeçage",
+      "Severability",
+      "Imunidade relativa"
+     ],
+     "correta": 1,
+     "explicacao": "dépeçage é fracionar o contrato entre leis diferentes, permitido pela autonomia da vontade, respeitada a ordem pública."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Pelo art. 9º da LINDB, as obrigações se regem pela lei:",
+     "opcoes": [
+      "Escolhida livremente pelas partes, sem limites",
+      "Do país onde se constituíram",
+      "Do domicílio do réu",
+      "Da nacionalidade do vendedor"
+     ],
+     "correta": 1,
+     "explicacao": "o art. 9º fala do lugar de constituição e não menciona a autonomia da vontade, daí a dúvida na doutrina que o anteprojeto quer resolver."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma sociedade foi constituída na Argentina e opera no Brasil. Sua existência como PJ segue a lei:",
+     "opcoes": [
+      "Brasileira, porque opera aqui",
+      "Argentina, porque se constituiu lá",
+      "Do domicílio dos sócios",
+      "Escolhida no contrato social"
+     ],
+     "correta": 1,
+     "explicacao": "pelo art. 11 da LINDB, a PJ obedece à lei do Estado em que se constituiu."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Explique o princípio da autonomia da vontade nos contratos internacionais e seus limites, citando o anteprojeto de lei de DIPr.",
+     "respostaEsperada": "a autonomia da vontade dá às partes liberdade para escolher a lei aplicável e o foro ou a arbitragem, podendo até fracionar o contrato (dépeçage). A LINDB (art. 9º) fala em lei do lugar de constituição e não prevê a escolha expressamente, o que gera dúvida. O anteprojeto (art. 29) propõe que, salvo abuso, o contrato internacional siga o direito escolhido, de forma expressa ou tácita inequívoca. Limites: ordem pública e, em trabalho e consumo, a norma mais favorável à parte vulnerável.",
+     "criterios": [
+      "liberdade de escolher lei e foro",
+      "dépeçage",
+      "ordem pública",
+      "art. 29 do anteprojeto (salvo abuso",
+      "expressa ou tácita)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mp2",
+   "titulo": "Mini prova 2: Jurisdição e imunidade",
+   "secoes": [
+    "jurisdicao-internacional",
+    "imunidade-de-jurisdicao-e"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Um casal estrangeiro, domiciliado nos EUA, se divorcia e tem um imóvel em Florianópolis. A partilha desse imóvel:",
+     "opcoes": [
+      "Pode ser feita só nos EUA",
+      "É de competência exclusiva da justiça brasileira",
+      "Depende da nacionalidade do casal",
+      "Vai para arbitragem obrigatória"
+     ],
+     "correta": 1,
+     "explicacao": "o CPC, art. 23, III, dá competência exclusiva ao Brasil para partilhar bens situados aqui, mesmo com titular estrangeiro ou domiciliado fora."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma empresa processa no Brasil um réu domiciliado em Curitiba por um contrato assinado na Itália. O juiz brasileiro é competente porque:",
+     "opcoes": [
+      "O contrato foi assinado na Itália",
+      "O réu é domiciliado no Brasil (LINDB, art. 12)",
+      "Toda ação internacional é exclusiva do Brasil",
+      "A Itália não tem tribunais competentes"
+     ],
+     "correta": 1,
+     "explicacao": "a LINDB, art. 12, torna competente a autoridade brasileira quando o réu está domiciliado aqui."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "A embaixada de um país compra móveis para seu prédio diplomático em Brasília. Sobre tributos:",
+     "opcoes": [
+      "Paga como qualquer empresa",
+      "Tem imunidade, pois é ato jure imperii",
+      "Tem imunidade só se pagar em dólar",
+      "Depende de autorização da OMC"
+     ],
+     "correta": 1,
+     "explicacao": "manter o prédio diplomático é função soberana, logo há imunidade tributária (caso da embaixada no material)."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma estatal estrangeira importa maquinário para produzir e vender com lucro no Brasil. Ela:",
+     "opcoes": [
+      "Tem imunidade absoluta por ser do Estado",
+      "Paga tributos como qualquer empresa, pois é ato jure gestionis",
+      "Só pode ser julgada no seu país de origem",
+      "Tem imunidade funcional"
+     ],
+     "correta": 1,
+     "explicacao": "o critério é a natureza do ato, não quem o pratica. Ato comercial não tem imunidade (caso CEMPX)."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "No caso Alemanha × Itália (CIJ, 2012), a Corte:",
+     "opcoes": [
+      "Acabou com a imunidade de jurisdição",
+      "Reafirmou a imunidade mesmo em caso de violação de jus cogens",
+      "Criou a imunidade funcional",
+      "Aplicou a CISG"
+     ],
+     "correta": 1,
+     "explicacao": "a CIJ separou a natureza processual da imunidade da ilegalidade do ato e manteve a imunidade. A tensão com o jus cogens segue em aberto."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Diferencie imunidade absoluta e relativa, explicando jure imperii e jure gestionis com um exemplo de cada.",
+     "respostaEsperada": "na imunidade absoluta, visão tradicional (Oppenheim), o Estado era sempre imune, qualquer que fosse o ato, o que gerava injustiças com credores privados. Na relativa (restrita), que predomina hoje, a imunidade depende da natureza do ato: atos jure imperii, soberanos (vistos, atos diplomáticos, uma embaixada comprando material para o prédio), têm imunidade; atos jure gestionis, comerciais (compra e venda, estatal importando máquinas para lucrar), não têm, e o Estado responde e paga tributos como um particular. A Convenção da ONU de 2004 (art. 10) veda imunidade em transações comerciais.",
+     "criterios": [
+      "absoluta × relativa",
+      "natureza do ato",
+      "jure imperii com exemplo",
+      "jure gestionis com exemplo"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mp3",
+   "titulo": "Mini prova 3: Cláusulas contratuais",
+   "secoes": [
+    "clausulas-padrao-boilerplate",
+    "clausulas-essenciais-forca-maior",
+    "outros-pontos-dos-cartoes"
+   ],
+   "questoes": [
+    {
+     "tipo": "multipla",
+     "enunciado": "Depois de assinar o contrato, uma parte alega que um e-mail anterior prometia um desconto extra. Qual cláusula afasta esse argumento?",
+     "opcoes": [
+      "Cessão",
+      "Acordo integral (entire agreement)",
+      "Sucessores",
+      "Idioma"
+     ],
+     "correta": 1,
+     "explicacao": "o acordo integral faz do contrato escrito o entendimento final e completo e revoga e-mails, propostas e acordos verbais anteriores (cartão 3)."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Um embargo governamental repentino impede totalmente que a exportadora embarque o café. A cláusula aplicável é:",
+     "opcoes": [
+      "Hardship",
+      "Força maior",
+      "No waiver",
+      "Severability"
+     ],
+     "correta": 1,
+     "explicacao": "é impossibilidade causada por evento externo, imprevisível e irresistível. Hardship seria se cumprir fosse possível, mas ruinoso."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Uma crise cambial torna ruinoso para a construtora o preço fixado em dólar, mas a obra ainda pode ser feita. A cláusula adequada é:",
+     "opcoes": [
+      "Força maior, para rescindir na hora",
+      "Hardship, para renegociar de boa-fé",
+      "Acordo integral",
+      "Reserva de domínio"
+     ],
+     "correta": 1,
+     "explicacao": "há onerosidade excessiva, não impossibilidade. O hardship obriga a renegociar para reequilibrar o contrato."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Qual NÃO é exceção ao sigilo num NDA?",
+     "opcoes": [
+      "Informação já de domínio público",
+      "Informação que a receptora já tinha licitamente antes",
+      "Divulgação exigida por ordem judicial",
+      "Informação estratégica repassada a um concorrente por interesse comercial"
+     ],
+     "correta": 3,
+     "explicacao": "as exceções são domínio público, posse lícita anterior ou fonte legítima, e exigência legal ou judicial. Repassar a concorrente é violação."
+    },
+    {
+     "tipo": "multipla",
+     "enunciado": "Na garantia à primeira demanda (on-demand bond):",
+     "opcoes": [
+      "O banco paga assim que o beneficiário pede, sem discutir o mérito",
+      "O vendedor continua dono do bem até receber",
+      "A empresa-mãe garante a dívida",
+      "O banco paga só depois de uma sentença"
+     ],
+     "correta": 0,
+     "explicacao": "essa é a característica do on-demand bond. A opção b é reserva de domínio; a c é fiança corporativa."
+    },
+    {
+     "tipo": "dissertativa",
+     "enunciado": "Diferencie a cláusula de força maior da cláusula de hardship, com requisitos, efeitos e um exemplo de cada.",
+     "respostaEsperada": "a força maior trata da impossibilidade de cumprir por evento externo, imprevisível e irresistível (requisitos cumulativos). O efeito é exonerar ou suspender as obrigações, com notificação e possível rescisão se o impedimento durar. Exemplo: embargo governamental que impede a exportação de café. O hardship trata da onerosidade excessiva superveniente: cumprir ainda é possível, mas ficou desequilibrado por mudança imprevisível. O efeito é a obrigação de notificar e renegociar de boa-fé, com rescisão ou revisão arbitral só em último caso. Exemplo: crise cambial que torna ruinoso um preço fixado em dólar.",
+     "criterios": [
+      "impossibilidade × onerosidade excessiva",
+      "3 requisitos da força maior",
+      "renegociação de boa-fé",
+      "exemplos"
+     ]
+    }
+   ]
+  }
+ ],
+ "simulado": {
+  "titulo": "Simulado P1 completo",
+  "descricao": "todos os temas + dissertativa",
+  "questoes": [
+   {
+    "tipo": "multipla",
+    "enunciado": "Segundo o conceito flexível, o contrato internacional é:",
+    "opcoes": [
+     "Qualquer contrato em língua estrangeira",
+     "Acordo de vontades potencialmente sujeito a dois ou mais sistemas jurídicos",
+     "Contrato assinado só por Estados",
+     "Contrato registrado na OMC"
+    ],
+    "correta": 1,
+    "explicacao": "é o conceito flexível do material. O grande desafio é definir o direito aplicável."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "No Brasil, a capacidade da pessoa física em contratos internacionais é regida, em regra, pelo:",
+    "opcoes": [
+     "Domicílio",
+     "Local da assinatura",
+     "Idioma do contrato",
+     "País do comprador"
+    ],
+    "correta": 0,
+    "explicacao": "a capacidade rege-se pelo domicílio, considerando também territorialidade e nacionalidade."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "As partes elegem a lei suíça para o contrato, mas uma cláusula ofende a ordem pública brasileira. O que acontece?",
+    "opcoes": [
+     "A escolha vale sem limites",
+     "A ordem pública limita a aplicação da lei escolhida",
+     "O contrato vira nacional",
+     "Aplica-se o Código Bustamante automaticamente"
+    ],
+    "correta": 1,
+    "explicacao": "a autonomia da vontade respeita a ordem pública, como no cartão 7 e no anteprojeto."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Qual regra é de competência exclusiva da justiça brasileira?",
+    "opcoes": [
+     "Cobrança de dívida de réu domiciliado no exterior",
+     "Ação relativa a imóvel situado no Brasil",
+     "Qualquer contrato em reais",
+     "Arbitragem com sede em Paris"
+    ],
+    "correta": 1,
+    "explicacao": "o CPC, art. 23, I, prevê competência exclusiva para imóveis situados no Brasil."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "A imunidade dos organismos internacionais, como a ONU:",
+    "opcoes": [
+     "É absoluta e decorre da soberania",
+     "É funcional, relativa e interpretada de forma restrita",
+     "Não existe",
+     "Vale só para atos comerciais"
+    ],
+    "correta": 1,
+    "explicacao": "ela existe para que cumpram sua missão institucional e é limitada pelos acordos de sede."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Uma cláusula diz: \"a tolerância de uma parte com um descumprimento não será considerada renúncia\". É a cláusula:",
+    "opcoes": [
+     "Severability",
+     "No waiver",
+     "Amendment",
+     "Assignment"
+    ],
+    "correta": 1,
+    "explicacao": "no waiver: tolerar é mera liberalidade, não renúncia nem novação."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "\"Nenhuma parte poderá transferir seus direitos sem consentimento prévio e por escrito da outra.\" É a cláusula de:",
+    "opcoes": [
+     "Cessão (assignment)",
+     "Sucessores",
+     "Idioma",
+     "Aditamento"
+    ],
+    "correta": 0,
+    "explicacao": "a cessão regula a transferência de direitos e obrigações a terceiros."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Qual instituição NÃO aparece no material como instituição arbitral internacional?",
+    "opcoes": [
+     "CCI",
+     "LCIA",
+     "ICDR-AAA",
+     "OMA"
+    ],
+    "correta": 3,
+    "explicacao": "CCI, LCIA e ICDR-AAA são citadas. A OMA é a Organização Mundial das Aduanas, que não é instituição arbitral."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "A carta de crédito (L/C) funciona assim:",
+    "opcoes": [
+     "O vendedor mantém a propriedade até o pagamento",
+     "O banco do comprador paga o vendedor contra a apresentação de documentos, como fatura e B/L",
+     "A matriz garante a dívida da filial",
+     "O comprador paga sem qualquer documento"
+    ],
+    "correta": 1,
+    "explicacao": "essa é a definição do material e do cartão 12. A opção a é reserva de domínio; a c é fiança corporativa."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "O princípio do tratamento nacional da OMC proíbe:",
+    "opcoes": [
+     "Cobrar imposto de importação",
+     "Discriminar o produto importado, depois que ele entra no mercado interno, em relação ao nacional similar",
+     "Exportar para países fora da OMC",
+     "Usar Incoterms"
+    ],
+    "correta": 1,
+    "explicacao": "o tratamento nacional vale após a entrada no mercado interno (cartão 4)."
+   },
+   {
+    "tipo": "multipla",
+    "enunciado": "Pelo art. 14 da Convenção de Roma (1980), o ônus da prova em matéria contratual segue:",
+    "opcoes": [
+     "Sempre a lei do juiz (foro)",
+     "A lei que regula o contrato",
+     "A lei do domicílio do autor",
+     "A escolha do árbitro"
+    ],
+    "correta": 1,
+    "explicacao": "a lei do contrato também rege presunções e ônus da prova, regra mantida no Regulamento 593/2008 (art. 18) e nos Princípios da Haia (2015)."
+   },
+   {
+    "tipo": "dissertativa",
+    "enunciado": "Uma empresa japonesa vende equipamentos industriais a uma brasileira. Proponha as cláusulas essenciais do contrato e justifique cada uma.",
+    "respostaEsperada": "• **Força maior:** eventos externos, imprevisíveis e irresistíveis suspendem as obrigações, com notificação.\n• **Hardship:** renegociação de boa-fé se uma mudança imprevisível, como o câmbio, desequilibrar o contrato.\n• **Confidencialidade (NDA):** protege os dados técnicos, com as exceções de domínio público e ordem legal.\n• **Cláusula arbitral:** por exemplo, CCI com três árbitros, sede e idioma definidos, pela neutralidade, especialização, rapidez e execução via Convenção de Nova York.\n• **Preço e garantias:** moeda, câmbio, condições de pagamento e Incoterms, com garantias como carta de crédito ou performance bond.\n• **Boilerplate:** acordo integral, severability e idioma prevalente, para segurança jurídica.",
+    "criterios": [
+     "força maior",
+     "hardship",
+     "NDA",
+     "cláusula arbitral e Convenção de Nova York",
+     "preço e garantias (L/C ou bond)",
+     "ao menos uma boilerplate"
+    ]
+   }
+  ]
+ }
+}

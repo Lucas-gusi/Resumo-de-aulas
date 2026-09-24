@@ -1,7 +1,7 @@
 [
   { "slug": "estrategia", "nome": "Estratégia", "status": "pronto" },
   { "slug": "ciencia-da-decisao", "nome": "Ciência da Decisão", "status": "pronto" },
-  { "slug": "logistica-internacional", "nome": "Logística Internacional", "status": "em-breve" },
-  { "slug": "direito-do-comercio-internacional", "nome": "Direito do Comércio Internacional", "status": "em-breve" },
-  { "slug": "mercado-financeiro", "nome": "Mercado Financeiro", "status": "em-breve" }
+  { "slug": "logistica-internacional", "nome": "Logística Internacional", "status": "pronto" },
+  { "slug": "direito-do-comercio-internacional", "nome": "Direito do Comércio Internacional", "status": "pronto" },
+  { "slug": "mercado-financeiro", "nome": "Mercado Financeiro", "status": "pronto" }
 ]

@@ -29,11 +29,17 @@
 
   // ---------------- RESUMO ----------------
   // bloco "pergunta → Mostrar resposta"
-  const pergunta = (p, r) => `<div class="qa"><div class="qa-p">${p}</div>
-      <button class="qa-btn" type="button">Mostrar resposta</button><div class="qa-r">${r}</div></div>`;
-  const respostaDe = q => q.tipo === "multipla" ? `<b>${md(q.opcoes[q.correta])}</b>${q.explicacao ? `<br>${md(q.explicacao)}` : ""}`
-    : q.tipo === "numerica" ? q.campos.map(c => `${esc(c.rotulo)} = <b>${c.resposta.toLocaleString("pt-BR")}</b>`).join(" · ") + (q.explicacao ? `<br>${md(q.explicacao)}` : "")
-    : md(q.respostaEsperada || "");
+  const pergunta = (n, p, r) => `<div class="qa"><div class="qa-p"><span class="k">${n}.</span><span>${p}</span></div>
+      <input class="qa-in" type="text" placeholder="O que você acha que é?" aria-label="Sua resposta">
+      <button class="qa-btn" type="button">Mostrar resposta</button>
+      <div class="qa-r"><div class="ans">${r}</div><div class="mine"></div></div></div>`;
+  // abre/fecha a resposta e mostra o palpite da pessoa ao lado
+  const setQA = (qa, abrir) => {
+    qa.classList.toggle("open", abrir);
+    qa.querySelector(".qa-btn").textContent = abrir ? "Esconder" : "Mostrar resposta";
+    const v = qa.querySelector(".qa-in").value.trim();
+    qa.querySelector(".mine").textContent = abrir && v ? "Você respondeu: " + v : "";
+  };
 
   function resumo() {
     let h = `<article class="doc">`;
@@ -41,13 +47,13 @@
     // Quick view
     h += `<section class="quick"><h2>⚡ Quick View</h2>
       <p class="lead">O essencial da matéria. Leia antes de estudar e de novo antes da prova.</p>
-      <ul>${M.quickView.map(it => `<li>${it.topico ? `<b>${esc(it.topico)}:</b> ` : ""}${md(it.texto)}</li>`).join("")}</ul></section>`;
+      ${M.quickView.map(it => `<div class="qitem">${it.topico ? `<b class="t">${esc(it.topico)}</b>` : ""}${md(it.texto)}</div>`).join("")}</section>`;
 
     // Perguntas-chave
     if (M.revisaoRapida?.length) {
       h += `<section><div class="row between"><h2>❓ Perguntas-chave</h2><button class="link-btn" id="all" type="button">Mostrar todas</button></div>
-        <p class="lead">Tente responder de cabeça e depois confira.</p>
-        <div class="qa-list">${M.revisaoRapida.map(x => pergunta(md(x.se), md(x.entao))).join("")}</div></section>`;
+        <p class="lead">Escreva o que você acha que é e depois clique em Mostrar resposta para conferir.</p>
+        <div class="qa-list">${M.revisaoRapida.map((x, k) => pergunta(k + 1, md(x.se), md(x.entao))).join("")}</div></section>`;
     }
 
     // Sumário + conteúdo
@@ -58,7 +64,7 @@
         ${s.pergunta ? `<p class="hook">${md(s.pergunta)}</p>` : ""}
         ${s.emUmaFrase ? `<div class="oneline"><b class="lbl">Em uma frase</b>${md(s.emUmaFrase)}</div>` : ""}
         ${s.blocos.map(renderBlock).join("")}
-        ${s.checkpoint?.length ? `<div class="check"><div class="ct">🧠 Teste rápido</div>${s.checkpoint.map(q => pergunta(md(q.enunciado), respostaDe(q))).join("")}</div>` : ""}
+        ${s.checkpoint?.length ? `<div class="check"><div class="ct">🧠 Teste rápido</div><div class="muted small">Responda antes de seguir.</div><div class="cp" data-sec="${i}"></div></div>` : ""}
       </section>`;
     });
 
@@ -66,21 +72,31 @@
     if (M.fontes) h += `<footer class="src">Fontes: ${md(M.fontes)}${M.atualizadoEm ? ` · Atualizado em ${esc(M.atualizadoEm)}` : ""}</footer>`;
     view.innerHTML = h + `</article>`;
 
-    view.querySelectorAll(".qa-btn").forEach(b => b.onclick = () => b.closest(".qa").classList.toggle("open"));
+    view.querySelectorAll(".cp").forEach(el => Quiz(el, M.secoes[+el.dataset.sec].checkpoint, { modo: "estudo", numerar: false, placar: false }));
+    view.querySelectorAll(".qa").forEach(qa => {
+      qa.querySelector(".qa-btn").onclick = () => setQA(qa, !qa.classList.contains("open"));
+      qa.querySelector(".qa-in").onkeydown = e => { if (e.key === "Enter") setQA(qa, true); };
+    });
     const all = document.getElementById("all");
     if (all) all.onclick = () => {
       const abrir = all.textContent === "Mostrar todas";
-      all.closest("section").querySelectorAll(".qa").forEach(q => q.classList.toggle("open", abrir));
+      view.querySelectorAll(".qa-list .qa").forEach(qa => setQA(qa, abrir));
       all.textContent = abrir ? "Esconder todas" : "Mostrar todas";
     };
-    // rótulo do botão acompanha o estado
-    new MutationObserver(ms => ms.forEach(m => { const b = m.target.querySelector(".qa-btn"); if (b) b.textContent = m.target.classList.contains("open") ? "Esconder" : "Mostrar resposta"; }))
-      .observe(view, { attributes: true, subtree: true, attributeFilter: ["class"] });
+    botaoTopo();
+  }
+
+  function botaoTopo() {
+    const b = document.createElement("button");
+    b.className = "to-top"; b.type = "button"; b.title = "Voltar ao topo"; b.setAttribute("aria-label", "Voltar ao topo"); b.textContent = "↑";
+    b.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    document.body.appendChild(b);
+    addEventListener("scroll", () => b.classList.toggle("show", scrollY > 600), { passive: true });
   }
 
   // ---------------- PROVAS ----------------
+  let modo = "estudo";
   function provas() {
-    let modo = "estudo";
     const topo = document.createElement("div");
     topo.innerHTML = `<h2 style="margin-top:0">📝 Mini provas</h2>
       <div class="mode">
@@ -92,13 +108,17 @@
     pintaModo();
     view.appendChild(topo);
 
+    const cobre = p => {
+      const nomes = (p.secoes || []).map(id => M.secoes.find(x => x.id === id)?.titulo).filter(Boolean);
+      return nomes.length ? " · Cobre: " + esc(nomes.join(", ")) : "";
+    };
     const todas = (M.miniProvas || []).map(p => ({ ...p, ic: "📝" }));
     if (M.simulado) todas.push({ ...M.simulado, id: "simulado", ic: "🎯", big: true });
     const lista = document.createElement("div"); lista.className = "plist";
     todas.forEach(p => {
       const b = document.createElement("button"); b.className = "pitem" + (p.big ? " big" : "");
       b.innerHTML = `<span class="ic">${p.ic}</span><span><div class="pt">${esc(p.titulo)}</div>
-        <div class="pm">${p.questoes.length} questões${p.descricao ? " · " + esc(p.descricao) : ""}</div></span><span class="go">Começar →</span>`;
+        <div class="pm">${p.questoes.length} questões${p.descricao ? " · " + esc(p.descricao) : ""}${cobre(p)}</div></span><span class="go">Começar →</span>`;
       b.onclick = () => fazer(p);
       lista.appendChild(b);
     });
@@ -109,7 +129,7 @@
       const top = document.createElement("div");
       top.innerHTML = `<button class="btn ghost sm">← Voltar às provas</button>
         <h2>${p.ic} ${esc(p.titulo)}</h2><div class="muted small">${modo === "estudo" ? "Modo estudo: a correção aparece a cada resposta." : "Modo prova: responda tudo e clique em Corrigir no final."}</div>`;
-      top.querySelector("button").onclick = () => { view.innerHTML = ""; provas(); };
+      top.querySelector("button").onclick = () => { view.innerHTML = ""; provas(); window.scrollTo(0, 0); };
       view.appendChild(top);
       const box = document.createElement("div"); view.appendChild(box);
       Quiz(box, p.questoes, { modo });
