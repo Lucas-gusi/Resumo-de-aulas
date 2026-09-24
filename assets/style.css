@@ -193,7 +193,7 @@ footer.src { font-size: 13px; color: var(--muted); margin-top: 30px; border-top:
 .files .fd { font-size: 13px; color: var(--muted); }
 
 /* ---------- escolha resumo / provas ---------- */
-.choose { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.choose { margin-bottom: 18px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .opt-big { display: flex; gap: 16px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
   padding: 26px 22px; text-decoration: none; color: inherit; transition: transform .12s, border-color .12s; }
 .opt-big:hover { transform: translateY(-2px); border-color: var(--blue); }

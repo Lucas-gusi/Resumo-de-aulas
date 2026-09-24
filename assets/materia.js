@@ -22,6 +22,7 @@
         <a class="opt-big" href="${url("provas")}"><span class="ic">📝</span><span><b>Mini provas</b>
           <span class="d">${nq} provas com correção e explicação</span></span></a>
       </div>
+      ${M.comoCai?.length ? `<h3>🎯 Como a prova costuma ser</h3>${renderBlock({ tipo: "tabela", cabecalho: ["Parte", "Formato", "Peso", "Como garantir"], linhas: M.comoCai.map(x => [x.parte, x.formato, x.peso, x.dica]) })}` : ""}
       ${M.materiais?.length ? `<h3>📎 Materiais</h3><div class="files">${M.materiais.map(f =>
         `<a href="${esc(f.arquivo)}" target="_blank" rel="noopener"><span style="font-size:20px">📄</span><span><b>${esc(f.nome)}</b>${f.descricao ? `<div class="fd">${esc(f.descricao)}</div>` : ""}</span></a>`).join("")}</div>` : ""}`;
   }
@@ -47,11 +48,6 @@
       h += `<section><div class="row between"><h2>❓ Perguntas-chave</h2><button class="link-btn" id="all" type="button">Mostrar todas</button></div>
         <p class="lead">Tente responder de cabeça e depois confira.</p>
         <div class="qa-list">${M.revisaoRapida.map(x => pergunta(md(x.se), md(x.entao))).join("")}</div></section>`;
-    }
-
-    // Como cai
-    if (M.comoCai?.length) {
-      h += `<section><h2>🎯 Como a prova costuma ser</h2>${renderBlock({ tipo: "tabela", cabecalho: ["Parte", "Formato", "Peso", "Como garantir"], linhas: M.comoCai.map(x => [x.parte, x.formato, x.peso, x.dica]) })}</section>`;
     }
 
     // Sumário + conteúdo
