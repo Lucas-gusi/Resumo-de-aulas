@@ -9,7 +9,7 @@
  "quickView": [
   {
    "topico": "Logística e SCM",
-   "texto": "logística é **planejar, implementar e controlar** o fluxo e a armazenagem de produtos, serviços e informações da origem ao consumo (Ballou). Ela é uma parte do **SCM**, que integra toda a cadeia, do fornecedor original ao usuário final."
+   "texto": "Logística é **planejar, implementar e controlar** o fluxo e a armazenagem de produtos, serviços e informações da origem ao consumo (Ballou). Ela é uma parte do **SCM**, que integra toda a cadeia, do fornecedor original ao usuário final."
   },
   {
    "topico": "Modais de transporte",
@@ -17,31 +17,31 @@
   },
   {
    "topico": "Atores (players)",
-   "texto": "a logística internacional depende de muitos atores interdependentes. Os principais são **armador**, **NVOCC** (\"armador sem navio\"), **freight forwarder**, **agência marítima**, **trading**, **despachante aduaneiro** e **broker**."
+   "texto": "A logística internacional depende de muitos atores interdependentes. Os principais são **armador**, **NVOCC** (\"armador sem navio\"), **freight forwarder**, **agência marítima**, **trading**, **despachante aduaneiro** e **broker**."
   },
   {
    "topico": "Documentos e unitização",
-   "texto": "o **B/L** (marítimo) e o **AWB** (aéreo) comprovam o embarque e são o contrato de transporte. A **unitização** (pallet, contêiner, big bag) agrupa volumes para reduzir custos, avarias e tempo."
+   "texto": "O **B/L** (marítimo) e o **AWB** (aéreo) comprovam o embarque e são o contrato de transporte. A **unitização** (pallet, contêiner, big bag) agrupa volumes para reduzir custos, avarias e tempo."
   },
   {
    "topico": "Rotas e infraestrutura",
-   "texto": "o Brasil planeja **5 rotas de integração sul-americana** e as **rotas bioceânicas** (Atlântico–Pacífico), para chegar mais rápido à Ásia. O **PNL 2035** é o plano estratégico que integra todos os modais."
+   "texto": "O Brasil planeja **5 rotas de integração sul-americana** e as **rotas bioceânicas** (Atlântico–Pacífico), para chegar mais rápido à Ásia. O **PNL 2035** é o plano estratégico que integra todos os modais."
   },
   {
    "topico": "Processos e tempo",
-   "texto": "o **TRS** mede quanto tempo leva para liberar uma carga importada. A Receita Federal responde por **menos de 10%** do tempo; o importador pode responder por quase **80%**. O **OEA** é **32%** mais ágil."
+   "texto": "O **TRS** mede quanto tempo leva para liberar uma carga importada. A Receita Federal responde por **menos de 10%** do tempo; o importador pode responder por quase **80%**. O **OEA** é **32%** mais ágil."
   },
   {
    "topico": "Risco, cenários e decisão",
-   "texto": "a decisão logística equilibra **custo, tempo e risco** para entregar o **nível de serviço**. **Cenários prospectivos** ajudam a decidir sob incerteza, e o **ESG** entra como critério."
+   "texto": "A decisão logística equilibra **custo, tempo e risco** para entregar o **nível de serviço**. **Cenários prospectivos** ajudam a decidir sob incerteza, e o **ESG** entra como critério."
   }
  ],
  "secoes": [
   {
    "id": "logistica-scm-e-logistica",
    "titulo": "Logística, SCM e logística internacional",
-   "pergunta": "de onde veio a logística e o que ela faz hoje?",
-   "emUmaFrase": "logística é levar a coisa certa ao lugar certo, no prazo, na quantidade e no preço certos, e a internacional faz isso entre países.",
+   "pergunta": "De onde veio a logística e o que ela faz hoje?",
+   "emUmaFrase": "Logística é levar a coisa certa ao lugar certo, no prazo, na quantidade e no preço certos, e a internacional faz isso entre países.",
    "blocos": [
     {
      "tipo": "texto",
@@ -115,17 +115,17 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "logística **não** é sinônimo de SCM. Logística é **parte** do SCM."
+     "texto": "Logística **não** é sinônimo de SCM. Logística é **parte** do SCM."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "na prova, \"da origem ao consumo\" = logística. \"Do usuário final ao fornecedor original\" = SCM."
+     "texto": "Na prova, \"da origem ao consumo\" = logística. \"Do usuário final ao fornecedor original\" = SCM."
     },
     {
      "tipo": "destaque",
      "estilo": "analogia",
-     "texto": "o SCM é o time inteiro. A logística é quem faz a bola (a carga) chegar ao lugar certo."
+     "texto": "O SCM é o time inteiro. A logística é quem faz a bola (a carga) chegar ao lugar certo."
     },
     {
      "tipo": "flashcards",
@@ -165,8 +165,8 @@
   {
    "id": "modais-de-transporte",
    "titulo": "Modais de transporte",
-   "pergunta": "qual modal escolher para cada tipo de carga?",
-   "emUmaFrase": "cada modal troca custo por velocidade, e a escolha depende do valor e da urgência da carga.",
+   "pergunta": "Qual modal escolher para cada tipo de carga?",
+   "emUmaFrase": "Cada modal troca custo por velocidade, e a escolha depende do valor e da urgência da carga.",
    "blocos": [
     {
      "tipo": "tabela",
@@ -233,17 +233,17 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "cabotagem é navegação **na costa do país** (águas nacionais), não entre países. Longo curso é a internacional."
+     "texto": "Cabotagem é navegação **na costa do país** (águas nacionais), não entre países. Longo curso é a internacional."
     },
     {
      "tipo": "destaque",
      "estilo": "exemplo",
-     "texto": "em 2025, o aéreo permitiu antecipar importações para os EUA antes de tarifas novas (**frontloading**) e levou cerca de 3/4 dos bens ligados à IA."
+     "texto": "Em 2025, o aéreo permitiu antecipar importações para os EUA antes de tarifas novas (**frontloading**) e levou cerca de 3/4 dos bens ligados à IA."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "pergunta sobre \"urgência + alto valor\" → aéreo. Sobre \"grande volume + menor custo\" → marítimo."
+     "texto": "Pergunta sobre \"urgência + alto valor\" → aéreo. Sobre \"grande volume + menor custo\" → marítimo."
     },
     {
      "tipo": "flashcards",
@@ -283,8 +283,8 @@
   {
    "id": "atores-players-da-logistica",
    "titulo": "Atores (players) da logística internacional",
-   "pergunta": "quem faz a carga andar, e o que cada um faz?",
-   "emUmaFrase": "é uma rede de players interdependentes, e muitos deles trabalham com inteligência, não com ativos próprios.",
+   "pergunta": "Quem faz a carga andar, e o que cada um faz?",
+   "emUmaFrase": "É uma rede de players interdependentes, e muitos deles trabalham com inteligência, não com ativos próprios.",
    "blocos": [
     {
      "tipo": "tabela",
@@ -353,12 +353,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "despachante aduaneiro (trâmite na Receita) × broker (negociação comercial de commodities)."
+     "texto": "Despachante aduaneiro (trâmite na Receita) × broker (negociação comercial de commodities)."
     },
     {
      "tipo": "destaque",
      "estilo": "analogia",
-     "texto": "o armador é a companhia de ônibus; o NVOCC compra lugares e revende para quem só tem \"uma mala\"."
+     "texto": "O armador é a companhia de ônibus; o NVOCC compra lugares e revende para quem só tem \"uma mala\"."
     },
     {
      "tipo": "flashcards",
@@ -398,8 +398,8 @@
   {
    "id": "documentos-unitizacao-embalagem-seguro",
    "titulo": "Documentos, unitização, embalagem, seguro e Incoterms",
-   "pergunta": "o que acompanha a carga e como ela é preparada?",
-   "emUmaFrase": "o documento comprova o embarque, a unitização padroniza a carga e o seguro protege contra perdas.",
+   "pergunta": "O que acompanha a carga e como ela é preparada?",
+   "emUmaFrase": "O documento comprova o embarque, a unitização padroniza a carga e o seguro protege contra perdas.",
    "blocos": [
     {
      "tipo": "texto",
@@ -499,7 +499,7 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "o B/L não é só um recibo. Ele é também o **contrato de transporte**."
+     "texto": "O B/L não é só um recibo. Ele é também o **contrato de transporte**."
     },
     {
      "tipo": "destaque",
@@ -544,8 +544,8 @@
   {
    "id": "rotas-corredores-e-planejamento",
    "titulo": "Rotas, corredores e planejamento (PNL)",
-   "pergunta": "por onde a carga passa e quem planeja isso?",
-   "emUmaFrase": "a infraestrutura cria possibilidades e as rotas criam caminhos. O Brasil planeja integrar a América do Sul e chegar ao Pacífico.",
+   "pergunta": "Por onde a carga passa e quem planeja isso?",
+   "emUmaFrase": "A infraestrutura cria possibilidades e as rotas criam caminhos. O Brasil planeja integrar a América do Sul e chegar ao Pacífico.",
    "blocos": [
     {
      "tipo": "texto",
@@ -621,17 +621,17 @@
     {
      "tipo": "destaque",
      "estilo": "exemplo",
-     "texto": "a ponte binacional entre **Porto Murtinho (MS)** e **Carmelo Peralta (Paraguai)** faz parte da Rota 4, a Bioceânica de Capricórnio."
+     "texto": "A ponte binacional entre **Porto Murtinho (MS)** e **Carmelo Peralta (Paraguai)** faz parte da Rota 4, a Bioceânica de Capricórnio."
     },
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "o PNL é **estratégico** (o que fazer). Os planos setoriais detalham o **como fazer**."
+     "texto": "O PNL é **estratégico** (o que fazer). Os planos setoriais detalham o **como fazer**."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "o material usa \"intermodalidade\" para a relação operacional entre modos. O \"multimodal de cargas\" tem definição em lei (Lei 9.611)."
+     "texto": "O material usa \"intermodalidade\" para a relação operacional entre modos. O \"multimodal de cargas\" tem definição em lei (Lei 9.611)."
     },
     {
      "tipo": "flashcards",
@@ -667,8 +667,8 @@
   {
    "id": "processos-e-tempo-trs",
    "titulo": "Processos e tempo: TRS, OEA e facilitação",
-   "pergunta": "por que a carga demora para ser liberada e onde está o gargalo?",
-   "emUmaFrase": "medir o tempo de cada etapa mostra que o gargalo nem sempre é a aduana.",
+   "pergunta": "Por que a carga demora para ser liberada e onde está o gargalo?",
+   "emUmaFrase": "Medir o tempo de cada etapa mostra que o gargalo nem sempre é a aduana.",
    "blocos": [
     {
      "tipo": "texto",
@@ -733,12 +733,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "não é a Receita que \"trava\" a importação. Ela responde por menos de 10% do tempo."
+     "texto": "Não é a Receita que \"trava\" a importação. Ela responde por menos de 10% do tempo."
     },
     {
      "tipo": "destaque",
      "estilo": "analogia",
-     "texto": "é como uma fila de banco em que cada guichê só começa quando o anterior termina (sequencialismo). Atender em paralelo corta o tempo pela metade."
+     "texto": "É como uma fila de banco em que cada guichê só começa quando o anterior termina (sequencialismo). Atender em paralelo corta o tempo pela metade."
     },
     {
      "tipo": "flashcards",
@@ -778,8 +778,8 @@
   {
    "id": "risco-cenarios-esg-e",
    "titulo": "Risco, cenários, ESG e tomada de decisão",
-   "pergunta": "como decidir em logística quando o futuro é incerto?",
-   "emUmaFrase": "não existe a melhor opção absoluta; existe a melhor decisão para cada contexto, objetivo e nível de risco aceitável.",
+   "pergunta": "Como decidir em logística quando o futuro é incerto?",
+   "emUmaFrase": "Não existe a melhor opção absoluta; existe a melhor decisão para cada contexto, objetivo e nível de risco aceitável.",
    "blocos": [
     {
      "tipo": "texto",
@@ -845,12 +845,12 @@
     {
      "tipo": "destaque",
      "estilo": "exemplo",
-     "texto": "frases como \"a televisão não dará certo\" (NYT, 1939) mostram por que prever um único futuro é arriscado, e por isso se trabalha com cenários."
+     "texto": "Frases como \"a televisão não dará certo\" (NYT, 1939) mostram por que prever um único futuro é arriscado, e por isso se trabalha com cenários."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "numa dissertativa, cite **custo × tempo × serviço × risco** e diga que a melhor escolha depende do contexto."
+     "texto": "Numa dissertativa, cite **custo × tempo × serviço × risco** e diga que a melhor escolha depende do contexto."
     },
     {
      "tipo": "flashcards",

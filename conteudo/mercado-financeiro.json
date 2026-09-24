@@ -9,31 +9,31 @@
  "quickView": [
   {
    "topico": "PIB",
-   "texto": "é a **soma de todos os bens e serviços finais** produzidos numa economia num período (em geral, um ano). É um **indicador síntese**: mede o tamanho da economia, mas **não** mede distribuição de renda, saúde ou educação. O **PIB per capita** divide o PIB pelo número de habitantes."
+   "texto": "É a **soma de todos os bens e serviços finais** produzidos numa economia num período (em geral, um ano). É um **indicador síntese**: mede o tamanho da economia, mas **não** mede distribuição de renda, saúde ou educação. O **PIB per capita** divide o PIB pelo número de habitantes."
   },
   {
    "topico": "Inflação",
-   "texto": "aumento generalizado de preços que corrói o poder de compra. Por isso o PIB de um ano não pode ser comparado com o de outro sem descontar a **inflação**. A principal causa da inflação de longo prazo é o **excesso de dinheiro circulando** em relação à oferta real de bens e serviços."
+   "texto": "Aumento generalizado de preços que corrói o poder de compra. Por isso o PIB de um ano não pode ser comparado com o de outro sem descontar a **inflação**. A principal causa da inflação de longo prazo é o **excesso de dinheiro circulando** em relação à oferta real de bens e serviços."
   },
   {
    "topico": "Sistema Financeiro Nacional (SFN)",
-   "texto": "organizado em **órgãos normativos** (fazem as regras: CMN, CNSP, CNPC), **supervisores** (fiscalizam: BACEN, CVM, SUSEP, PREVIC) e **operadores** (atendem o público: bancos, corretoras, seguradoras, fundos de pensão)."
+   "texto": "Organizado em **órgãos normativos** (fazem as regras: CMN, CNSP, CNPC), **supervisores** (fiscalizam: BACEN, CVM, SUSEP, PREVIC) e **operadores** (atendem o público: bancos, corretoras, seguradoras, fundos de pensão)."
   },
   {
    "topico": "Políticas econômicas",
-   "texto": "o governo usa três \"pilares\". A **monetária** cuida de liquidez e juros, a **fiscal** de arrecadação e gastos, e a **cambial** da relação da moeda com o exterior. Os objetivos são emprego, inflação controlada, crescimento do PIB e estabilidade."
+   "texto": "O governo usa três \"pilares\". A **monetária** cuida de liquidez e juros, a **fiscal** de arrecadação e gastos, e a **cambial** da relação da moeda com o exterior. Os objetivos são emprego, inflação controlada, crescimento do PIB e estabilidade."
   },
   {
    "topico": "Política monetária",
-   "texto": "afeta a **quantidade de dinheiro em circulação** e o **custo do dinheiro (juros)**. A finalidade principal é manter a **inflação baixa, estável e previsível**."
+   "texto": "Afeta a **quantidade de dinheiro em circulação** e o **custo do dinheiro (juros)**. A finalidade principal é manter a **inflação baixa, estável e previsível**."
   },
   {
    "topico": "Tesouro Direto",
-   "texto": "programa do **Tesouro Nacional** que vende **títulos públicos** a pessoas físicas. Quem compra **empresta dinheiro ao governo**. É **renda fixa**, e o IR segue a **tabela regressiva** (de 22,5% a 15%)."
+   "texto": "Programa do **Tesouro Nacional** que vende **títulos públicos** a pessoas físicas. Quem compra **empresta dinheiro ao governo**. É **renda fixa**, e o IR segue a **tabela regressiva** (de 22,5% a 15%)."
   },
   {
    "topico": "Produtos e FGC",
-   "texto": "poupança, CDB, LCI, LCA, CRI, CRA e fundos de investimento. O **FGC** é uma associação **privada**, mantida pelos bancos, que garante até **R$ 250.000 por CPF/CNPJ por instituição**."
+   "texto": "Poupança, CDB, LCI, LCA, CRI, CRA e fundos de investimento. O **FGC** é uma associação **privada**, mantida pelos bancos, que garante até **R$ 250.000 por CPF/CNPJ por instituição**."
   }
  ],
  "comoCai": [
@@ -54,8 +54,8 @@
   {
    "id": "pib-o-tamanho-da",
    "titulo": "PIB: o tamanho da economia",
-   "pergunta": "como medir quanto um país produz, e o que essa medida esconde?",
-   "emUmaFrase": "o PIB soma tudo o que foi produzido de bens e serviços finais num período, mas não diz se a população vive bem.",
+   "pergunta": "Como medir quanto um país produz, e o que essa medida esconde?",
+   "emUmaFrase": "O PIB soma tudo o que foi produzido de bens e serviços finais num período, mas não diz se a população vive bem.",
    "blocos": [
     {
      "tipo": "texto",
@@ -105,7 +105,7 @@
     {
      "tipo": "destaque",
      "estilo": "analogia",
-     "texto": "o PIB é o faturamento de uma empresa. Ele não diz como o dinheiro foi dividido entre os funcionários."
+     "texto": "O PIB é o faturamento de uma empresa. Ele não diz como o dinheiro foi dividido entre os funcionários."
     },
     {
      "tipo": "exemplo",
@@ -151,8 +151,8 @@
   {
    "id": "inflacao-por-que-comparar",
    "titulo": "Inflação: por que comparar PIBs exige cuidado",
-   "pergunta": "se o PIB passou de US$ 1.000 para US$ 1.100, o país cresceu 10%?",
-   "emUmaFrase": "não necessariamente, porque parte do aumento pode ser só alta de preços (inflação).",
+   "pergunta": "Se o PIB passou de US$ 1.000 para US$ 1.100, o país cresceu 10%?",
+   "emUmaFrase": "Não necessariamente, porque parte do aumento pode ser só alta de preços (inflação).",
    "blocos": [
     {
      "tipo": "lista",
@@ -176,12 +176,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "aumento do PIB em valores correntes ≠ aumento da produção."
+     "texto": "Aumento do PIB em valores correntes ≠ aumento da produção."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "toda questão que comparar PIB de anos diferentes quer ouvir a palavra **inflação**."
+     "texto": "Toda questão que comparar PIB de anos diferentes quer ouvir a palavra **inflação**."
     },
     {
      "tipo": "flashcards",
@@ -217,8 +217,8 @@
   {
    "id": "sistema-financeiro-nacional-sfn",
    "titulo": "Sistema Financeiro Nacional (SFN)",
-   "pergunta": "quem manda, quem fiscaliza e quem opera no mercado financeiro brasileiro?",
-   "emUmaFrase": "o SFN tem três camadas: quem faz as regras, quem fiscaliza e quem atende o público.",
+   "pergunta": "Quem manda, quem fiscaliza e quem opera no mercado financeiro brasileiro?",
+   "emUmaFrase": "O SFN tem três camadas: quem faz as regras, quem fiscaliza e quem atende o público.",
    "blocos": [
     {
      "tipo": "texto",
@@ -289,17 +289,17 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "o **CMN** é normativo de **duas colunas** (moeda/crédito/câmbio **e** valores mobiliários). A CVM é supervisora, não normativa."
+     "texto": "O **CMN** é normativo de **duas colunas** (moeda/crédito/câmbio **e** valores mobiliários). A CVM é supervisora, não normativa."
     },
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "o BACEN **fiscaliza**, quem cria as regras é o CMN."
+     "texto": "O BACEN **fiscaliza**, quem cria as regras é o CMN."
     },
     {
      "tipo": "destaque",
      "estilo": "analogia",
-     "texto": "o CMN escreve as regras do jogo, o BACEN e a CVM apitam, e os bancos e corretoras jogam."
+     "texto": "O CMN escreve as regras do jogo, o BACEN e a CVM apitam, e os bancos e corretoras jogam."
     },
     {
      "tipo": "flashcards",
@@ -343,8 +343,8 @@
   {
    "id": "politicas-economicas-e-politica",
    "titulo": "Políticas econômicas e política monetária",
-   "pergunta": "que ferramentas o governo usa para controlar a economia?",
-   "emUmaFrase": "são três políticas (monetária, fiscal e cambial) com objetivos de emprego, inflação baixa, crescimento e estabilidade.",
+   "pergunta": "Que ferramentas o governo usa para controlar a economia?",
+   "emUmaFrase": "São três políticas (monetária, fiscal e cambial) com objetivos de emprego, inflação baixa, crescimento e estabilidade.",
    "blocos": [
     {
      "tipo": "texto",
@@ -451,12 +451,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "a política monetária mexe com **dinheiro e juros**. Impostos e gastos são política **fiscal**."
+     "texto": "A política monetária mexe com **dinheiro e juros**. Impostos e gastos são política **fiscal**."
     },
     {
      "tipo": "destaque",
      "estilo": "exemplo",
-     "texto": "a turma analisou uma ata do **Copom** (comitê que decide a taxa básica de juros) na atividade de Políticas Econômicas."
+     "texto": "A turma analisou uma ata do **Copom** (comitê que decide a taxa básica de juros) na atividade de Políticas Econômicas."
     },
     {
      "tipo": "flashcards",
@@ -496,8 +496,8 @@
   {
    "id": "politica-fiscal-e-politica",
    "titulo": "Política fiscal e política cambial",
-   "pergunta": "como o governo usa impostos, gastos e o câmbio?",
-   "emUmaFrase": "a fiscal mexe no orçamento do governo e a cambial no valor do real frente a outras moedas.",
+   "pergunta": "Como o governo usa impostos, gastos e o câmbio?",
+   "emUmaFrase": "A fiscal mexe no orçamento do governo e a cambial no valor do real frente a outras moedas.",
    "blocos": [
     {
      "tipo": "tabela",
@@ -527,12 +527,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "câmbio **flutuante** não quer dizer \"sem banco central\". Na atividade, a turma registrou que o BC pode atuar vendendo dólar das reservas para conter a volatilidade."
+     "texto": "Câmbio **flutuante** não quer dizer \"sem banco central\". Na atividade, a turma registrou que o BC pode atuar vendendo dólar das reservas para conter a volatilidade."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "pergunta sobre exportação e importação → pense em **câmbio**."
+     "texto": "Pergunta sobre exportação e importação → pense em **câmbio**."
     },
     {
      "tipo": "flashcards",
@@ -572,8 +572,8 @@
   {
    "id": "tesouro-direto-e-tributacao",
    "titulo": "Tesouro Direto e tributação",
-   "pergunta": "o que é investir em título público e quanto se paga de imposto?",
-   "emUmaFrase": "comprar título público é emprestar dinheiro ao governo, com rendimento de renda fixa e IR menor quanto mais tempo você fica.",
+   "pergunta": "O que é investir em título público e quanto se paga de imposto?",
+   "emUmaFrase": "Comprar título público é emprestar dinheiro ao governo, com rendimento de renda fixa e IR menor quanto mais tempo você fica.",
    "blocos": [
     {
      "tipo": "lista",
@@ -630,12 +630,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "a alíquota incide sobre o **rendimento (lucro)**, não sobre o valor total aplicado."
+     "texto": "A alíquota incide sobre o **rendimento (lucro)**, não sobre o valor total aplicado."
     },
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "a tabela é **regressiva**: a alíquota **cai** com o tempo."
+     "texto": "A tabela é **regressiva**: a alíquota **cai** com o tempo."
     },
     {
      "tipo": "flashcards",
@@ -675,8 +675,8 @@
   {
    "id": "produtos-do-mercado-financeiro",
    "titulo": "Produtos do mercado financeiro e FGC",
-   "pergunta": "quais produtos a disciplina cobre e quem protege o investidor se um banco quebrar?",
-   "emUmaFrase": "poupança, CDB, letras (LCI/LCA), certificados (CRI/CRA) e fundos, com o FGC como \"escudo\" de até R$ 250 mil.",
+   "pergunta": "Quais produtos a disciplina cobre e quem protege o investidor se um banco quebrar?",
+   "emUmaFrase": "Poupança, CDB, letras (LCI/LCA), certificados (CRI/CRA) e fundos, com o FGC como \"escudo\" de até R$ 250 mil.",
    "blocos": [
     {
      "tipo": "texto",
@@ -746,17 +746,17 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "não é o governo que paga o FGC. São os bancos que alimentam esse fundo preventivo."
+     "texto": "Não é o governo que paga o FGC. São os bancos que alimentam esse fundo preventivo."
     },
     {
      "tipo": "destaque",
      "estilo": "exemplo",
-     "texto": "o professor levou para debate o impacto do caso Banco Master sobre o FGC."
+     "texto": "O professor levou para debate o impacto do caso Banco Master sobre o FGC."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "a atividade pede para explicar a **poupança** (funcionamento, taxas, remuneração). Revise isso na sua própria resposta da atividade, porque os slides não trazem os números."
+     "texto": "A atividade pede para explicar a **poupança** (funcionamento, taxas, remuneração). Revise isso na sua própria resposta da atividade, porque os slides não trazem os números."
     },
     {
      "tipo": "flashcards",

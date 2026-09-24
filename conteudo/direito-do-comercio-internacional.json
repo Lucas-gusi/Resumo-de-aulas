@@ -9,23 +9,23 @@
  "quickView": [
   {
    "topico": "Contrato internacional",
-   "texto": "é o acordo de vontades **sujeito a dois ou mais sistemas jurídicos**. O grande desafio é saber **qual direito se aplica**, qual o **foro** e se haverá **arbitragem**."
+   "texto": "É o acordo de vontades **sujeito a dois ou mais sistemas jurídicos**. O grande desafio é saber **qual direito se aplica**, qual o **foro** e se haverá **arbitragem**."
   },
   {
    "topico": "Lei aplicável e autonomia da vontade",
-   "texto": "a **autonomia da vontade** deixa as partes escolherem a lei e o foro, e até fracionar o contrato (**dépeçage**), respeitando a **ordem pública**. A LINDB (art. 9º) fala em lei do lugar de constituição da obrigação; o anteprojeto de lei de DIPr propõe aceitar a escolha das partes (art. 29)."
+   "texto": "A **autonomia da vontade** deixa as partes escolherem a lei e o foro, e até fracionar o contrato (**dépeçage**), respeitando a **ordem pública**. A LINDB (art. 9º) fala em lei do lugar de constituição da obrigação; o anteprojeto de lei de DIPr propõe aceitar a escolha das partes (art. 29)."
   },
   {
    "topico": "Jurisdição internacional",
-   "texto": "são as regras sobre **quando o juiz brasileiro pode julgar**. Há **competência exclusiva** no CPC (art. 23: imóveis, sucessão e partilha de bens no Brasil). A LINDB (art. 12) dá competência ao Brasil quando o **réu é domiciliado aqui**."
+   "texto": "São as regras sobre **quando o juiz brasileiro pode julgar**. Há **competência exclusiva** no CPC (art. 23: imóveis, sucessão e partilha de bens no Brasil). A LINDB (art. 12) dá competência ao Brasil quando o **réu é domiciliado aqui**."
   },
   {
    "topico": "Imunidade de jurisdição",
-   "texto": "um Estado não é julgado por outro sem consentimento (**par in parem non habet judicium**). Hoje vale a **imunidade relativa**: atos **jure imperii** (soberanos) têm imunidade; atos **jure gestionis** (comerciais) não têm."
+   "texto": "Um Estado não é julgado por outro sem consentimento (**par in parem non habet judicium**). Hoje vale a **imunidade relativa**: atos **jure imperii** (soberanos) têm imunidade; atos **jure gestionis** (comerciais) não têm."
   },
   {
    "topico": "Cláusulas padrão (boilerplate)",
-   "texto": "acordo integral, cessão, aditamento, sucessores, renúncia (no waiver), independência (severability), idioma e notificações. Dão **segurança jurídica** ao contrato."
+   "texto": "Acordo integral, cessão, aditamento, sucessores, renúncia (no waiver), independência (severability), idioma e notificações. Dão **segurança jurídica** ao contrato."
   },
   {
    "topico": "Cláusulas essenciais",
@@ -33,15 +33,15 @@
   },
   {
    "topico": "Comércio internacional e padronização",
-   "texto": "a **CISG** (Convenção de Viena de 1980) rege a compra e venda entre países signatários. Os **Incoterms** são da **CCI**. O **tratamento nacional** da OMC proíbe discriminar o importado depois que ele entra no país."
+   "texto": "A **CISG** (Convenção de Viena de 1980) rege a compra e venda entre países signatários. Os **Incoterms** são da **CCI**. O **tratamento nacional** da OMC proíbe discriminar o importado depois que ele entra no país."
   }
  ],
  "secoes": [
   {
    "id": "contrato-internacional-e-elementos",
    "titulo": "Contrato internacional e elementos de conexão",
-   "pergunta": "o que torna um contrato \"internacional\" e qual o problema que isso cria?",
-   "emUmaFrase": "o contrato é internacional quando pode ser regido por mais de um sistema jurídico, e aí surge a dúvida de qual lei vale.",
+   "pergunta": "O que torna um contrato \"internacional\" e qual o problema que isso cria?",
+   "emUmaFrase": "O contrato é internacional quando pode ser regido por mais de um sistema jurídico, e aí surge a dúvida de qual lei vale.",
    "blocos": [
     {
      "tipo": "texto",
@@ -109,12 +109,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "a capacidade da pessoa física no Brasil segue o **domicílio**, não a nacionalidade."
+     "texto": "A capacidade da pessoa física no Brasil segue o **domicílio**, não a nacionalidade."
     },
     {
      "tipo": "destaque",
      "estilo": "analogia",
-     "texto": "se o contrato \"mora\" em dois países, é preciso combinar de qual \"casa\" são as regras."
+     "texto": "Se o contrato \"mora\" em dois países, é preciso combinar de qual \"casa\" são as regras."
     },
     {
      "tipo": "flashcards",
@@ -150,8 +150,8 @@
   {
    "id": "lei-aplicavel-autonomia-da",
    "titulo": "Lei aplicável, autonomia da vontade e CISG",
-   "pergunta": "as partes podem escolher a lei do contrato?",
-   "emUmaFrase": "sim, pela autonomia da vontade, mas com limites (ordem pública e proteção de partes vulneráveis).",
+   "pergunta": "As partes podem escolher a lei do contrato?",
+   "emUmaFrase": "Sim, pela autonomia da vontade, mas com limites (ordem pública e proteção de partes vulneráveis).",
    "blocos": [
     {
      "tipo": "lista",
@@ -191,7 +191,7 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "autonomia não é ilimitada. A **ordem pública** sempre pode barrar a escolha."
+     "texto": "Autonomia não é ilimitada. A **ordem pública** sempre pode barrar a escolha."
     },
     {
      "tipo": "destaque",
@@ -236,8 +236,8 @@
   {
    "id": "jurisdicao-internacional",
    "titulo": "Jurisdição internacional",
-   "pergunta": "quando o juiz brasileiro pode (ou deve) julgar um caso com elemento estrangeiro?",
-   "emUmaFrase": "cada Estado define por lei a competência de seus tribunais; o Brasil tem casos de competência exclusiva e concorrente.",
+   "pergunta": "Quando o juiz brasileiro pode (ou deve) julgar um caso com elemento estrangeiro?",
+   "emUmaFrase": "Cada Estado define por lei a competência de seus tribunais; o Brasil tem casos de competência exclusiva e concorrente.",
    "blocos": [
     {
      "tipo": "lista",
@@ -288,7 +288,7 @@
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "ônus da prova ligado ao mérito segue a **mesma lei aplicável ao mérito** (ex.: se a lei francesa rege a questão, ela define quem prova)."
+     "texto": "Ônus da prova ligado ao mérito segue a **mesma lei aplicável ao mérito** (ex.: se a lei francesa rege a questão, ela define quem prova)."
     },
     {
      "tipo": "flashcards",
@@ -324,8 +324,8 @@
   {
    "id": "imunidade-de-jurisdicao-e",
    "titulo": "Imunidade de jurisdição e imunidade tributária",
-   "pergunta": "um Estado estrangeiro pode ser processado ou tributado no Brasil?",
-   "emUmaFrase": "depende da natureza do ato. Ato soberano tem imunidade; ato comercial, não.",
+   "pergunta": "Um Estado estrangeiro pode ser processado ou tributado no Brasil?",
+   "emUmaFrase": "Depende da natureza do ato. Ato soberano tem imunidade; ato comercial, não.",
    "blocos": [
     {
      "tipo": "lista",
@@ -406,12 +406,12 @@
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "o critério é a **natureza do ato**, não quem o pratica. Uma estatal agindo como empresa é tratada como empresa."
+     "texto": "O critério é a **natureza do ato**, não quem o pratica. Uma estatal agindo como empresa é tratada como empresa."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "o Estado **não** tem imunidade quando pratica atos de gestão privada ou comercial (teoria da imunidade relativa).",
+     "texto": "O Estado **não** tem imunidade quando pratica atos de gestão privada ou comercial (teoria da imunidade relativa).",
      "titulo": "Dica (cartão 10)"
     },
     {
@@ -452,8 +452,8 @@
   {
    "id": "clausulas-padrao-boilerplate",
    "titulo": "Cláusulas padrão (boilerplate)",
-   "pergunta": "quais cláusulas \"de rotina\" aparecem em quase todo contrato internacional?",
-   "emUmaFrase": "são cláusulas padrão que evitam brigas sobre forma, alteração e interpretação do contrato.",
+   "pergunta": "Quais cláusulas \"de rotina\" aparecem em quase todo contrato internacional?",
+   "emUmaFrase": "São cláusulas padrão que evitam brigas sobre forma, alteração e interpretação do contrato.",
    "blocos": [
     {
      "tipo": "tabela",
@@ -513,7 +513,7 @@
     {
      "tipo": "destaque",
      "estilo": "analogia",
-     "texto": "acordo integral é o \"vale o que está escrito\". Tudo o que ficou de fora do papel não conta."
+     "texto": "Acordo integral é o \"vale o que está escrito\". Tudo o que ficou de fora do papel não conta."
     },
     {
      "tipo": "flashcards",
@@ -553,8 +553,8 @@
   {
    "id": "clausulas-essenciais-forca-maior",
    "titulo": "Cláusulas essenciais: força maior, hardship, NDA, arbitral e garantias",
-   "pergunta": "como o contrato internacional lida com riscos, sigilo, disputas e pagamento?",
-   "emUmaFrase": "cada cláusula essencial trata de um risco diferente: impossibilidade, desequilíbrio, vazamento, litígio e calote.",
+   "pergunta": "Como o contrato internacional lida com riscos, sigilo, disputas e pagamento?",
+   "emUmaFrase": "Cada cláusula essencial trata de um risco diferente: impossibilidade, desequilíbrio, vazamento, litígio e calote.",
    "blocos": [
     {
      "tipo": "texto",
@@ -655,17 +655,17 @@
     {
      "tipo": "destaque",
      "estilo": "exemplo",
-     "texto": "uma empresa alemã vende uma linha de montagem de € 5 milhões para uma fábrica brasileira. Pagamento: 20% adiantado, 40% contra B/L ou L/C e 40% após a instalação, com performance bond de 10%."
+     "texto": "Uma empresa alemã vende uma linha de montagem de € 5 milhões para uma fábrica brasileira. Pagamento: 20% adiantado, 40% contra B/L ou L/C e 40% após a instalação, com performance bond de 10%."
     },
     {
      "tipo": "destaque",
      "estilo": "pegadinha",
-     "texto": "se ainda dá para cumprir, só que ficou caríssimo, é **hardship**, não força maior."
+     "texto": "Se ainda dá para cumprir, só que ficou caríssimo, é **hardship**, não força maior."
     },
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "arbitragem = \"neutralidade + Convenção de Nova York\". Incoterms = \"CCI\"."
+     "texto": "Arbitragem = \"neutralidade + Convenção de Nova York\". Incoterms = \"CCI\"."
     },
     {
      "tipo": "flashcards",
@@ -709,8 +709,8 @@
   {
    "id": "outros-pontos-dos-cartoes",
    "titulo": "Outros pontos dos cartões: OMC, Incoterms e logística",
-   "pergunta": "que outros temas a professora destacou para a P1?",
-   "emUmaFrase": "princípios da OMC, quem cria os Incoterms e um caso prático de desembaraço.",
+   "pergunta": "Que outros temas a professora destacou para a P1?",
+   "emUmaFrase": "Princípios da OMC, quem cria os Incoterms e um caso prático de desembaraço.",
    "blocos": [
     {
      "tipo": "tabela",
@@ -736,7 +736,7 @@
     {
      "tipo": "destaque",
      "estilo": "dica",
-     "texto": "tratamento nacional vale **depois** que o produto entrou no país. Não confunda com o imposto de importação cobrado na entrada."
+     "texto": "Tratamento nacional vale **depois** que o produto entrou no país. Não confunda com o imposto de importação cobrado na entrada."
     },
     {
      "tipo": "flashcards",
