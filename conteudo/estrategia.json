@@ -1,0 +1,1113 @@
+{
+  "slug": "estrategia",
+  "nome": "Estratégia",
+  "nomeCompleto": "Estratégia e Governança Corporativa",
+  "professor": "Prof. Marco Antonio de Andrade",
+  "avaliacao": "P1 · Aulas 1 a 7",
+  "atualizadoEm": "24/09/2026",
+  "fontes": "Classroom da turma: gabarito da revisão P1, roteiros das aulas 6 e 7 e planejamento semanal.",
+  "quickView": [
+    {
+      "topico": "VEC",
+      "texto": "É o valor que a empresa cria: a diferença entre o que o cliente **aceitaria pagar (WTP)** e o que **custa** produzir (C). O preço não muda esse valor, só decide quanto fica com o cliente (**excedente = WTP − P**) e quanto fica com a empresa (**margem = P − C**)."
+    },
+    {
+      "topico": "Estratégias de Porter",
+      "texto": "Uma empresa vence sendo a **mais barata** (liderança em custo) ou **diferente** a ponto de cobrar mais (diferenciação), no mercado todo ou num nicho (foco). Quem tenta ser as duas coisas ao mesmo tempo fica **preso no meio** e lucra abaixo da média."
+    },
+    {
+      "topico": "Eficácia operacional × posicionamento",
+      "texto": "Fazer o mesmo que os rivais, só que melhor, é **eficácia operacional**: todos copiam e vira guerra de preços. Estratégia de verdade é **posicionamento**: fazer diferente, escolher o que NÃO fazer (**trade-offs**) e ter atividades que se reforçam (**fit**)."
+    },
+    {
+      "topico": "VRIO",
+      "texto": "Um recurso só gera vantagem duradoura se for **Valioso, Raro, difícil de Imitar** e a empresa estiver **Organizada** para usá-lo. O que mais dificulta a cópia é a **cultura e a confiança** (complexidade social) e não saber exatamente de onde vem o sucesso (ambiguidade causal)."
+    },
+    {
+      "topico": "Análise do ambiente",
+      "texto": "**PESTEL** olha o macroambiente (política, economia, sociedade, tecnologia, ecologia, leis) e as **5 Forças** olham o setor. A **SWOT** junta tudo, mas Mintzberg critica por ser estática. A **TOWS** cruza forças e fraquezas com oportunidades e ameaças para virar estratégia."
+    },
+    {
+      "topico": "Escolas de Mintzberg",
+      "texto": "Algumas escolas dizem que a estratégia é **planejada antes** (Design, Planejamento, Posicionamento). A **Escola do Aprendizado** diz que ela **surge da prática**, testando e ajustando: é a estratégia emergente."
+    },
+    {
+      "topico": "Teoria da Agência",
+      "texto": "O acionista (**Principal**) contrata o executivo (**Agente**), que sabe mais e pode agir em benefício próprio. Esconder algo **antes** do contrato é seleção adversa, e **depois** é risco moral. Para controlar isso existem custos: **monitoramento** (pago pelo Principal), **garantia** (pago pelo Agente) e a **perda residual** que sobra."
+    },
+    {
+      "topico": "Modelo de Abell",
+      "texto": "Defina o negócio por três eixos: **quem** atende, **o que** o cliente precisa e **como** atende. Definir pelo produto atual causa miopia. O certo é definir pela **necessidade do cliente**."
+    }
+  ],
+  "comoCai": [
+    {
+      "parte": "Objetivas",
+      "formato": "7 questões: caso curto + nome do conceito",
+      "peso": "~35-40%",
+      "dica": "Saber diferenciar conceitos parecidos"
+    },
+    {
+      "parte": "Dissertativas",
+      "formato": "3 questões de estudo de caso (0,5 por item)",
+      "peso": "~35-40%",
+      "dica": "Usar os TERMOS técnicos + autor + aplicar ao caso"
+    },
+    {
+      "parte": "VEC (contas)",
+      "formato": "Cálculo e interpretação",
+      "peso": "~20-25%",
+      "dica": "Decorar 3 fórmulas: pontos garantidos"
+    }
+  ],
+  "secoes": [
+    {
+      "id": "vec",
+      "titulo": "VEC: Valor Econômico Criado",
+      "pergunta": "Quanto valor a empresa cria e quem fica com ele?",
+      "emUmaFrase": "O valor criado é a diferença entre o que o cliente **aceitaria pagar** e o que **custa** produzir. O preço só decide como esse valor é dividido.",
+      "blocos": [
+        {
+          "tipo": "formula",
+          "itens": [
+            {
+              "formula": "VEC = WTP − C",
+              "significado": "valor total criado (o tamanho da pizza)"
+            },
+            {
+              "formula": "Excedente = WTP − P",
+              "significado": "o \"lucro\" do cliente"
+            },
+            {
+              "formula": "Margem = P − C",
+              "significado": "o lucro da empresa por unidade"
+            }
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "analogia",
+          "texto": "O VEC é uma pizza. O **preço** é a faca: ele não muda o tamanho da pizza, só decide quanto fica com o cliente e quanto fica com a empresa."
+        },
+        {
+          "tipo": "exemplo",
+          "titulo": "Exemplo resolvido (da revisão)",
+          "enunciado": "WTP = R$ 60 · C = R$ 25 · P = R$ 42",
+          "passos": [
+            "VEC = 60 − 25 = **R$ 35**",
+            "Excedente = 60 − 42 = **R$ 18**",
+            "Margem = 42 − 25 = **R$ 17**"
+          ],
+          "conclusao": "Confere: 18 + 17 = 35. Faça sempre essa verificação na prova."
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Movimento",
+            "O que acontece com o VEC"
+          ],
+          "linhas": [
+            [
+              "**Diferenciação**: sobe a WTP mais do que o custo",
+              "A pizza cresce"
+            ],
+            [
+              "**Liderança em custo**: reduz C com o preço igual",
+              "A pizza cresce, e todo o ganho vai para a margem da empresa"
+            ],
+            [
+              "**Guerra de preços**: baixa P",
+              "Não cria valor: só passa margem da empresa para o cliente (soma zero)"
+            ]
+          ]
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Uma empresa baixou o preço em R$ 10 sem mudar custo nem WTP. O que aconteceu com o VEC?",
+          "opcoes": [
+            "Aumentou R$ 10",
+            "Diminuiu R$ 10",
+            "Não mudou: só passou R$ 10 da margem para o excedente do cliente",
+            "Dobrou"
+          ],
+          "correta": 2,
+          "explicacao": "VEC = WTP − C, e o preço nem aparece na conta. Baixar P só redistribui: a margem cai e o excedente sobe."
+        }
+      ]
+    },
+    {
+      "id": "porter",
+      "titulo": "Posicionamento: Porter",
+      "pergunta": "Como uma empresa escolhe onde e como competir?",
+      "emUmaFrase": "Estratégia é **escolher o que NÃO fazer**. Copiar as melhores práticas não é estratégia, é eficácia operacional.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Estratégia genérica",
+            "Como ganha",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "**Liderança em custo**",
+              "Custo mais baixo do setor",
+              "Atacarejo, companhia aérea low-cost"
+            ],
+            [
+              "**Diferenciação**",
+              "Cliente paga mais por algo único",
+              "Apple, marcas premium"
+            ],
+            [
+              "**Foco**",
+              "Custo ou diferenciação num nicho específico",
+              "Transporte só de vacinas refrigeradas"
+            ]
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "titulo": "⚠️ Preso no meio (stuck in the middle)",
+          "texto": "Tenta ser barato E diferenciado ao mesmo tempo, não tem vantagem em nenhum e fica com rentabilidade **abaixo da média** (ex.: VarejoMix)."
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "",
+            "Eficácia Operacional (EO)",
+            "Posicionamento Estratégico (PE)"
+          ],
+          "linhas": [
+            [
+              "O que é",
+              "Fazer as MESMAS atividades MELHOR",
+              "Fazer atividades DIFERENTES (ou de jeito diferente)"
+            ],
+            [
+              "Resultado",
+              "Rivais copiam (benchmarking): tudo vira commodity e guerra de preços",
+              "Conjunto único de atividades, difícil de copiar"
+            ],
+            [
+              "Palavras-chave",
+              "melhoria contínua, convergência",
+              "**TRADE-OFFS** (o que NÃO fazer) e **FIT** (atividades se reforçam)"
+            ],
+            [
+              "Caso da revisão",
+              "Veloz Express (software genérico)",
+              "PharmaCold (nicho ultracongelado, frota dedicada)"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "**Cadeia de Valor (Porter):** divide a empresa em atividades para achar de onde vem a vantagem."
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Primárias (fazem e entregam o produto)",
+            "Suporte (sustentam as primárias)"
+          ],
+          "linhas": [
+            [
+              "Logística **interna** (receber e armazenar insumos)",
+              "Infraestrutura (gestão, finanças, jurídico)"
+            ],
+            [
+              "Operações (produzir)",
+              "Gestão de pessoas (RH)"
+            ],
+            [
+              "Logística **externa** (entregar ao cliente)",
+              "Desenvolvimento de tecnologia"
+            ],
+            [
+              "Marketing e vendas · Serviço pós-venda",
+              "Aquisição (compras)"
+            ]
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "**Compras** de insumos é SUPORTE (aquisição). **Receber/armazenar** insumos é PRIMÁRIA (logística interna). **Entregar** ao cliente é PRIMÁRIA (logística externa)."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Todas as transportadoras compraram o mesmo software de roteirização e melhoraram os prazos. Em um ano, os preços caíram. Isso é:",
+          "opcoes": [
+            "Posicionamento estratégico",
+            "Eficácia operacional",
+            "Diferenciação",
+            "Foco"
+          ],
+          "correta": 1,
+          "explicacao": "Fazer o mesmo melhor, e todos copiando, é **eficácia operacional**. Resultado: convergência e guerra de preços."
+        }
+      ]
+    },
+    {
+      "id": "vrio",
+      "titulo": "VBR e VRIO",
+      "pergunta": "Por que alguns recursos geram vantagem que ninguém consegue copiar?",
+      "emUmaFrase": "A vantagem sustentável vem **de dentro** da empresa: recursos valiosos, raros, difíceis de imitar e bem organizados.",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Recursos:** ativos tangíveis e intangíveis.",
+            "**Capacidades:** saber combinar os recursos.",
+            "**Competências essenciais:** capacidades que geram vantagem sobre os rivais (Hitt et al.)."
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Valioso?",
+            "Raro?",
+            "Inimitável?",
+            "Organizado?",
+            "Resultado"
+          ],
+          "linhas": [
+            [
+              "Não",
+              "–",
+              "–",
+              "–",
+              "Desvantagem competitiva"
+            ],
+            [
+              "Sim",
+              "Não",
+              "–",
+              "–",
+              "Paridade competitiva"
+            ],
+            [
+              "Sim",
+              "Sim",
+              "Não",
+              "–",
+              "Vantagem **temporária**"
+            ],
+            [
+              "Sim",
+              "Sim",
+              "Sim",
+              "Sim",
+              "Vantagem **sustentável**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "**Por que um recurso é inimitável?**"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Ambiguidade causal:** ninguém sabe exatamente o que gera o sucesso, nem a própria empresa.",
+            "**Complexidade social:** cultura, confiança, sinergia de equipe e reputação. Não se compra no mercado.",
+            "**Path dependency:** a história e o aprendizado acumulados da empresa."
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "Caso BioGen: a concorrente contratou os executivos-chave e **NÃO** conseguiu copiar. A vantagem estava no sistema social (cultura), não nas pessoas isoladas."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Um recurso é valioso e raro, mas os concorrentes copiam em 6 meses. Pelo VRIO, ele gera:",
+          "opcoes": [
+            "Paridade competitiva",
+            "Vantagem temporária",
+            "Vantagem sustentável",
+            "Desvantagem"
+          ],
+          "correta": 1,
+          "explicacao": "V = sim, R = sim, I = **não**, então a vantagem é **temporária**."
+        }
+      ]
+    },
+    {
+      "id": "ambiente",
+      "titulo": "Análise ambiental: PESTEL, 5 Forças, SWOT e TOWS",
+      "pergunta": "Como analisar o que acontece fora e dentro da empresa?",
+      "emUmaFrase": "PESTEL e 5 Forças olham para **fora**. A SWOT junta fora e dentro, mas é estática. A TOWS transforma o diagnóstico em estratégia.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "PESTEL",
+            "Exemplos"
+          ],
+          "linhas": [
+            [
+              "**P**olítico",
+              "governo, estabilidade, políticas públicas"
+            ],
+            [
+              "**E**conômico",
+              "juros (Selic), inflação, câmbio, renda"
+            ],
+            [
+              "**S**ocial",
+              "hábitos, demografia, cultura"
+            ],
+            [
+              "**T**ecnológico",
+              "IA, nuvem, automação, P&D"
+            ],
+            [
+              "**E**cológico",
+              "clima, sustentabilidade, ESG"
+            ],
+            [
+              "**L**egal",
+              "leis e regulação, ex.: **LGPD**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "**5 Forças de Porter** (atratividade do setor): rivalidade entre concorrentes, ameaça de novos entrantes, ameaça de substitutos, poder dos fornecedores e poder dos compradores."
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "Empresa que eleva o **custo de troca** (ex.: prontuários integrados, playlists) **reduz o poder de barganha dos compradores**. E LGPD é vetor **Legal**, não Político."
+        },
+        {
+          "tipo": "texto",
+          "texto": "**Crítica à SWOT (Mintzberg, Safári de Estratégia, 2010):**"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "É **estática** e vira uma \"lista de lavanderia\" sem hierarquia.",
+            "Trata forças e fraquezas como absolutas, mas uma **força pode virar fraqueza** quando o contexto muda (ex.: \"marca tradicional\" da SoftTech diante de tecnologia disruptiva)."
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Matriz TOWS (Weihrich)",
+            "Oportunidades",
+            "Ameaças"
+          ],
+          "linhas": [
+            [
+              "**Forças**",
+              "**SO**: ofensiva (usar forças para aproveitar oportunidades)",
+              "**ST**: proteção (usar forças contra ameaças)"
+            ],
+            [
+              "**Fraquezas**",
+              "**WO**: mudança (corrigir fraquezas para aproveitar oportunidades)",
+              "**WT**: defensiva / sobrevivência"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "Depois do diagnóstico, o plano de ação é o **5W2H**: o quê, por quê, onde, quando, quem, como, quanto."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Uma nova lei de proteção de dados obriga a empresa a mudar seus sistemas. No PESTEL, isso é:",
+          "opcoes": [
+            "Político",
+            "Tecnológico",
+            "Legal",
+            "Social"
+          ],
+          "correta": 2,
+          "explicacao": "Lei e regulação (como a LGPD) são o vetor **Legal**."
+        }
+      ]
+    },
+    {
+      "id": "mintzberg",
+      "titulo": "Estratégia e as Escolas de Mintzberg",
+      "pergunta": "A estratégia é planejada antes ou surge na prática?",
+      "emUmaFrase": "Algumas escolas dizem que a estratégia é **planejada antes** (prescritivas). A do Aprendizado diz que ela **emerge** do dia a dia.",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "texto": "**5 P's da estratégia:** Plano, Pretexto (manobra), Padrão, Posição e Perspectiva."
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Escola",
+            "Como a estratégia nasce",
+            "Tipo"
+          ],
+          "linhas": [
+            [
+              "Design, Planejamento",
+              "Formulada antes, de forma deliberada",
+              "Prescritiva"
+            ],
+            [
+              "Posicionamento (Porter)",
+              "Escolha analítica de uma posição no setor",
+              "Prescritiva"
+            ],
+            [
+              "Empreendedora",
+              "Visão e intuição do líder / fundador",
+              "Descritiva"
+            ],
+            [
+              "**Aprendizado**",
+              "**EMERGE** do dia a dia, feedback e tentativa (duplo loop)",
+              "Descritiva / emergente"
+            ]
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "dica",
+          "texto": "Viu na questão \"testou, ouviu o cliente, ajustou, sem plano formal\"? É **Escola do Aprendizado**."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Qual escola vê a estratégia como algo que nasce da visão e intuição do fundador?",
+          "opcoes": [
+            "Planejamento",
+            "Empreendedora",
+            "Aprendizado",
+            "Posicionamento"
+          ],
+          "correta": 1,
+          "explicacao": "Visão e intuição do líder é a **Escola Empreendedora**."
+        }
+      ]
+    },
+    {
+      "id": "agencia",
+      "titulo": "Teoria da Agência e desempenho",
+      "pergunta": "Por que o executivo nem sempre age no interesse do acionista, e como corrigir isso?",
+      "emUmaFrase": "O **Principal** (acionista) contrata o **Agente** (executivo), mas o agente sabe mais e pode agir em benefício próprio. Isso gera **custos de agência**.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Assimetria",
+            "Quando",
+            "O que é"
+          ],
+          "linhas": [
+            [
+              "**Seleção adversa**",
+              "ANTES do contrato",
+              "Informação oculta: o agente esconde sua real capacidade"
+            ],
+            [
+              "**Risco moral** (moral hazard)",
+              "DEPOIS do contrato",
+              "Ação oculta: preguiça, construir impérios, risco excessivo pelo bônus"
+            ]
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Custo de agência",
+            "Quem paga",
+            "Exemplos"
+          ],
+          "linhas": [
+            [
+              "**Monitoramento**",
+              "Principal",
+              "Auditoria externa, conselho independente"
+            ],
+            [
+              "**Garantia (bonding)**",
+              "Agente",
+              "Seguro D&O, clawback aceito pelo executivo"
+            ],
+            [
+              "**Perda residual**",
+              "–",
+              "Prejuízo que sobra mesmo com os controles"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "**Métricas de desempenho:**"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Contábeis** (EBITDA, lucro): olham o passado e são manipuláveis no curto prazo.",
+            "**EVA:** lucro econômico real, descontado o custo de capital. Cria valor quando **ROIC > WACC**.",
+            "**BSC** (Kaplan & Norton): 4 perspectivas: Financeira, Clientes, Processos Internos, Aprendizado/Crescimento.",
+            "**OKRs:** Objetivo qualitativo + Resultados-Chave mensuráveis, revisados a cada trimestre."
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "dica",
+          "titulo": "💡 Receita da dissertativa: \"como corrigir o CEO oportunista?\"",
+          "texto": "1) **Problema:** bônus por volume/faturamento leva a decisões de curto prazo.\n2) **Assimetria:** o CEO esconde informação do conselho (risco moral).\n3) **Perda residual:** inadimplência, EVA negativo.\n4) **Solução:** bônus atrelado a EVA, margem e ESG + lock-up de ações (3 anos) + clawback + monitoramento."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "O candidato a diretor escondeu na entrevista que não domina a área. Isso é:",
+          "opcoes": [
+            "Risco moral",
+            "Seleção adversa",
+            "Perda residual",
+            "Custo de garantia"
+          ],
+          "correta": 1,
+          "explicacao": "Informação oculta **antes** do contrato é **seleção adversa**. Risco moral é ação oculta **depois**."
+        }
+      ]
+    },
+    {
+      "id": "abell",
+      "titulo": "Definição do negócio: Modelo de Abell",
+      "pergunta": "Qual é, de verdade, o negócio da empresa?",
+      "emUmaFrase": "Defina o negócio pela **necessidade do cliente**, não pelo produto. Quem se define pelo produto fica obsoleto.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Eixo",
+            "Pergunta",
+            "Ex.: AgroFuturo (antes → depois)"
+          ],
+          "linhas": [
+            [
+              "Grupos de clientes",
+              "**QUEM** atendemos?",
+              "Pequenos compradores → grandes do agronegócio"
+            ],
+            [
+              "Funções / necessidades",
+              "**O QUÊ** o cliente busca?",
+              "Comprar trator → produtividade por hectare, menos carbono, dados"
+            ],
+            [
+              "Tecnologias",
+              "**COMO** atendemos?",
+              "Trator a diesel → frota elétrica autônoma, IoT, assinatura (FaaS)"
+            ]
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "Definir o negócio pelo **produto ou tecnologia** atual gera **miopia** e obsolescência. Defina pela **necessidade** do cliente."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "A empresa trocou motores a diesel por elétricos, atendendo os mesmos clientes com a mesma necessidade. Qual eixo de Abell mudou?",
+          "opcoes": [
+            "Quem",
+            "O quê",
+            "Como"
+          ],
+          "correta": 2,
+          "explicacao": "Mudou a tecnologia, então o eixo que mudou foi o **Como**."
+        }
+      ]
+    }
+  ],
+  "revisaoRapida": [
+    {
+      "se": "Tenta ser barato e diferenciado, lucro baixo",
+      "entao": "Preso no meio (Porter)"
+    },
+    {
+      "se": "Todos copiam as melhores práticas",
+      "entao": "Eficácia Operacional, não estratégia"
+    },
+    {
+      "se": "Nicho, trade-offs, atividades que se encaixam",
+      "entao": "Posicionamento Estratégico"
+    },
+    {
+      "se": "Compras de insumos",
+      "entao": "Atividade de SUPORTE"
+    },
+    {
+      "se": "Entrega ao cliente final",
+      "entao": "Atividade PRIMÁRIA (logística externa)"
+    },
+    {
+      "se": "Contratou os executivos e não conseguiu copiar",
+      "entao": "Ambiguidade causal / complexidade social (VRIO: I)"
+    },
+    {
+      "se": "Estratégia surge da prática, tentativa e erro",
+      "entao": "Escola do Aprendizado (emergente)"
+    },
+    {
+      "se": "Força que virou fraqueza",
+      "entao": "Crítica de Mintzberg à SWOT estática"
+    },
+    {
+      "se": "IA, nuvem, automação",
+      "entao": "PESTEL: Tecnológico"
+    },
+    {
+      "se": "LGPD / lei",
+      "entao": "PESTEL: Legal"
+    },
+    {
+      "se": "Cliente com dificuldade de migrar",
+      "entao": "Custo de troca: reduz o poder dos compradores"
+    },
+    {
+      "se": "Auditoria externa, conselho independente",
+      "entao": "Custo de MONITORAMENTO (paga o Principal)"
+    },
+    {
+      "se": "Seguro D&O, clawback aceito pelo executivo",
+      "entao": "Custo de GARANTIA / bonding (paga o Agente)"
+    },
+    {
+      "se": "Prejuízo mesmo com controles",
+      "entao": "Perda residual"
+    },
+    {
+      "se": "Quem / o quê / como",
+      "entao": "Modelo triaxial de Abell"
+    },
+    {
+      "se": "Conta com WTP, P e C",
+      "entao": "VEC = WTP − C · Excedente = WTP − P · Margem = P − C"
+    }
+  ],
+  "miniProvas": [
+    {
+      "id": "mp1",
+      "titulo": "Mini prova 1: VEC e Porter",
+      "secoes": [
+        "vec",
+        "porter"
+      ],
+      "questoes": [
+        {
+          "tipo": "numerica",
+          "enunciado": "A **CaféSul** vende um café especial. WTP = R$ 200, custo = R$ 80, preço = R$ 150. Calcule:",
+          "campos": [
+            {
+              "rotulo": "VEC",
+              "resposta": 120
+            },
+            {
+              "rotulo": "Excedente do consumidor",
+              "resposta": 50
+            },
+            {
+              "rotulo": "Margem da empresa",
+              "resposta": 70
+            }
+          ],
+          "explicacao": "VEC = 200 − 80 = 120 · Excedente = 200 − 150 = 50 · Margem = 150 − 80 = 70. Confere: 50 + 70 = 120."
+        },
+        {
+          "tipo": "numerica",
+          "enunciado": "A CaféSul automatiza a torra e o custo cai para **R$ 60** (WTP e preço iguais). Calcule:",
+          "campos": [
+            {
+              "rotulo": "Novo VEC",
+              "resposta": 140
+            },
+            {
+              "rotulo": "Nova margem",
+              "resposta": 90
+            },
+            {
+              "rotulo": "Novo excedente",
+              "resposta": 50
+            }
+          ],
+          "explicacao": "Todo o ganho de R$ 20 ficou com a empresa. Isso é **liderança em custo / eficiência**: reduz C sem mexer na percepção do cliente."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "A Fábrica Aurora terceirizou o desenvolvimento do seu sistema de gestão (Projeto X) e reorganizou o recebimento e a armazenagem das matérias-primas (Projeto Y). Na Cadeia de Valor, X e Y são, respectivamente:",
+          "opcoes": [
+            "Primária e suporte",
+            "Suporte (desenvolvimento de tecnologia) e primária (logística interna)",
+            "Suporte e suporte",
+            "Primária (operações) e primária (logística externa)",
+            "Suporte (infraestrutura) e suporte (aquisição)"
+          ],
+          "correta": 1,
+          "explicacao": "Desenvolvimento de tecnologia é **suporte**. Receber e armazenar insumos é **logística interna**, que é primária."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Uma rede de academias passou a oferecer personal e spa (aumentando custos), mas manteve preços de low-cost e não conseguiu cobrar mais. A rentabilidade caiu abaixo da média. Segundo Porter, ela está:",
+          "opcoes": [
+            "Em liderança em custo",
+            "Em diferenciação",
+            "Presa no meio (stuck in the middle)",
+            "Em foco por diferenciação",
+            "Em posicionamento estratégico sustentável"
+          ],
+          "correta": 2,
+          "explicacao": "Tentou diferenciar sem cobrar preço premium e perdeu eficiência de custo: não tem vantagem em nenhum dos dois pilares."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "A MedFrio decidiu transportar só medicamentos termossensíveis, recusou carga geral e montou frota refrigerada própria com equipe certificada. Segundo Porter (1996), o que torna isso difícil de copiar?",
+          "opcoes": [
+            "Benchmarking das melhores práticas",
+            "Trade-offs claros e fit entre as atividades",
+            "Economia de escala",
+            "Preço mais baixo que os rivais"
+          ],
+          "correta": 1,
+          "explicacao": "Posicionamento estratégico: **trade-offs** (recusar carga geral) e **fit** (frota, certificação e equipe se reforçam). O conjunto é difícil de imitar."
+        }
+      ]
+    },
+    {
+      "id": "mp2",
+      "titulo": "Mini prova 2: VRIO e Análise Ambiental",
+      "secoes": [
+        "vrio",
+        "ambiente"
+      ],
+      "questoes": [
+        {
+          "tipo": "multipla",
+          "enunciado": "A Loja Beta possui um aplicativo valioso e raro, mas que concorrentes conseguem copiar em poucos meses. Pelo VRIO, esse recurso gera:",
+          "opcoes": [
+            "Desvantagem competitiva",
+            "Paridade competitiva",
+            "Vantagem competitiva temporária",
+            "Vantagem competitiva sustentável",
+            "Nenhuma implicação competitiva"
+          ],
+          "correta": 2,
+          "explicacao": "V = sim, R = sim, I = **não**, então a vantagem é **temporária**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Uma concorrente contratou os cinco principais cientistas da BioLab, mas não conseguiu replicar sua inovação, que dependia da cultura de colaboração e da confiança construída ao longo de anos. Isso ilustra:",
+          "opcoes": [
+            "Economias de escala",
+            "Complexidade social",
+            "Custos de troca",
+            "Eficácia operacional",
+            "Seleção adversa"
+          ],
+          "correta": 1,
+          "explicacao": "Cultura, confiança e sinergia de equipe são **complexidade social** (Barney). Não se compra no mercado."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "O Banco Central elevou a Selic, encarecendo o crédito para quem compra veículos. No PESTEL de uma montadora, esse fator é:",
+          "opcoes": [
+            "Político",
+            "Econômico",
+            "Social",
+            "Tecnológico",
+            "Legal"
+          ],
+          "correta": 1,
+          "explicacao": "Juros, inflação, câmbio e renda são fatores **econômicos**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Uma empresa com marca forte e caixa elevado (forças) usa esses recursos para se proteger da entrada de um concorrente estrangeiro (ameaça). Na TOWS, essa é uma estratégia:",
+          "opcoes": [
+            "SO (ofensiva)",
+            "WO (mudança)",
+            "ST (proteção / manutenção)",
+            "WT (defensiva / sobrevivência)"
+          ],
+          "correta": 2,
+          "explicacao": "Forças contra Ameaças é **ST**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Uma crítica de Mintzberg et al. (2010) à SWOT tradicional é que ela:",
+          "opcoes": [
+            "É excessivamente matemática",
+            "Trata forças e fraquezas como absolutas, ignorando que o contexto pode transformar uma força em fraqueza",
+            "Considera demais o ambiente externo",
+            "Só pode ser usada por empresas grandes"
+          ],
+          "correta": 1,
+          "explicacao": "A SWOT é **estática**. Uma força pode virar fraqueza quando o ambiente muda."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Um streaming integra playlists, histórico e recomendações, tornando trabalhoso migrar para um concorrente. Nas 5 Forças, isso reduz principalmente:",
+          "opcoes": [
+            "O poder dos fornecedores",
+            "O poder de barganha dos compradores",
+            "A rivalidade entre concorrentes",
+            "As barreiras de entrada"
+          ],
+          "correta": 1,
+          "explicacao": "Aumentar o **custo de troca** enfraquece o **poder dos compradores**."
+        }
+      ]
+    },
+    {
+      "id": "mp3",
+      "titulo": "Mini prova 3: Mintzberg, Agência e Abell",
+      "secoes": [
+        "mintzberg",
+        "agencia",
+        "abell"
+      ],
+      "questoes": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Numa startup, a estratégia se formou aos poucos: a equipe testou produtos, ouviu feedback e ajustou o rumo, sem plano formal. Segundo o Safári de Estratégia, é a Escola:",
+          "opcoes": [
+            "Do Design",
+            "Do Planejamento",
+            "Do Posicionamento",
+            "Do Aprendizado",
+            "Cultural"
+          ],
+          "correta": 3,
+          "explicacao": "Estratégia **emergente** é a **Escola do Aprendizado**. Design, Planejamento e Posicionamento são prescritivas."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Após ser contratado, um diretor aprova projetos arriscados que inflam o resultado do trimestre (e o seu bônus), sem que o conselho consiga observar. Isso é:",
+          "opcoes": [
+            "Seleção adversa",
+            "Risco moral (moral hazard)",
+            "Custo de monitoramento",
+            "Perda residual",
+            "Ambiguidade causal"
+          ],
+          "correta": 1,
+          "explicacao": "Ação oculta **depois** da contratação é **risco moral**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "O novo CEO aceitou, por iniciativa própria, uma cláusula de clawback para mostrar compromisso com os acionistas. Esse custo é:",
+          "opcoes": [
+            "Gasto de monitoramento",
+            "Custo de garantia (bonding)",
+            "Perda residual",
+            "Custo de oportunidade"
+          ],
+          "correta": 1,
+          "explicacao": "Custo assumido pelo **Agente** para mostrar fidelidade é **garantia / bonding**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "O conselho contratou auditoria externa independente para fiscalizar os números da diretoria. Esse gasto é:",
+          "opcoes": [
+            "Custo de garantia",
+            "Perda residual",
+            "Gasto de monitoramento",
+            "Investimento em P&D"
+          ],
+          "correta": 2,
+          "explicacao": "Pago pelo **Principal** para controlar o agente é **monitoramento**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Pelo EVA, uma unidade de negócio cria valor para o acionista quando:",
+          "opcoes": [
+            "O EBITDA cresce",
+            "O faturamento bruto aumenta",
+            "O ROIC supera o WACC",
+            "O lucro contábil é positivo"
+          ],
+          "correta": 2,
+          "explicacao": "EVA desconta o custo do capital: só cria valor quando **ROIC > WACC**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Uma fabricante de câmeras redefine seu negócio de 'vender câmeras' para 'ajudar pessoas a registrar e compartilhar memórias'. No modelo de Abell, isso atua no eixo:",
+          "opcoes": [
+            "Grupos de clientes (quem)",
+            "Funções / necessidades (o quê)",
+            "Tecnologias (como)",
+            "Cadeia de valor"
+          ],
+          "correta": 1,
+          "explicacao": "Redefinir **qual necessidade** é atendida é o eixo **O quê**."
+        }
+      ]
+    }
+  ],
+  "simulado": {
+    "titulo": "Simulado P1 completo",
+    "descricao": "todas as aulas + dissertativas",
+    "questoes": [
+      {
+        "tipo": "multipla",
+        "enunciado": "A Fábrica Aurora terceirizou o desenvolvimento do seu sistema de gestão (Projeto X) e reorganizou o recebimento e a armazenagem das matérias-primas (Projeto Y). Na Cadeia de Valor, X e Y são, respectivamente:",
+        "opcoes": [
+          "Primária e suporte",
+          "Suporte (desenvolvimento de tecnologia) e primária (logística interna)",
+          "Suporte e suporte",
+          "Primária (operações) e primária (logística externa)",
+          "Suporte (infraestrutura) e suporte (aquisição)"
+        ],
+        "correta": 1,
+        "explicacao": "Desenvolvimento de tecnologia é **suporte**. Receber e armazenar insumos é **logística interna** (primária)."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "Uma concorrente contratou os cinco principais cientistas da BioLab, mas não conseguiu replicar sua inovação, que dependia da cultura de colaboração. Isso ilustra:",
+        "opcoes": [
+          "Economias de escala",
+          "Complexidade social",
+          "Custos de troca",
+          "Eficácia operacional",
+          "Seleção adversa"
+        ],
+        "correta": 1,
+        "explicacao": "Cultura e confiança são **complexidade social**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "Após ser contratado, um diretor aprova projetos arriscados que inflam o resultado do trimestre (e o seu bônus). Isso é:",
+        "opcoes": [
+          "Seleção adversa",
+          "Risco moral (moral hazard)",
+          "Custo de monitoramento",
+          "Perda residual"
+        ],
+        "correta": 1,
+        "explicacao": "Ação oculta **depois** do contrato é **risco moral**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "O Banco Central elevou a Selic. No PESTEL de uma montadora, esse fator é:",
+        "opcoes": [
+          "Político",
+          "Econômico",
+          "Social",
+          "Legal"
+        ],
+        "correta": 1,
+        "explicacao": "Juros são fator **econômico**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "Numa startup, a estratégia se formou testando, ouvindo feedback e ajustando, sem plano formal. É a Escola:",
+        "opcoes": [
+          "Do Design",
+          "Do Planejamento",
+          "Do Posicionamento",
+          "Do Aprendizado"
+        ],
+        "correta": 3,
+        "explicacao": "Estratégia emergente é a **Escola do Aprendizado**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "Um streaming torna trabalhoso migrar para um concorrente. Nas 5 Forças, isso reduz principalmente:",
+        "opcoes": [
+          "O poder dos fornecedores",
+          "O poder de barganha dos compradores",
+          "A rivalidade",
+          "As barreiras de entrada"
+        ],
+        "correta": 1,
+        "explicacao": "Custo de troca alto enfraquece o **poder dos compradores**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "Pelo EVA, cria-se valor quando:",
+        "opcoes": [
+          "O EBITDA cresce",
+          "O faturamento aumenta",
+          "O ROIC supera o WACC",
+          "O lucro contábil é positivo"
+        ],
+        "correta": 2,
+        "explicacao": "**ROIC > WACC**."
+      },
+      {
+        "tipo": "numerica",
+        "enunciado": "WTP = R$ 200, custo = R$ 80, preço = R$ 150. Calcule:",
+        "campos": [
+          {
+            "rotulo": "VEC",
+            "resposta": 120
+          },
+          {
+            "rotulo": "Excedente",
+            "resposta": 50
+          },
+          {
+            "rotulo": "Margem",
+            "resposta": 70
+          }
+        ],
+        "explicacao": "VEC = 200 − 80 · Excedente = 200 − 150 · Margem = 150 − 80. Confere: 50 + 70 = 120."
+      },
+      {
+        "tipo": "dissertativa",
+        "enunciado": "A **TechLog** comprou o mesmo sistema de roteirização que todos os concorrentes usam e reduziu atrasos em 15%, mas em um ano os rivais igualaram e os preços caíram. A **MedFrio** decidiu transportar apenas medicamentos termossensíveis, recusou carga geral, montou frota refrigerada própria e certificou a equipe. Explique a diferença entre as estratégias usando Porter (1996).",
+        "respostaEsperada": "A TechLog buscou **Eficácia Operacional**: fazer as mesmas atividades melhor. Como é fácil de copiar (benchmarking), houve **convergência**: o serviço virou commodity e a disputa passou a ser por preço. A MedFrio fez **Posicionamento Estratégico**: atividades diferentes para um nicho, com **trade-offs** (recusou carga geral) e **fit** entre as atividades (frota, certificação e equipe se reforçam). O conjunto é difícil de imitar, então a vantagem é sustentável.",
+        "criterios": [
+          "Eficácia Operacional = fazer o mesmo melhor",
+          "Imitação / convergência / commodity / guerra de preços",
+          "Posicionamento Estratégico = atividades diferentes",
+          "Trade-offs (o que NÃO fazer)",
+          "Fit / atividades que se reforçam"
+        ]
+      },
+      {
+        "tipo": "dissertativa",
+        "enunciado": "O CEO da **MaxiVarejo** recebe bônus proporcional ao faturamento bruto. Ele ampliou o crediário para clientes de alto risco, cortou investimentos em e-commerce e não informou ao conselho o aumento da inadimplência. (a) Identifique os problemas de agência. (b) Proponha um novo sistema de incentivos.",
+        "respostaEsperada": "(a) Conflito **Principal (acionistas) × Agente (CEO)**. O bônus por faturamento incentiva comportamento oportunista de curto prazo. Esconder a inadimplência é **assimetria de informação / risco moral**. O prejuízo que sobra é a **perda residual**. (b) Tirar o bônus por faturamento e vinculá-lo a **EVA** (ROIC > WACC), margem e metas de longo prazo/ESG. Incluir **lock-up** de ações e **clawback**. Reforçar o **monitoramento**: conselho independente e auditoria externa.",
+        "criterios": [
+          "Principal × Agente / conflito de interesses",
+          "Risco moral ou assimetria de informação",
+          "Perda residual",
+          "Bônus por EVA / valor, e não por volume",
+          "Clawback / lock-up / monitoramento"
+        ]
+      }
+    ]
+  },
+  "materiais": [
+    {
+      "nome": "Resumo P1 (PDF original)",
+      "arquivo": "arquivos/Resumo_P1_Estrategia.pdf",
+      "descricao": "Versão para imprimir"
+    },
+    {
+      "nome": "Simulado P1 (versão antiga)",
+      "arquivo": "arquivos/Simulado_P1_Estrategia.html",
+      "descricao": "14 objetivas + VEC + 2 dissertativas"
+    }
+  ]
+}

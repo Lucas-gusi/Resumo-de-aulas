@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resumos da Turma</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="home-hero">
+  <div class="wrap">
+    <h1>Resumos da Turma</h1>
+    <p>Resumo, quick view e mini provas de cada matéria.</p>
+  </div>
+</div>
+<main>
+  <div class="wrap">
+    <div class="grid" id="grid"></div>
+  </div>
+</main>
+<div class="toast" id="toast"></div>
+<script src="assets/core.js"></script>
+<script>
+(async () => {
+  const grid = document.getElementById("grid");
+  const materias = await loadJSON("conteudo/materias.json");
+  materias.forEach(m => {
+    const pronto = m.status === "pronto";
+    const b = document.createElement("button");
+    b.className = "mcard" + (pronto ? "" : " soon");
+    b.innerHTML = `<span class="ini">${esc(m.nome[0])}</span>
+      <span><span class="nm">${esc(m.nome)}</span><br>
+      <span class="st">${pronto ? "Disponível" : "Ainda não resumido"}</span></span>`;
+    b.onclick = () => pronto
+      ? location.href = "materia.html?m=" + encodeURIComponent(m.slug)
+      : toast(`${m.nome}: ainda não resumido.`);
+    grid.appendChild(b);
+  });
+})();
+</script>
+</body>
+</html>

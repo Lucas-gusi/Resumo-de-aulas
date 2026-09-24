@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ciência da Decisão Prática</title>
+<style>
+  :root {
+    --bg:#f4f6fa; --card:#fff; --text:#1d2433; --muted:#5f6b7d; --line:#d9e0ea;
+    --navy:#1f3a5f; --blue:#3c78b4; --orange:#e07b39; --green:#2f8a5b; --red:#c0442e; --purple:#7b5ea7;
+    --green-bg:#e6f4ec; --red-bg:#fbe9e5; --tip-bg:#fff4e5; --code-bg:#eef2f8; --sel:#e8f0f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#12161d; --card:#1b212b; --text:#e6e9ef; --muted:#9aa5b5; --line:#2e3745;
+      --navy:#8fb4e3; --blue:#6ea4dc; --orange:#f0a064; --green:#5cc58e; --red:#f07a63; --purple:#b39ddb;
+      --green-bg:#173326; --red-bg:#3a1f1a; --tip-bg:#3a2c19; --code-bg:#232b37; --sel:#22324a;
+    }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 "Segoe UI", system-ui, sans-serif; }
+  header { background:#1f3a5f; color:#fff; padding:26px 16px 0; }
+  header .wrap, main { max-width:900px; margin:0 auto; }
+  header h1 { margin:0 0 4px; font-size:25px; }
+  header p { margin:0 0 16px; opacity:.85; }
+  nav { display:flex; gap:4px; overflow-x:auto; }
+  nav button { background:transparent; color:#cfe0f5; border:0; padding:10px 14px; font:inherit; font-weight:600;
+               border-radius:8px 8px 0 0; cursor:pointer; white-space:nowrap; }
+  nav button.active { background:var(--bg); color:var(--navy); }
+  main { padding:20px 16px 80px; }
+  section.mod { display:none; } section.mod.active { display:block; }
+  h2 { color:var(--navy); margin:4px 0 6px; font-size:22px; }
+  h3 { color:var(--navy); margin:26px 0 8px; font-size:17px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px; margin:14px 0; }
+  .lead { color:var(--muted); margin-top:0; }
+  .steps { counter-reset:s; list-style:none; padding:0; margin:0; }
+  .steps > li { counter-increment:s; position:relative; padding:0 0 12px 42px; }
+  .steps > li::before { content:counter(s); position:absolute; left:0; top:0; width:28px; height:28px; border-radius:50%;
+                        background:#3c78b4; color:#fff; font-weight:700; display:grid; place-items:center; font-size:14px; }
+  code, .f { font-family:Consolas, "Cascadia Mono", monospace; background:var(--code-bg); padding:1px 6px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code-bg); padding:12px; border-radius:8px; overflow-x:auto; font:14px/1.5 Consolas, monospace; margin:8px 0; }
+  table { border-collapse:collapse; width:100%; font-size:14px; margin:8px 0; }
+  th, td { border:1px solid var(--line); padding:6px 8px; text-align:center; }
+  th { background:var(--sel); color:var(--navy); }
+  td.l, th.l { text-align:left; }
+  .xl td { font-family:Consolas, monospace; font-size:13px; }
+  .xl th { background:#e3e8ef; color:#444; font-weight:600; width:32px; }
+  @media (prefers-color-scheme: dark) { .xl th { background:#2a3340; color:#bbb; } }
+  .var { background:#fff3c4; } .fo { background:#d9f2e2; } .lhs { background:#dde9f7; }
+  @media (prefers-color-scheme: dark) { .var{background:#4a4220;} .fo{background:#1f4030;} .lhs{background:#223650;} }
+  .tip { border-left:4px solid var(--orange); background:var(--tip-bg); padding:10px 12px; border-radius:6px; margin:10px 0; font-size:15px; }
+  .key { border-left:4px solid var(--green); background:var(--green-bg); padding:10px 12px; border-radius:6px; margin:10px 0; font-size:15px; }
+  .ex { border:2px solid var(--blue); }
+  .ex .tag { display:inline-block; background:#3c78b4; color:#fff; font-size:12px; font-weight:700; padding:2px 8px; border-radius:20px; margin-bottom:6px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:10px; margin:10px 0; }
+  .grid label { font-size:13px; color:var(--muted); display:block; }
+  .grid input, .grid select { width:100%; padding:7px; font-size:15px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--text); }
+  input.ok, select.ok { border-color:var(--green); background:var(--green-bg); }
+  input.bad, select.bad { border-color:var(--red); background:var(--red-bg); }
+  button.act { font:inherit; font-weight:600; border:0; border-radius:8px; padding:8px 16px; cursor:pointer; background:#3c78b4; color:#fff; margin:4px 6px 4px 0; }
+  button.sec { background:transparent; color:var(--blue); border:1px solid var(--blue); }
+  .sol { display:none; margin-top:10px; padding:12px; border-radius:8px; background:var(--sel); font-size:15px; }
+  .sol.show { display:block; }
+  .res { font-weight:600; margin-left:4px; }
+  details { margin:6px 0; } summary { cursor:pointer; color:var(--blue); font-weight:600; }
+  .pill { display:inline-block; padding:1px 8px; border-radius:12px; font-size:13px; font-weight:600; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Ciência da Decisão: Parte 2, Prática</h1>
+  <p>Passo a passo no Excel + exercícios com correção automática. Faça na ordem. Use a planilha <b>3_Modelos_Excel.xlsx</b> junto.</p>
+  <nav id="nav"></nav>
+</div></header>
+<main>
+
+<!-- 0 -->
+<section class="mod" data-t="0. Preparar o Excel">
+  <h2>0. Preparar o Excel (5 min)</h2>
+  <p class="lead">O Solver é um suplemento que vem desligado. Faça isso uma vez só.</p>
+  <div class="card"><ol class="steps">
+    <li><b>Arquivo → Opções → Suplementos</b>.</li>
+    <li>Embaixo, em <b>Gerenciar</b>, escolha <b>Suplementos do Excel</b> e clique em <b>Ir...</b></li>
+    <li>Marque <b>Solver</b> e dê OK.</li>
+    <li>Pronto: aparece <b>Dados → Solver</b> (canto direito da faixa).</li>
+  </ol>
+  <div class="tip">No Excel em português as fórmulas usam <b>;</b> como separador: <code>=SOMARPRODUTO(B4:C4;B5:C5)</code>.</div></div>
+  <h3>A receita que serve para TODO problema de PL</h3>
+  <div class="card"><ol class="steps">
+    <li><b>Células das variáveis</b> (amarelo): deixe vazias ou com 0. O Solver vai preencher.</li>
+    <li><b>Coeficientes</b>: copie a tabela do enunciado (lucros, horas, consumos).</li>
+    <li><b>Função objetivo</b> (verde): <code>=SOMARPRODUTO(variáveis;lucros)</code>.</li>
+    <li><b>Lado esquerdo de cada restrição</b> (azul): <code>=SOMARPRODUTO(variáveis;consumos da linha)</code>.</li>
+    <li><b>Lado direito</b>: a disponibilidade ou exigência.</li>
+    <li><b>Solver</b>: objetivo = célula verde, Máx ou Mín, alterando = células amarelas, restrições = azul ≤/≥ lado direito, marque <i>Tornar variáveis irrestritas não negativas</i>, método <b>LP Simplex</b>.</li>
+    <li><b>Resolver</b> → marque os relatórios <b>Resposta</b> e <b>Sensibilidade</b> → OK.</li>
+  </ol></div>
+</section>
+
+<!-- 1 -->
+<section class="mod" data-t="1. PL no Solver">
+  <h2>1. Modelagem + Solver</h2>
+  <p class="lead">Exemplo resolvido: <b>Banheiras</b> (Lista, gráfico 5). Depois você faz 4 sozinho.</p>
+  <div class="card">
+    <h3 style="margin-top:0">Passo 1: Traduzir o enunciado</h3>
+    <ul>
+      <li><b>Variáveis:</b> S = nº de SpaAqua, L = nº de LuxoHidro.</li>
+      <li><b>FO:</b> Max 350S + 300L.</li>
+      <li><b>Restrições:</b> Bombas S + L ≤ 200 · Horas 9S + 6L ≤ 1566 · Tubos 12S + 16L ≤ 2880 · S, L ≥ 0.</li>
+    </ul>
+    <h3>Passo 2: Montar no Excel (aba "1 Banheiras" da planilha)</h3>
+    <table class="xl">
+      <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
+      <tr><th>3</th><td></td><td>SpaAqua</td><td>LuxoHidro</td><td></td><td></td><td></td></tr>
+      <tr><th>4</th><td class="l">Quantidade</td><td class="var">0</td><td class="var">0</td><td></td><td></td><td></td></tr>
+      <tr><th>5</th><td class="l">Lucro unit.</td><td>350</td><td>300</td><td class="fo">=SOMARPRODUTO($B$4:$C$4;B5:C5)</td><td></td><td></td></tr>
+      <tr><th>7</th><td class="l">Bombas</td><td>1</td><td>1</td><td class="lhs">=SOMARPRODUTO($B$4:$C$4;B7:C7)</td><td>≤</td><td>200</td></tr>
+      <tr><th>8</th><td class="l">Horas</td><td>9</td><td>6</td><td class="lhs">=SOMARPRODUTO($B$4:$C$4;B8:C8)</td><td>≤</td><td>1566</td></tr>
+      <tr><th>9</th><td class="l">Tubos</td><td>12</td><td>16</td><td class="lhs">=SOMARPRODUTO($B$4:$C$4;B9:C9)</td><td>≤</td><td>2880</td></tr>
+    </table>
+    <div class="tip">O <b>$</b> em <code>$B$4:$C$4</code> trava as variáveis: você escreve a fórmula no D7 e arrasta até o D9.</div>
+    <h3>Passo 3: Configurar o Solver</h3>
+    <table><tr><th class="l">Campo</th><th class="l">Preencher com</th></tr>
+      <tr><td class="l">Definir Objetivo</td><td class="l"><code>$D$5</code></td></tr>
+      <tr><td class="l">Para</td><td class="l">Máx.</td></tr>
+      <tr><td class="l">Alterando Células Variáveis</td><td class="l"><code>$B$4:$C$4</code></td></tr>
+      <tr><td class="l">Sujeito às Restrições → Adicionar</td><td class="l"><code>$D$7:$D$9 &lt;= $F$7:$F$9</code></td></tr>
+      <tr><td class="l">Tornar Variáveis Irrestritas Não Negativas</td><td class="l">✔ marcado</td></tr>
+      <tr><td class="l">Método</td><td class="l">LP Simplex</td></tr></table>
+    <h3>Passo 4: Conferir</h3>
+    <p>Resultado esperado: <b>S = 122, L = 78, Lucro = 66.100</b>. Bombas usadas: 200/200, horas: 1566/1566, tubos: 2712/2880 (sobram 168).</p>
+    <div class="key"><b>Leitura:</b> bombas e horas são os gargalos (usadas 100%). Tubo sobra, ou seja, comprar mais tubo não adianta nada.</div>
+  </div>
+
+  <div class="card ex" data-ex="e6">
+    <span class="tag">EXERCÍCIO 1.1</span>
+    <p><b>Beta Ltda.</b> Produtos P1, P2, P3 com lucro 2.100, 1.200 e 600; horas de trabalho 6, 4, 6 (disponível 4.800); horas de máquina 12, 6, 2 (disponível 7.200); demanda máxima 800, 600, 600. Maximize o lucro.</p>
+    <details><summary>Dica de montagem</summary>A demanda máxima pode entrar como restrição <code>P ≤ demanda</code> (3 linhas a mais) ou direto na restrição <code>$B$4:$D$4 &lt;= $B$10:$D$10</code>.</details>
+    <div class="grid">
+      <div><label>P1</label><input data-a="280"></div><div><label>P2</label><input data-a="600"></div>
+      <div><label>P3</label><input data-a="120"></div><div><label>Lucro total</label><input data-a="1380000"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Max 2100P1 + 1200P2 + 600P3 · 6P1 + 4P2 + 6P3 ≤ 4800 · 12P1 + 6P2 + 2P3 ≤ 7200 · P1 ≤ 800, P2 ≤ 600, P3 ≤ 600.<br>
+      Ótimo: <b>P1 = 280, P2 = 600, P3 = 120, L = 1.380.000</b>. Trabalho e máquina se esgotam; P2 bate na demanda máxima.</div>
+  </div>
+
+  <div class="card ex" data-ex="e1">
+    <span class="tag">EXERCÍCIO 1.2 · MINIMIZAR</span>
+    <p><b>Caminhões.</b> Tipo A: 2 m³ refrigerados + 4 m³ não refrigerados, R$ 0,30/km. Tipo B: 3 + 3 m³, R$ 0,40/km. Precisa transportar 90 m³ refrigerados e 120 m³ não refrigerados. Minimize o custo.</p>
+    <div class="tip">Aqui a FO é <b>Mín.</b> e as restrições são <b>≥</b> ("precisa transportar" = no mínimo).</div>
+    <div class="grid">
+      <div><label>Caminhões A</label><input data-a="15"></div><div><label>Caminhões B</label><input data-a="20"></div>
+      <div><label>Custo por km</label><input data-a="12.5"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Min 0,3A + 0,4B · 2A + 3B ≥ 90 · 4A + 3B ≥ 120 · A, B ≥ 0 → <b>A = 15, B = 20, custo = 12,5 por km</b>.</div>
+  </div>
+
+  <div class="card ex" data-ex="e7">
+    <span class="tag">EXERCÍCIO 1.3 · CUIDADO COM A UNIDADE</span>
+    <p><b>Papel toalha.</b> Lucros A = 1,00, B = 1,50, C = 2,00. Horas por unidade: Corte 8, 5, 2 · Dobra 5, 10, 4 · Empacotamento 0,7, 1, 2. Máquinas: Corte 3, Dobra 10, Empacotamento 2, cada uma 40 h/semana.</p>
+    <div class="grid">
+      <div><label>A</label><input data-a="0"></div><div><label>B</label><input data-a="10"></div>
+      <div><label>C</label><input data-a="35"></div><div><label>Lucro</label><input data-a="85"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Lado direito = máquinas × 40: Corte 120 h, Dobra 400 h, Empacotamento 80 h. Ótimo <b>A = 0, B = 10, C = 35, L = 85</b>.
+      Produto A não é produzido: ele consome muito corte (gargalo) para pouco lucro.</div>
+  </div>
+
+  <div class="card ex" data-ex="e5">
+    <span class="tag">EXERCÍCIO 1.4 · DESAFIO (restrição de proporção)</span>
+    <p><b>Refinaria.</b> Verde, Azul, Comum com margens 0,30, 0,25, 0,20 por litro. Consumo por litro (pura, octana, aditivo): Verde 0,22/0,50/0,28 · Azul 0,52/0,34/0,14 · Comum 0,74/0,20/0,06. Disponível: 9.600.000, 4.800.000, 2.200.000. Comum ≥ 16 × Verde. Azul ≤ 600.000.</p>
+    <details><summary>Dica</summary>"Comum ≥ 16 × Verde" vira <code>16V − C ≤ 0</code>. Monte uma linha com coeficientes 16, 0, −1 e lado direito 0.</details>
+    <div class="grid">
+      <div><label>Verde (L)</label><input data-a="770149.25"></div><div><label>Azul (L)</label><input data-a="600000"></div>
+      <div><label>Comum (L)</label><input data-a="12322388.06"></div><div><label>Margem total</label><input data-a="2845522.39"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Ótimo: <b>V = 770.149,25 · A = 600.000 · C = 12.322.388,06 · L = 2.845.522,39</b>. Gasolina pura acaba (gargalo) e a regra dos 16× fica ativa.</div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="mod" data-t="2. Método gráfico">
+  <h2>2. Método gráfico (2 variáveis)</h2>
+  <p class="lead">Exemplo resolvido: <b>Microcomputadores</b> (Lista, gráfico 2). Max 60x + 50y.</p>
+  <div class="card"><ol class="steps">
+    <li><b>Escreva as restrições:</b> Montagem 4x + 10y ≤ 100 · Inspeção 2x + y ≤ 22 · Armazenagem 0,1x + 0,1y ≤ 1,3 (ou seja, x + y ≤ 13).</li>
+    <li><b>Ache onde cada reta corta os eixos</b> (zere uma variável de cada vez):
+      <table><tr><th>Reta</th><th>x = 0 → y</th><th>y = 0 → x</th></tr>
+        <tr><td>4x + 10y = 100</td><td>10</td><td>25</td></tr>
+        <tr><td>2x + y = 22</td><td>22</td><td>11</td></tr>
+        <tr><td>x + y = 13</td><td>13</td><td>13</td></tr></table></li>
+    <li><b>Desenhe e sombreie</b> a região que atende tudo (≤ é o lado da origem).</li>
+    <li><b>Ache os vértices</b>. Onde duas retas se cruzam, resolva o sistema. Ex.: 2x + y = 22 e x + y = 13 → subtraindo, x = 9 e y = 4.</li>
+    <li><b>Teste a FO em cada vértice</b>:
+      <table><tr><th>Vértice</th><th>60x + 50y</th></tr>
+        <tr><td>(0, 0)</td><td>0</td></tr><tr><td>(11, 0)</td><td>660</td></tr>
+        <tr><td>(9, 4)</td><td><b>740 ← ótimo</b></td></tr><tr><td>(5, 8)</td><td>700</td></tr><tr><td>(0, 10)</td><td>500</td></tr></table></li>
+  </ol>
+  <div class="key">No ótimo (9, 4) se cruzam as retas de <b>inspeção</b> e <b>armazenagem</b>: são os gargalos. A montagem tem folga (usa 76 de 100 h).</div></div>
+
+  <div class="card ex" data-ex="g3">
+    <span class="tag">EXERCÍCIO 2.1</span>
+    <p><b>Casas.</b> Modelo A: 4.000 h, 2 t de pedra, 600 m de tábua, lucro 1.000. Modelo B: 10.000 h, 3 t, 600 m, lucro 2.000. Disponível: 400.000 h, 150 t, 60.000 m. Ache o vértice ótimo.</p>
+    <details><summary>Dica</summary>Divida para simplificar: 2A + 5B ≤ 200 · 2A + 3B ≤ 150 · A + B ≤ 100.</details>
+    <div class="grid">
+      <div><label>A no vértice ótimo</label><input data-a="37.5"></div><div><label>B no vértice ótimo</label><input data-a="25"></div>
+      <div><label>Lucro no vértice</label><input data-a="87500"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Vértices: (0,0) = 0 · (75, 0) = 75.000 · <b>(37,5 ; 25) = 87.500</b> · (0, 40) = 80.000. A tábua (A + B ≤ 100) nunca limita.
+      Como casa é inteira, o gabarito da lista usa <b>A = 37, B = 25, L = 87.000</b>.</div>
+  </div>
+
+  <div class="card ex" data-ex="g4">
+    <span class="tag">EXERCÍCIO 2.2</span>
+    <p><b>Bombons.</b> Estoque: 130 kg cereja, 170 kg menta. Pacote 1: ½ cereja + ½ menta, R$ 20/kg. Pacote 2: ⅓ cereja + ⅔ menta, R$ 12,50/kg. Quantos kg de cada pacote?</p>
+    <div class="grid">
+      <div><label>Pacote 1 (kg)</label><input data-a="260"></div><div><label>Pacote 2 (kg)</label><input data-a="0"></div>
+      <div><label>Receita</label><input data-a="5200"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">0,5P1 + ⅓P2 ≤ 130 · 0,5P1 + ⅔P2 ≤ 170. Vértices: (0,0) · (260, 0) = <b>5.200</b> · (180, 120) = 5.100 · (0, 255) = 3.187,50. Ótimo: <b>P1 = 260, P2 = 0</b>. A cereja acaba e sobram 40 kg de menta.</div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="mod" data-t="3. Dual">
+  <h2>3. Escrever e resolver o dual</h2>
+  <p class="lead">Regra de bolso: <b>transpõe tudo</b>. Uma variável dual por restrição do primal.</p>
+  <div class="card"><ol class="steps">
+    <li>Primal <b>Max</b> com restrições <b>≤</b> → dual <b>Min</b> com restrições <b>≥</b>.</li>
+    <li>Coeficientes da FO do dual = <b>lado direito</b> do primal.</li>
+    <li>Lado direito do dual = <b>lucros</b> do primal.</li>
+    <li>Cada <b>coluna</b> do primal vira uma <b>linha</b> do dual.</li>
+  </ol>
+  <p><b>Exemplo (bombons):</b></p>
+<pre>PRIMAL  Max 20 P1 + 12,5 P2          DUAL  Min 130 yC + 170 yM
+        0,5 P1 + 1/3 P2 ≤ 130  (yC)        0,5 yC + 0,5 yM ≥ 20     (col. P1)
+        0,5 P1 + 2/3 P2 ≤ 170  (yM)        1/3 yC + 2/3 yM ≥ 12,5   (col. P2)
+        P1, P2 ≥ 0                         yC, yM ≥ 0</pre>
+  <p>Resolvendo no Solver (Mín., restrições ≥): <b>yC = 40, yM = 0, FO = 5.200</b> = lucro do primal ✓</p>
+  <div class="key">Interpretação: 1 kg a mais de cereja aumentaria a receita em R$ 40. Menta vale 0 porque já sobra.</div></div>
+
+  <div class="card ex" data-ex="d1">
+    <span class="tag">EXERCÍCIO 3.1</span>
+    <p>Escreva e resolva o <b>dual das banheiras</b> (primal: Max 350S + 300L · S + L ≤ 200 · 9S + 6L ≤ 1566 · 12S + 16L ≤ 2880).</p>
+    <div class="grid">
+      <div><label>y1 (bombas)</label><input data-a="200"></div><div><label>y2 (horas)</label><input data-a="16.67" data-tol="0.02"></div>
+      <div><label>y3 (tubos)</label><input data-a="0"></div><div><label>FO do dual</label><input data-a="66100"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Min 200y1 + 1566y2 + 2880y3 · y1 + 9y2 + 12y3 ≥ 350 · y1 + 6y2 + 16y3 ≥ 300 · y ≥ 0.<br>
+      <b>y1 = 200, y2 = 16,67, y3 = 0, FO = 66.100</b>. Igual ao lucro do primal, e esses são os preços sombra do módulo 4.</div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="mod" data-t="4. Sensibilidade">
+  <h2>4. Relatório de sensibilidade</h2>
+  <p class="lead">Na janela "Solver encontrou uma solução", selecione <b>Sensibilidade</b> em Relatórios. Ele cria uma aba nova.</p>
+  <div class="card">
+    <p><b>Relatório das banheiras (o que o Excel mostra):</b></p>
+    <table>
+      <tr><th class="l">Células Variáveis</th><th>Valor Final</th><th>Custo Reduzido</th><th>Coef. Objetivo</th><th>Permitido Aumentar</th><th>Permitido Reduzir</th></tr>
+      <tr><td class="l">SpaAqua</td><td>122</td><td>0</td><td>350</td><td>100</td><td>50</td></tr>
+      <tr><td class="l">LuxoHidro</td><td>78</td><td>0</td><td>300</td><td>50</td><td>66,67</td></tr>
+    </table>
+    <table>
+      <tr><th class="l">Restrições</th><th>Valor Final</th><th>Preço Sombra</th><th>Restrição Lateral R.H.</th><th>Permitido Aumentar</th><th>Permitido Reduzir</th></tr>
+      <tr><td class="l">Bombas</td><td>200</td><td>200</td><td>200</td><td>7</td><td>26</td></tr>
+      <tr><td class="l">Horas</td><td>1566</td><td>16,67</td><td>1566</td><td>234</td><td>126</td></tr>
+      <tr><td class="l">Tubos</td><td>2712</td><td>0</td><td>2880</td><td>1E+30</td><td>168</td></tr>
+    </table>
+    <h3>Como ler (passo a passo)</h3>
+    <ol class="steps">
+      <li><b>Qual recurso aumentar?</b> O de maior preço sombra: <b>bombas (R$ 200 cada)</b>, válido até +7 bombas.</li>
+      <li><b>+1 metro de tubo?</b> Preço sombra 0 → impacto <b>zero</b> (sobram 168 m).</li>
+      <li><b>Faixa dos lucros:</b> SpaAqua de 350 − 50 = <b>300</b> até 350 + 100 = <b>450</b>; LuxoHidro de <b>233,33</b> até <b>350</b>. Dentro disso, o mix (122 ; 78) continua ótimo (o lucro total muda, mas as quantidades não).</li>
+      <li><b>Produto zerado?</b> Olhe o custo reduzido: o lucro precisa subir pelo menos esse valor para o produto entrar.</li>
+    </ol>
+    <div class="tip">"1E+30" significa <b>infinito</b>: pode aumentar à vontade (o recurso já sobra).</div>
+  </div>
+
+  <div class="card ex" data-ex="s2">
+    <span class="tag">EXERCÍCIO 4.1 · Rádios (Sensibilidade 2)</span>
+    <p>Lucros A = 17, B = 32, C = 52. Horas por unidade (fabricar, montar, embalar): A 0,4/0,3/0,2 · B 0,4/0,4/0,1 · C 0,6/0,7/0,4. Disponível: 120.000, 160.000, 48.000. Resolva no Solver, gere o relatório e responda:</p>
+    <div class="grid">
+      <div><label>Solução: A</label><input data-a="0"></div><div><label>Solução: B</label><input data-a="192000"></div>
+      <div><label>Solução: C</label><input data-a="72000"></div><div><label>Lucro total</label><input data-a="9888000"></div>
+      <div><label>a) Recurso que aumentaria</label><select data-a="fab"><option value="">escolha…</option><option value="fab">Fabricação</option><option value="mon">Montagem</option><option value="emb">Embalagem</option></select></div>
+      <div><label>a) Ganho por hora extra</label><input data-a="76"></div>
+      <div><label>b) Lucro mínimo de A p/ produzir</label><input data-a="33.6"></div>
+      <div><label>c) Impacto de montagem = 160.001</label><input data-a="0"></div>
+      <div><label>d) Lucro mínimo de C</label><input data-a="48"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Preços sombra: fabricação <b>76</b>, montagem <b>0</b> (sobram 32.800 h), embalagem <b>16</b>.<br>
+      a) Fabricação, +R$ 76 por hora.<br>
+      b) Custo reduzido de A = −16,6. O lucro de A precisa passar de 17 + 16,6 = <b>33,60</b>.<br>
+      c) Montagem tem folga, então o impacto é <b>0</b>.<br>
+      d) Permitido reduzir de C = 4, então o mínimo é 52 − 4 = <b>48</b>.</div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="mod" data-t="5. Metas">
+  <h2>5. Programação por metas</h2>
+  <p class="lead">Exemplo guiado: <b>Lustres e abajures</b> (Lista, metas 1).</p>
+  <div class="card"><ol class="steps">
+    <li><b>Variáveis de decisão:</b> L = lustres, A = abajures.</li>
+    <li><b>Liste as metas e o tipo:</b>
+      <table><tr><th class="l">Meta</th><th>Equação com desvios</th><th>Desvio ruim</th></tr>
+        <tr><td class="l">Horas: não fazer hora extra (220 h)</td><td>8,8L + 4,4A + d1⁻ − d1⁺ = 220</td><td>d1⁺</td></tr>
+        <tr><td class="l">Matéria-prima: usar os 160 kg, sem comprar</td><td>5L + 4A + d2⁻ − d2⁺ = 160</td><td>d2⁺ (e d2⁻, se "usar tudo")</td></tr>
+        <tr><td class="l">Lucro: pelo menos R$ 240</td><td>5L + 7,5A + d3⁻ − d3⁺ = 240</td><td>d3⁻</td></tr></table></li>
+    <li><b>FO (método dos pesos, pesos iguais):</b> Min d1⁺ + d2⁻ + d2⁺ + d3⁻.</li>
+    <li><b>No Excel:</b> variáveis = L, A e os 6 desvios (8 células amarelas). Cada meta é uma restrição <b>=</b>: <code>SOMARPRODUTO(...) = meta</code>. Todas ≥ 0. LP Simplex.</li>
+    <li><b>Interprete:</b> FO = 0 → todas as metas foram cumpridas. Gabarito: L = 12, A = 25, sobram 4,4 h (d1⁻), lucro 247,5 (d3⁺ = 7,5).</li>
+  </ol>
+  <div class="tip">Desvio "bom" (lucro acima da meta, horas sobrando) <b>não</b> entra na FO.</div></div>
+
+  <div class="card ex" data-ex="m1">
+    <span class="tag">EXERCÍCIO 5.1 · Teste sua solução</span>
+    <p>Digite a solução que o seu Solver deu. A página calcula os desvios de cada meta. Existe mais de uma solução com FO = 0.</p>
+    <div class="grid">
+      <div><label>Lustres (L)</label><input id="mL"></div><div><label>Abajures (A)</label><input id="mA"></div>
+    </div>
+    <button class="act" id="mBtn">Calcular desvios</button>
+    <div id="mOut" class="sol"></div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="mod" data-t="6. Decisão">
+  <h2>6. Teoria da decisão</h2>
+  <p class="lead">Exemplo resolvido: <b>Alberto</b>. Siga o padrão do gabarito: valores tratados como ganho (maior = melhor), v = 0,7.</p>
+  <div class="card">
+    <table>
+      <tr><th class="l"></th><th>s1</th><th>s2</th><th>s3</th><th>máx</th><th>mín</th><th>Hurwicz<br>0,7·máx + 0,3·mín</th></tr>
+      <tr><td class="l">a1</td><td>80</td><td>67</td><td>55</td><td>80</td><td>55</td><td>72,5</td></tr>
+      <tr><td class="l">a2</td><td>92</td><td>89</td><td>82</td><td>92</td><td>82</td><td>89</td></tr>
+      <tr><td class="l">a3</td><td>100</td><td>88</td><td>82</td><td>100</td><td>82</td><td>94,6</td></tr>
+    </table>
+    <ol class="steps">
+      <li><b>Maximax:</b> maior da coluna "máx" = <b>100 (a3)</b>.</li>
+      <li><b>Maximin:</b> maior da coluna "mín" = <b>82 (a2 e a3, empate)</b>.</li>
+      <li><b>Hurwicz:</b> 0,7·máx + 0,3·mín; maior = <b>94,6 (a3)</b>.</li>
+      <li><b>Savage:</b> monte a matriz de arrependimento (maior da coluna − valor):
+        <table><tr><th></th><th>s1 (máx 100)</th><th>s2 (máx 89)</th><th>s3 (máx 82)</th><th>arrep. máx</th></tr>
+          <tr><td>a1</td><td>20</td><td>22</td><td>27</td><td>27</td></tr>
+          <tr><td>a2</td><td>8</td><td>0</td><td>0</td><td>8</td></tr>
+          <tr><td>a3</td><td>0</td><td>1</td><td>0</td><td><b>1 ← menor</b></td></tr></table></li>
+    </ol>
+    <div class="key">Todos os critérios apontam para a3 (estudar a noite toda): a decisão é robusta.</div>
+    <div class="tip">No Excel: <code>=MÁXIMO(B2:D2)</code>, <code>=MÍNIMO(B2:D2)</code>, <code>=0,7*E2+0,3*F2</code>. Arrependimento: <code>=MÁXIMO(B$2:B$4)-B2</code>.</div>
+  </div>
+
+  <div class="card ex" data-ex="t3">
+    <span class="tag">EXERCÍCIO 6.1 · Acampamento (4 critérios)</span>
+    <table>
+      <tr><th></th><th>s1</th><th>s2</th><th>s3</th><th>s4</th></tr>
+      <tr><td>a1 (200)</td><td>5</td><td>10</td><td>18</td><td>25</td></tr>
+      <tr><td>a2 (250)</td><td>8</td><td>7</td><td>12</td><td>23</td></tr>
+      <tr><td>a3 (300)</td><td>21</td><td>18</td><td>12</td><td>21</td></tr>
+      <tr><td>a4 (350)</td><td>30</td><td>22</td><td>19</td><td>15</td></tr>
+    </table>
+    <div class="grid">
+      <div><label>Maximax: alternativa</label><select data-a="a4"><option value="">…</option><option>a1</option><option>a2</option><option>a3</option><option>a4</option></select></div>
+      <div><label>Maximax: valor</label><input data-a="30"></div>
+      <div><label>Maximin: alternativa</label><select data-a="a4"><option value="">…</option><option>a1</option><option>a2</option><option>a3</option><option>a4</option></select></div>
+      <div><label>Maximin: valor</label><input data-a="15"></div>
+      <div><label>Hurwicz: alternativa</label><select data-a="a4"><option value="">…</option><option>a1</option><option>a2</option><option>a3</option><option>a4</option></select></div>
+      <div><label>Hurwicz: valor</label><input data-a="25.5"></div>
+      <div><label>Savage: alternativa</label><select data-a="a3"><option value="">…</option><option>a1</option><option>a2</option><option>a3</option><option>a4</option></select></div>
+      <div><label>Savage: arrep. mínimo</label><input data-a="9"></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Máx por linha: 25, 23, 21, 30 → Maximax <b>a4 (30)</b>. Mín por linha: 5, 7, 12, 15 → Maximin <b>a4 (15)</b>.
+      Hurwicz: 19; 18,2; 18,3; <b>25,5 (a4)</b>. Savage (máximos das colunas 30, 22, 19, 25): arrependimentos máx 25, 22, <b>9</b>, 10 → <b>a3</b>.</div>
+  </div>
+
+  <h3>Árvore de decisão: passo a passo</h3>
+  <div class="card"><ol class="steps">
+    <li>Desenhe da esquerda para a direita: □ = decisão, ○ = evento (com probabilidades).</li>
+    <li>Resolva da <b>direita para a esquerda</b>: em cada ○ faça Σ prob × valor; em cada □ fique com o maior.</li>
+    <li>Varejista: grande = 0,6·800 + 0,4·máx(40 ; 0,3·20 + 0,7·220 = 160) = <b>544</b> vs pequeno = 0,6·270 + 0,4·200 = 242.</li>
+  </ol></div>
+
+  <div class="card ex" data-ex="t5">
+    <span class="tag">EXERCÍCIO 6.2 · Terrenos do hotel</span>
+    <p>Terreno A: compra 18, retorno 31 se o aeroporto sair perto, revenda 6 se não sair. Terreno B: compra 12, retorno 23, revenda 4. P(aeroporto perto de A) = 0,4; P(perto de B) = 0,6. Opções: A, B, ambos ou nenhum. Calcule o <b>ganho líquido esperado</b> (retorno − compra), em R$ milhões.</p>
+    <div class="grid">
+      <div><label>EV comprar só A</label><input data-a="-2"></div><div><label>EV comprar só B</label><input data-a="3.4"></div>
+      <div><label>EV comprar ambos</label><input data-a="1.4"></div>
+      <div><label>Melhor decisão</label><select data-a="B"><option value="">…</option><option value="A">Só A</option><option value="B">Só B</option><option value="AB">Ambos</option><option value="N">Nenhum</option></select></div>
+    </div>
+    <button class="act chk">Corrigir</button><button class="act sec sh">Ver resolução</button><span class="res"></span>
+    <div class="sol">Só A: 0,4·(31 − 18) + 0,6·(6 − 18) = 5,2 − 7,2 = <b>−2,0</b>.<br>
+      Só B: 0,6·(23 − 12) + 0,4·(4 − 12) = 6,6 − 3,2 = <b>3,4</b>.<br>
+      Ambos: aeroporto em A (0,4): 13 + (4 − 12) = 5 · em B (0,6): (6 − 18) + 11 = −1 → 0,4·5 + 0,6·(−1) = <b>1,4</b>.<br>
+      Nenhum = 0. <b>Decisão: comprar só o terreno B.</b></div>
+  </div>
+</section>
+
+</main>
+<script>
+const mods = [...document.querySelectorAll("section.mod")];
+const nav = document.getElementById("nav");
+function show(i) {
+  mods.forEach((m, k) => m.classList.toggle("active", k === i));
+  [...nav.children].forEach((b, k) => b.classList.toggle("active", k === i));
+  try { localStorage.setItem("cdTab", i); } catch (e) {}
+  window.scrollTo(0, 0);
+}
+mods.forEach((m, i) => { const b = document.createElement("button"); b.textContent = m.dataset.t; b.onclick = () => show(i); nav.appendChild(b); });
+let t0 = 0; try { t0 = +localStorage.getItem("cdTab") || 0; } catch (e) {}
+show(Math.min(t0, mods.length - 1));
+
+const num = s => parseFloat(String(s).trim().replace(/\s/g, "").replace(/\.(?=\d{3}(\D|$))/g, "").replace(",", "."));
+document.querySelectorAll(".ex").forEach(ex => {
+  const chk = ex.querySelector(".chk"), sh = ex.querySelector(".sh"), res = ex.querySelector(".res"), sol = ex.querySelector(".sol");
+  if (sh) sh.onclick = () => sol.classList.toggle("show");
+  if (!chk) return;
+  chk.onclick = () => {
+    let ok = 0, tot = 0;
+    ex.querySelectorAll("[data-a]").forEach(el => {
+      tot++;
+      let good;
+      if (el.tagName === "SELECT") good = el.value === el.dataset.a;
+      else {
+        const a = +el.dataset.a, v = num(el.value), tol = el.dataset.tol ? +el.dataset.tol : Math.max(0.011, Math.abs(a) * 0.001);
+        good = el.value.trim() !== "" && Math.abs(v - a) <= tol;
+      }
+      el.classList.toggle("ok", good); el.classList.toggle("bad", !good);
+      if (good) ok++;
+    });
+    res.textContent = ok === tot ? `✔ ${ok}/${tot}: tudo certo!` : `${ok}/${tot} certos. Revise os vermelhos.`;
+    res.style.color = ok === tot ? "var(--green)" : "var(--red)";
+  };
+});
+
+document.getElementById("mBtn").onclick = () => {
+  const L = num(document.getElementById("mL").value), A = num(document.getElementById("mA").value);
+  const out = document.getElementById("mOut");
+  if (isNaN(L) || isNaN(A)) { out.textContent = "Preencha L e A."; out.classList.add("show"); return; }
+  const h = 8.8 * L + 4.4 * A, mp = 5 * L + 4 * A, lu = 5 * L + 7.5 * A;
+  const f = x => x.toLocaleString("pt-BR", { maximumFractionDigits: 2 });
+  const row = (nome, v, meta, tipo) => {
+    const d = v - meta; let ok, txt;
+    if (tipo === "le") { ok = d <= 1e-6; txt = d > 0 ? `passou ${f(d)} (d⁺)` : `sobra ${f(-d)} (d⁻, ok)`; }
+    else if (tipo === "ge") { ok = d >= -1e-6; txt = d < 0 ? `faltou ${f(-d)} (d⁻)` : `acima ${f(d)} (d⁺, ok)`; }
+    else { ok = Math.abs(d) < 1e-6; txt = Math.abs(d) < 1e-6 ? "exato" : (d > 0 ? `passou ${f(d)} (d⁺)` : `faltou ${f(-d)} (d⁻)`); }
+    return `<tr><td class="l">${nome}</td><td>${f(v)}</td><td>${meta}</td><td class="l">${txt}</td><td>${ok ? "✔" : "✘"}</td></tr>`;
+  };
+  const r = [row("Horas (≤ 220)", h, 220, "le"), row("Matéria-prima (= 160)", mp, 160, "eq"), row("Lucro (≥ 240)", lu, 240, "ge")];
+  const all = !r.some(x => x.includes("✘"));
+  out.innerHTML = `<table><tr><th class="l">Meta</th><th>Resultado</th><th>Meta</th><th class="l">Desvio</th><th></th></tr>${r.join("")}</table>
+    <b>${all ? "Todas as metas cumpridas: FO = 0 ✔" : "Alguma meta foi violada: a FO seria > 0."}</b>`;
+  out.classList.add("show");
+};
+</script>
+</body>
+</html>

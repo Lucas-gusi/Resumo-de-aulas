@@ -1,0 +1,968 @@
+{
+  "slug": "ciencia-da-decisao",
+  "nome": "Ciência da Decisão",
+  "professor": "Prof. André Luiz Emidio de Abreu",
+  "avaliacao": "P1 · Lista P1",
+  "atualizadoEm": "24/09/2026",
+  "fontes": "Classroom da turma: Lista P1 (com gabarito) e plano de ensino. Resultados conferidos com Solver.",
+  "quickView": [
+    {
+      "topico": "Programação Linear (PL)",
+      "texto": "Todo exercício é uma empresa que quer o **melhor resultado** (lucro máximo ou custo mínimo) mas esbarra em **recursos limitados**. A resposta mostra quanto fazer de cada coisa e qual recurso é o **gargalo**."
+    },
+    {
+      "topico": "Montar o modelo",
+      "texto": "São 4 peças: **variáveis** (o que você decide), **função objetivo** (o que maximiza ou minimiza), **restrições** (os limites) e **não negatividade** (x ≥ 0). \"No máximo\" vira ≤, \"pelo menos\" vira ≥ e \"exatamente\" vira =."
+    },
+    {
+      "topico": "Solução gráfica",
+      "texto": "Com 2 variáveis dá para desenhar. A área que respeita todas as restrições é a **região viável**, e a melhor resposta está sempre numa **quina (vértice)** dela. As retas que passam pelo ótimo são os recursos que acabaram."
+    },
+    {
+      "topico": "Dualidade",
+      "texto": "Todo problema tem um problema \"espelho\" (o **dual**) que calcula **quanto vale cada recurso**. Os dois chegam no mesmo resultado final. Recurso que sobra vale **zero**."
+    },
+    {
+      "topico": "Análise de sensibilidade",
+      "texto": "Mostra o que acontece se os números mudarem. O **preço sombra** diz quanto o resultado melhora com +1 unidade de um recurso. O **custo reduzido** diz quanto o lucro de um produto não produzido precisa subir para valer a pena. As **faixas** mostram até onde a decisão continua valendo."
+    },
+    {
+      "topico": "Programação por metas",
+      "texto": "Quando há vários objetivos que brigam entre si, eles viram **metas flexíveis**. Cada meta ganha desvios (**d⁻** abaixo, **d⁺** acima), e só o desvio **ruim** é penalizado. O objetivo é ficar o mais perto possível de todas."
+    },
+    {
+      "topico": "Teoria da decisão",
+      "texto": "Se você **não sabe as probabilidades**, escolhe um critério de personalidade: otimista (**Maximax**), pessimista (**Maximin**), meio-termo (**Hurwicz**) ou evitar arrependimento (**Savage**). Se **sabe**, calcula o **valor esperado**, e a árvore de decisão é resolvida da direita para a esquerda."
+    }
+  ],
+  "secoes": [
+    {
+      "id": "modelagem",
+      "titulo": "Modelagem: traduzir o texto em matemática",
+      "pergunta": "Como transformar um enunciado em equações?",
+      "emUmaFrase": "Todo modelo de PL tem **4 peças**. Ache cada uma no texto e o resto é Excel.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Peça",
+            "O que é",
+            "Como achar no enunciado"
+          ],
+          "linhas": [
+            [
+              "**Variáveis de decisão**",
+              "O que VOCÊ controla",
+              "\"Quantos/quanto de cada...\" (caminhões, rádios, litros, R$)"
+            ],
+            [
+              "**Função objetivo (FO)**",
+              "O que quer maximizar ou minimizar",
+              "\"maximizar lucro\", \"minimizar custo\""
+            ],
+            [
+              "**Restrições**",
+              "Limites que não podem ser violados",
+              "\"disponível\", \"no máximo\", \"pelo menos\", \"exige\""
+            ],
+            [
+              "**Não negatividade**",
+              "Não se produz quantidade negativa",
+              "Sempre existe: x ≥ 0"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "**Dicionário de restrições** (a parte que mais cai):"
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Frase no enunciado",
+            "Vira",
+            "Exemplo da lista"
+          ],
+          "linhas": [
+            [
+              "\"dispõe de\", \"disponível\", \"no máximo\"",
+              "**≤**",
+              "0,3A + 0,4B + 0,5C ≤ 120.000 h"
+            ],
+            [
+              "\"pelo menos\", \"exigência mínima\", \"precisa transportar\"",
+              "**≥**",
+              "2A + 3B ≥ 90 m³ refrigerados"
+            ],
+            [
+              "\"demanda máxima\"",
+              "**x ≤ valor**",
+              "P1 ≤ 800"
+            ],
+            [
+              "\"no mínimo 16 vezes\"",
+              "**proporção**",
+              "C ≥ 16V → 16V − C ≤ 0"
+            ],
+            [
+              "\"não mais que 25% do total\"",
+              "**percentual**",
+              "Q ≤ 0,25 × 750.000"
+            ],
+            [
+              "\"usar exatamente\"",
+              "**=**",
+              "soma dos investimentos = 750.000"
+            ]
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "analogia",
+          "texto": "Pensa numa receita de bolo com a despensa limitada: você quer fazer o máximo de bolos (FO), escolhe quantos de cada tipo (variáveis), mas só tem 2 kg de farinha e 12 ovos (restrições). O ingrediente que acaba primeiro é o **gargalo**."
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "Cuidado com **unidades**. Na fábrica de papel, a tabela dá QUANTIDADE DE MÁQUINAS e cada uma trabalha 40 h: o limite de corte é 3 × 40 = **120 horas**, não 3."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "\"A empresa precisa transportar pelo menos 120 m³.\" Essa restrição usa:",
+          "opcoes": [
+            "≤",
+            "≥",
+            "=",
+            "Não é restrição"
+          ],
+          "correta": 1,
+          "explicacao": "\"Pelo menos\" / \"precisa\" é mínimo, então **≥**."
+        }
+      ]
+    },
+    {
+      "id": "grafico",
+      "titulo": "Solução gráfica",
+      "pergunta": "Onde fica a melhor resposta, e por quê?",
+      "emUmaFrase": "Com 2 variáveis dá para desenhar: a melhor resposta está sempre numa **quina (vértice)** da região viável.",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Região viável:** todos os pontos que respeitam TODAS as restrições ao mesmo tempo.",
+            "**Vértices:** as quinas da região. Basta testar a FO em cada uma.",
+            "**Restrição ativa:** a reta que passa pelo ótimo. É o recurso que acabou (**gargalo**).",
+            "**Restrição com folga:** não encosta no ótimo, então sobra recurso."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "titulo": "Microcomputadores (Lista, gráfico 2): Max 60x + 50y",
+          "passos": [
+            "Restrições: 4x + 10y ≤ 100 · 2x + y ≤ 22 · x + y ≤ 13",
+            "Cortes nos eixos (zere uma variável de cada vez) e desenhe as retas",
+            "Vértices: (0,0) = 0 · (11,0) = 660 · **(9,4) = 740** · (5,8) = 700 · (0,10) = 500",
+            "Em (9,4) se cruzam inspeção e armazenagem: são os gargalos. A montagem tem folga (usa 76 de 100 h)."
+          ],
+          "conclusao": "Ótimo: x = 9, y = 4, lucro = 740."
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Caso especial",
+            "No gráfico",
+            "Significado"
+          ],
+          "linhas": [
+            [
+              "Solução única",
+              "O ótimo é um único vértice",
+              "Uma melhor resposta"
+            ],
+            [
+              "Múltiplas soluções",
+              "FO paralela a uma restrição ativa",
+              "Vários mixes dão o mesmo lucro"
+            ],
+            [
+              "Ilimitada",
+              "Região aberta na direção que melhora a FO",
+              "Faltou restrição no modelo"
+            ],
+            [
+              "Inviável",
+              "Não existe região",
+              "Exigências impossíveis juntas"
+            ]
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "Se o problema pede **inteiros** (molduras, casas), o gabarito arredonda. Molduras: o ótimo contínuo é (2,22 ; 1,56), mas a resposta aceita é M1 = 3, M2 = 0."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "A reta da função objetivo ficou paralela a uma restrição ativa. Isso significa:",
+          "opcoes": [
+            "Solução inviável",
+            "Múltiplas soluções ótimas",
+            "Solução ilimitada",
+            "Erro no modelo"
+          ],
+          "correta": 1,
+          "explicacao": "FO paralela a uma restrição ativa: vários pontos da borda dão o mesmo valor, ou seja, **múltiplas soluções**."
+        }
+      ]
+    },
+    {
+      "id": "dual",
+      "titulo": "Dualidade",
+      "pergunta": "Quanto vale cada recurso que eu tenho?",
+      "emUmaFrase": "Todo problema tem um **espelho** (o dual) que mostra o valor de cada recurso. Os dois chegam no **mesmo número**.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Primal (Max)",
+            "Dual (Min)"
+          ],
+          "linhas": [
+            [
+              "Variáveis = produtos",
+              "Variáveis = recursos (1 por restrição)"
+            ],
+            [
+              "Coeficientes da FO (lucros)",
+              "Viram o lado direito das restrições"
+            ],
+            [
+              "Lado direito (disponibilidades)",
+              "Viram os coeficientes da FO"
+            ],
+            [
+              "Restrições ≤",
+              "Restrições ≥"
+            ],
+            [
+              "Matriz A",
+              "Matriz A transposta (linhas viram colunas)"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "titulo": "Bombons (Lista)",
+          "passos": [
+            "Primal: Max 20P1 + 12,5P2 · 0,5P1 + ⅓P2 ≤ 130 (cereja) · 0,5P1 + ⅔P2 ≤ 170 (menta)",
+            "Dual: Min 130yC + 170yM · 0,5yC + 0,5yM ≥ 20 · ⅓yC + ⅔yM ≥ 12,5",
+            "Primal: P1 = 260, P2 = 0, lucro = **5.200**",
+            "Dual: yC = 40, yM = 0, custo = **5.200**"
+          ],
+          "conclusao": "Cada kg de cereja vale R$ 40 (acabou, é gargalo). Menta vale R$ 0 (sobram 40 kg)."
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "Sempre compare: **FO primal = FO dual**. Se der diferente, o dual foi montado errado. Recurso que sobra no primal tem variável dual = **0**."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "No primal, sobraram 40 kg de menta. Qual o valor da variável dual da menta?",
+          "opcoes": [
+            "40",
+            "0",
+            "Igual ao lucro",
+            "Não dá pra saber"
+          ],
+          "correta": 1,
+          "explicacao": "Recurso com folga vale **0**: ter mais dele não melhora nada."
+        }
+      ]
+    },
+    {
+      "id": "sensibilidade",
+      "titulo": "Análise de sensibilidade",
+      "pergunta": "E se os números mudarem? A resposta continua valendo?",
+      "emUmaFrase": "O relatório de sensibilidade diz **onde investir** (maior preço sombra), **o que não adianta comprar** (folga) e **até onde a decisão aguenta** (faixas).",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Termo (Excel)",
+            "Onde",
+            "O que significa"
+          ],
+          "linhas": [
+            [
+              "**Preço Sombra**",
+              "Restrições",
+              "Quanto a FO muda se o recurso aumentar 1 unidade"
+            ],
+            [
+              "Restrição Lateral R.H.",
+              "Restrições",
+              "Disponibilidade atual do recurso"
+            ],
+            [
+              "Permitido Aumentar / Reduzir",
+              "Restrições",
+              "Até onde o preço sombra continua valendo"
+            ],
+            [
+              "**Custo Reduzido**",
+              "Variáveis",
+              "Produto zerado: quanto o lucro precisa melhorar para valer a pena"
+            ],
+            [
+              "Permitido Aumentar / Reduzir",
+              "Variáveis",
+              "Faixa do lucro SEM mudar o mix ótimo"
+            ]
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Pergunta típica",
+            "Onde olhar",
+            "Raciocínio"
+          ],
+          "linhas": [
+            [
+              "\"Qual recurso aumentaria?\"",
+              "Maior preço sombra",
+              "É o que mais melhora a FO"
+            ],
+            [
+              "\"Impacto de +1 unidade de X?\"",
+              "Preço sombra de X",
+              "Se X tem folga, impacto ZERO"
+            ],
+            [
+              "\"Lucro mínimo para produzir?\"",
+              "Custo reduzido",
+              "lucro atual + |custo reduzido|"
+            ],
+            [
+              "\"Faixa do lucro sem mudar a solução?\"",
+              "Permitido reduzir/aumentar",
+              "atual − reduzir até atual + aumentar"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "titulo": "Banheiras (Sensibilidade 1)",
+          "passos": [
+            "Preços sombra: bombas R$ 200 · horas R$ 16,67 · tubulação R$ 0 (sobram 168 m)",
+            "Aumentaria as **bombas**: +R$ 200 por bomba (vale até +7)",
+            "+1 m de tubulação: impacto **zero**",
+            "Mix (122 ; 78) se mantém com SpaAqua entre R$ 300 e R$ 450 e LuxoHidro entre R$ 233,33 e R$ 350"
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "O relatório só aparece com **LP Simplex** e **sem restrição de inteiro**. \"1E+30\" no Excel significa **infinito**."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Você pode comprar mais de UM recurso. Qual escolhe?",
+          "opcoes": [
+            "O de maior folga",
+            "O de maior preço sombra",
+            "O de menor custo reduzido",
+            "O mais barato"
+          ],
+          "correta": 1,
+          "explicacao": "O **maior preço sombra** é o que mais aumenta a FO por unidade extra."
+        }
+      ]
+    },
+    {
+      "id": "metas",
+      "titulo": "Programação por metas",
+      "pergunta": "E quando eu tenho vários objetivos que brigam entre si?",
+      "emUmaFrase": "As metas viram **flexíveis**: dá para descumprir, mas com penalidade. O objetivo é ficar o **mais perto possível** de todas.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Tipo de meta",
+            "Exemplo",
+            "Desvio ruim (vai para a FO)"
+          ],
+          "linhas": [
+            [
+              "≥ (pelo menos)",
+              "lucro ≥ R$ 240",
+              "**d⁻** (ficar abaixo)"
+            ],
+            [
+              "≤ (no máximo)",
+              "horas ≤ 220",
+              "**d⁺** (passar do limite)"
+            ],
+            [
+              "= (exatamente)",
+              "usar os 160 kg",
+              "**d⁻ e d⁺**"
+            ]
+          ]
+        },
+        {
+          "tipo": "formula",
+          "itens": [
+            {
+              "formula": "resultado + d⁻ − d⁺ = meta",
+              "significado": "escreva assim cada meta"
+            }
+          ]
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "**Método dos pesos:** FO = Min Σ (peso × desvio ruim). Use quando dá para comparar a importância em números.",
+            "**Método hierárquico:** resolve em etapas, da meta mais importante para a menos importante."
+          ]
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "exemplo",
+          "texto": "Lustres: L = 12, A = 25 dá lucro 247,5 (d⁺ = 7,5 acima da meta, isso é BOM) e sobram 4,4 h. **FO = 0** significa que todas as metas foram atingidas."
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "pegadinha",
+          "texto": "Desvio **desejável NÃO** entra na FO. Lucro acima da meta (d⁺) é bom e não se penaliza."
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Meta: lucro de pelo menos R$ 240. Qual desvio entra na FO?",
+          "opcoes": [
+            "d⁺",
+            "d⁻",
+            "Os dois",
+            "Nenhum"
+          ],
+          "correta": 1,
+          "explicacao": "Ruim é ficar **abaixo** da meta: **d⁻**."
+        }
+      ]
+    },
+    {
+      "id": "decisao",
+      "titulo": "Teoria da decisão",
+      "pergunta": "Como escolher quando o futuro é incerto?",
+      "emUmaFrase": "Se você **não sabe** as probabilidades, escolha um critério de personalidade. Se **sabe**, calcule o valor esperado.",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "cabecalho": [
+            "Critério",
+            "Personalidade",
+            "Como calcular"
+          ],
+          "linhas": [
+            [
+              "**Maximax**",
+              "Otimista",
+              "Melhor de cada alternativa → escolhe o maior"
+            ],
+            [
+              "**Maximin** (Wald)",
+              "Pessimista",
+              "Pior de cada alternativa → escolhe o maior (\"melhor dos piores\")"
+            ],
+            [
+              "**Hurwicz**",
+              "Meio-termo",
+              "v·máx + (1−v)·mín → escolhe o maior"
+            ],
+            [
+              "**Savage**",
+              "Evita arrependimento",
+              "Arrep. = melhor da coluna − valor. Pega o máximo de cada linha e escolhe o **menor**"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "titulo": "Alberto: festa × estudar (v = 0,7)",
+          "passos": [
+            "a1 festa: 80 / 67 / 55 → máx 80, mín 55, Hurwicz 72,5, arrep. máx 27",
+            "a2 metade: 92 / 89 / 82 → máx 92, mín 82, Hurwicz 89, arrep. máx 8",
+            "a3 estudar: 100 / 88 / 82 → máx **100**, mín **82**, Hurwicz **94,6**, arrep. máx **1**"
+          ],
+          "conclusao": "Todos os critérios apontam a3: a decisão é robusta."
+        },
+        {
+          "tipo": "destaque",
+          "estilo": "atencao",
+          "titulo": "👀 Padrão do professor",
+          "texto": "No gabarito, o professor trata os valores como **ganho** (maior é melhor) até nas matrizes chamadas de \"custo\". Siga o gabarito."
+        },
+        {
+          "tipo": "texto",
+          "texto": "**Árvore de decisão** (quando há probabilidades): ○ nó de evento = Σ prob × resultado · □ nó de decisão = escolhe o maior. Resolve **da direita para a esquerda**."
+        },
+        {
+          "tipo": "exemplo",
+          "titulo": "Varejista ($ mil)",
+          "passos": [
+            "Pequeno: 0,6 × 270 + 0,4 × 200 = **242**",
+            "Grande: 0,6 × 800 + 0,4 × 160 = **544**"
+          ],
+          "conclusao": "Construir o grande."
+        },
+        {
+          "tipo": "flashcards",
+          "cards": [
+            {
+              "frente": "Maximax",
+              "verso": "Otimista: maior dos máximos"
+            },
+            {
+              "frente": "Maximin",
+              "verso": "Pessimista: maior dos mínimos"
+            },
+            {
+              "frente": "Hurwicz",
+              "verso": "v·máx + (1−v)·mín"
+            },
+            {
+              "frente": "Savage",
+              "verso": "Menor arrependimento máximo"
+            }
+          ]
+        }
+      ],
+      "checkpoint": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Em Hurwicz, o que acontece com v = 0?",
+          "opcoes": [
+            "Vira Maximax",
+            "Vira Maximin",
+            "Vira Savage",
+            "Não muda nada"
+          ],
+          "correta": 1,
+          "explicacao": "v = 0 → 0·máx + 1·mín: só o pior importa, então vira **Maximin**."
+        }
+      ]
+    }
+  ],
+  "revisaoRapida": [
+    {
+      "se": "\"Quanto produzir de cada?\"",
+      "entao": "Variáveis de decisão + Solver"
+    },
+    {
+      "se": "\"Qual o melhor ponto?\" (2 variáveis)",
+      "entao": "Testar a FO nos vértices da região viável"
+    },
+    {
+      "se": "\"Quanto vale 1 unidade a mais do recurso?\"",
+      "entao": "Preço sombra = variável dual"
+    },
+    {
+      "se": "Recurso sobrando",
+      "entao": "Folga > 0 → preço sombra = 0"
+    },
+    {
+      "se": "Lucro mínimo para produzir um item zerado",
+      "entao": "Custo reduzido"
+    },
+    {
+      "se": "\"Até quanto o lucro pode variar?\"",
+      "entao": "Permitido aumentar / reduzir"
+    },
+    {
+      "se": "Vários objetivos conflitantes",
+      "entao": "Metas + variáveis de desvio d⁻ / d⁺"
+    },
+    {
+      "se": "Não sei as probabilidades",
+      "entao": "Maximax, Maximin, Hurwicz, Savage"
+    },
+    {
+      "se": "Tenho probabilidades / etapas",
+      "entao": "Valor esperado e árvore de decisão"
+    }
+  ],
+  "miniProvas": [
+    {
+      "id": "mp1",
+      "titulo": "Mini prova 1: Modelagem e gráfico",
+      "secoes": [
+        "modelagem",
+        "grafico"
+      ],
+      "questoes": [
+        {
+          "tipo": "multipla",
+          "enunciado": "\"A refinaria deve produzir comum em quantidade de no mínimo 16 vezes a verde.\" Como fica essa restrição no formato do Solver?",
+          "opcoes": [
+            "C ≤ 16V",
+            "16V − C ≤ 0",
+            "16C − V ≥ 0",
+            "C + 16V ≥ 0"
+          ],
+          "correta": 1,
+          "explicacao": "C ≥ 16V → passando tudo para um lado: **16V − C ≤ 0**."
+        },
+        {
+          "tipo": "numerica",
+          "enunciado": "**Caminhões.** Tipo A: 2 m³ refrigerados + 4 m³ não refrigerados, R$ 0,30/km. Tipo B: 3 + 3 m³, R$ 0,40/km. Precisa transportar 90 m³ refrigerados e 120 m³ não refrigerados. Minimize o custo.",
+          "campos": [
+            {
+              "rotulo": "Caminhões A",
+              "resposta": 15
+            },
+            {
+              "rotulo": "Caminhões B",
+              "resposta": 20
+            },
+            {
+              "rotulo": "Custo por km",
+              "resposta": 12.5
+            }
+          ],
+          "explicacao": "Min 0,3A + 0,4B · 2A + 3B ≥ 90 · 4A + 3B ≥ 120. Aqui é **Mín** com restrições **≥**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Fábrica de papel: 3 máquinas de corte, cada uma trabalha 40 h/semana. Qual o lado direito da restrição de corte?",
+          "opcoes": [
+            "3",
+            "40",
+            "120",
+            "43"
+          ],
+          "correta": 2,
+          "explicacao": "3 máquinas × 40 h = **120 horas**. Cuidado com a unidade!"
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Onde está a solução ótima de um problema de PL com 2 variáveis?",
+          "opcoes": [
+            "No centro da região viável",
+            "Em um vértice da região viável",
+            "Sempre na origem",
+            "Fora da região viável"
+          ],
+          "correta": 1,
+          "explicacao": "A solução ótima está sempre em um **vértice** (quina)."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "A região viável é aberta na direção que melhora a FO. O problema é:",
+          "opcoes": [
+            "Inviável",
+            "Ilimitado",
+            "De múltiplas soluções",
+            "De solução única"
+          ],
+          "correta": 1,
+          "explicacao": "Dá para melhorar para sempre: **ilimitado** (faltou alguma restrição)."
+        }
+      ]
+    },
+    {
+      "id": "mp2",
+      "titulo": "Mini prova 2: Dual e sensibilidade",
+      "secoes": [
+        "dual",
+        "sensibilidade"
+      ],
+      "questoes": [
+        {
+          "tipo": "multipla",
+          "enunciado": "O primal é de maximização com 3 restrições ≤ e 2 variáveis. O dual terá:",
+          "opcoes": [
+            "2 variáveis e 3 restrições ≤",
+            "3 variáveis e 2 restrições ≥ (minimização)",
+            "3 variáveis e 3 restrições",
+            "2 variáveis e 2 restrições ≥"
+          ],
+          "correta": 1,
+          "explicacao": "Uma variável dual **por restrição** do primal (3), e cada coluna vira uma restrição ≥ (2). Max vira **Min**."
+        },
+        {
+          "tipo": "numerica",
+          "enunciado": "Dual das banheiras: Min 200y1 + 1566y2 + 2880y3 · y1 + 9y2 + 12y3 ≥ 350 · y1 + 6y2 + 16y3 ≥ 300. Qual o valor da FO do dual? (lucro do primal = 66.100)",
+          "campos": [
+            {
+              "rotulo": "FO do dual",
+              "resposta": 66100
+            }
+          ],
+          "explicacao": "Teorema da dualidade forte: **FO dual = FO primal = 66.100**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Rádios: preços sombra fabricação 76, montagem 0, embalagem 16. Qual o impacto de +1 hora de montagem?",
+          "opcoes": [
+            "+R$ 76",
+            "+R$ 16",
+            "Zero",
+            "−R$ 16"
+          ],
+          "correta": 2,
+          "explicacao": "Preço sombra 0: a montagem tem folga (sobram 32.800 h). Impacto **zero**."
+        },
+        {
+          "tipo": "numerica",
+          "enunciado": "Rádios: o produto A tem lucro 17 e custo reduzido −16,6. Qual o lucro mínimo para A passar a ser produzido?",
+          "campos": [
+            {
+              "rotulo": "Lucro mínimo de A",
+              "resposta": 33.6
+            }
+          ],
+          "explicacao": "lucro atual + |custo reduzido| = 17 + 16,6 = **33,60**."
+        },
+        {
+          "tipo": "numerica",
+          "enunciado": "Banheiras: SpaAqua tem lucro 350, permitido aumentar 100 e permitido reduzir 50. Qual a faixa em que o mix ótimo não muda?",
+          "campos": [
+            {
+              "rotulo": "Lucro mínimo",
+              "resposta": 300
+            },
+            {
+              "rotulo": "Lucro máximo",
+              "resposta": 450
+            }
+          ],
+          "explicacao": "350 − 50 = **300** até 350 + 100 = **450**."
+        }
+      ]
+    },
+    {
+      "id": "mp3",
+      "titulo": "Mini prova 3: Metas e teoria da decisão",
+      "secoes": [
+        "metas",
+        "decisao"
+      ],
+      "questoes": [
+        {
+          "tipo": "multipla",
+          "enunciado": "Meta: não fazer hora extra (horas ≤ 220). Qual desvio vai para a FO?",
+          "opcoes": [
+            "d⁻",
+            "d⁺",
+            "Os dois",
+            "Nenhum"
+          ],
+          "correta": 1,
+          "explicacao": "Ruim é **passar** do limite: **d⁺**."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "No método hierárquico (preemptivo) de metas:",
+          "opcoes": [
+            "Todas as metas têm o mesmo peso",
+            "Resolve em etapas, da meta mais importante para a menos importante",
+            "Só a primeira meta é considerada",
+            "Usa probabilidades"
+          ],
+          "correta": 1,
+          "explicacao": "Minimiza a meta mais importante, fixa o resultado e passa para a próxima."
+        },
+        {
+          "tipo": "numerica",
+          "enunciado": "**Acampamento.** a1: 5/10/18/25 · a2: 8/7/12/23 · a3: 21/18/12/21 · a4: 30/22/19/15. Qual o valor do **Maximax** e do **Maximin**?",
+          "campos": [
+            {
+              "rotulo": "Maximax (valor)",
+              "resposta": 30
+            },
+            {
+              "rotulo": "Maximin (valor)",
+              "resposta": 15
+            }
+          ],
+          "explicacao": "Máximos por linha: 25, 23, 21, **30** (a4). Mínimos: 5, 7, 12, **15** (a4)."
+        },
+        {
+          "tipo": "multipla",
+          "enunciado": "Acampamento, critério de **Savage** (máximos das colunas: 30, 22, 19, 25). Arrependimentos máximos: a1 = 25, a2 = 22, a3 = 9, a4 = 10. Qual escolher?",
+          "opcoes": [
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+          ],
+          "embaralhar": false,
+          "correta": 2,
+          "explicacao": "Savage escolhe o **menor** arrependimento máximo: **a3 (9)**."
+        },
+        {
+          "tipo": "numerica",
+          "enunciado": "Árvore: prédio grande dá 800 (prob. 0,6) ou 160 (prob. 0,4). Qual o valor esperado?",
+          "campos": [
+            {
+              "rotulo": "Valor esperado",
+              "resposta": 544
+            }
+          ],
+          "explicacao": "0,6 × 800 + 0,4 × 160 = 480 + 64 = **544**."
+        }
+      ]
+    }
+  ],
+  "simulado": {
+    "titulo": "Simulado P1 completo",
+    "descricao": "todos os temas misturados",
+    "questoes": [
+      {
+        "tipo": "multipla",
+        "enunciado": "\"A empresa dispõe de 4.800 horas de trabalho.\" Essa restrição usa:",
+        "opcoes": [
+          "≤",
+          "≥",
+          "=",
+          "Não é restrição"
+        ],
+        "embaralhar": false,
+        "correta": 0,
+        "explicacao": "\"Dispõe de\" = disponível = no máximo: **≤**."
+      },
+      {
+        "tipo": "numerica",
+        "enunciado": "**Beta Ltda.** P1, P2, P3 com lucro 2.100, 1.200 e 600; horas de trabalho 6, 4, 6 (disp. 4.800); horas de máquina 12, 6, 2 (disp. 7.200); demanda máxima 800, 600, 600. Resolva no Solver.",
+        "campos": [
+          {
+            "rotulo": "P1",
+            "resposta": 280
+          },
+          {
+            "rotulo": "P2",
+            "resposta": 600
+          },
+          {
+            "rotulo": "P3",
+            "resposta": 120
+          },
+          {
+            "rotulo": "Lucro total",
+            "resposta": 1380000
+          }
+        ],
+        "explicacao": "Trabalho e máquina se esgotam; P2 bate na demanda máxima."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "No primal, a cereja acabou e sobraram 40 kg de menta. No dual:",
+        "opcoes": [
+          "yC = 0 e yM > 0",
+          "yC > 0 e yM = 0",
+          "Os dois são zero",
+          "Os dois são positivos"
+        ],
+        "correta": 1,
+        "explicacao": "O recurso que acabou tem valor (yC = 40). O que sobra vale **0**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "O relatório de sensibilidade não aparece no Solver. Causa provável:",
+        "opcoes": [
+          "Usou LP Simplex",
+          "Colocou restrição de número inteiro",
+          "Marcou não negatividade",
+          "O problema é de maximização"
+        ],
+        "correta": 1,
+        "explicacao": "O relatório só sai com **LP Simplex e sem restrição de inteiro**."
+      },
+      {
+        "tipo": "numerica",
+        "enunciado": "Rádios: permitido reduzir do lucro de C (52) é 4. Qual o lucro mínimo de C sem mudar a solução?",
+        "campos": [
+          {
+            "rotulo": "Lucro mínimo de C",
+            "resposta": 48
+          }
+        ],
+        "explicacao": "52 − 4 = **48**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "Em programação por metas, a FO final deu 0. Isso significa:",
+        "opcoes": [
+          "O problema é inviável",
+          "Todas as metas foram atingidas",
+          "Nenhuma meta foi atingida",
+          "O lucro é zero"
+        ],
+        "correta": 1,
+        "explicacao": "FO = soma dos desvios ruins = 0: **todas as metas cumpridas**."
+      },
+      {
+        "tipo": "numerica",
+        "enunciado": "Hurwicz com v = 0,7 para a alternativa com máx = 100 e mín = 82:",
+        "campos": [
+          {
+            "rotulo": "Valor Hurwicz",
+            "resposta": 94.6
+          }
+        ],
+        "explicacao": "0,7 × 100 + 0,3 × 82 = 70 + 24,6 = **94,6**."
+      },
+      {
+        "tipo": "multipla",
+        "enunciado": "Numa árvore de decisão, como se resolve?",
+        "opcoes": [
+          "Da esquerda para a direita",
+          "Da direita para a esquerda (do futuro para o presente)",
+          "Pelo nó do meio",
+          "Tanto faz"
+        ],
+        "correta": 1,
+        "explicacao": "Calcula os valores esperados no fim e volta até a decisão: **direita → esquerda**."
+      },
+      {
+        "tipo": "dissertativa",
+        "enunciado": "No problema das banheiras, os preços sombra são: bombas R$ 200, horas R$ 16,67, tubulação R$ 0. O gerente quer investir em mais recursos. O que você recomenda e por quê?",
+        "respostaEsperada": "Investir em **bombas**, porque têm o **maior preço sombra** (cada bomba extra aumenta o lucro em R$ 200, válido até +7 bombas). Comprar **tubulação não adianta**: o preço sombra é 0 porque já sobram 168 m (folga). Horas também ajudam, mas só R$ 16,67 por hora.",
+        "criterios": [
+          "Escolheu bombas (maior preço sombra)",
+          "Citou o valor R$ 200 por unidade",
+          "Explicou que tubulação tem folga / preço sombra 0",
+          "Mencionou o limite de validade (permitido aumentar)"
+        ]
+      }
+    ]
+  },
+  "materiais": [
+    {
+      "nome": "Parte 1: Teoria (PDF original)",
+      "arquivo": "arquivos/1_Teoria_Ciencia_da_Decisao.pdf",
+      "descricao": "Versão para imprimir"
+    },
+    {
+      "nome": "Parte 2: Prática no Excel",
+      "arquivo": "arquivos/2_Pratica_Ciencia_da_Decisao.html",
+      "descricao": "Passo a passo no Solver + exercícios com correção"
+    },
+    {
+      "nome": "Modelos Excel",
+      "arquivo": "arquivos/3_Modelos_Excel.xlsx",
+      "descricao": "Planilha para usar junto com a Parte 2"
+    }
+  ]
+}
