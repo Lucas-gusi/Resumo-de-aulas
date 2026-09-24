@@ -566,39 +566,39 @@
   ],
   "revisaoRapida": [
     {
-      "se": "\"Quanto produzir de cada?\"",
-      "entao": "Variáveis de decisão + Solver"
+      "se": "O exercício pergunta \"quanto produzir de cada produto?\". Por onde começar?",
+      "entao": "Definir as variáveis de decisão e resolver com o Solver"
     },
     {
-      "se": "\"Qual o melhor ponto?\" (2 variáveis)",
-      "entao": "Testar a FO nos vértices da região viável"
+      "se": "Com 2 variáveis, como achar o melhor ponto?",
+      "entao": "Testar a função objetivo em cada vértice da região viável"
     },
     {
-      "se": "\"Quanto vale 1 unidade a mais do recurso?\"",
-      "entao": "Preço sombra = variável dual"
+      "se": "Quanto vale 1 unidade a mais de um recurso?",
+      "entao": "O preço sombra, que é igual à variável dual"
     },
     {
-      "se": "Recurso sobrando",
-      "entao": "Folga > 0 → preço sombra = 0"
+      "se": "Se um recurso está sobrando, qual é o preço sombra dele?",
+      "entao": "Zero (folga > 0 → preço sombra = 0)"
     },
     {
-      "se": "Lucro mínimo para produzir um item zerado",
-      "entao": "Custo reduzido"
+      "se": "Qual o lucro mínimo para um produto que está zerado passar a ser produzido?",
+      "entao": "Lucro atual + |custo reduzido|"
     },
     {
-      "se": "\"Até quanto o lucro pode variar?\"",
-      "entao": "Permitido aumentar / reduzir"
+      "se": "Até quanto o lucro de um produto pode variar sem mudar a solução?",
+      "entao": "Olhe o permitido aumentar / reduzir no relatório de sensibilidade"
     },
     {
-      "se": "Vários objetivos conflitantes",
-      "entao": "Metas + variáveis de desvio d⁻ / d⁺"
+      "se": "Como resolver um problema com vários objetivos que brigam entre si?",
+      "entao": "Programação por metas, com variáveis de desvio d⁻ / d⁺"
     },
     {
-      "se": "Não sei as probabilidades",
-      "entao": "Maximax, Maximin, Hurwicz, Savage"
+      "se": "Que critérios usar quando não se sabe as probabilidades?",
+      "entao": "Maximax, Maximin, Hurwicz e Savage"
     },
     {
-      "se": "Tenho probabilidades / etapas",
+      "se": "E quando se tem as probabilidades ou a decisão tem várias etapas?",
       "entao": "Valor esperado e árvore de decisão"
     }
   ],

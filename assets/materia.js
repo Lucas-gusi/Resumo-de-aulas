@@ -45,7 +45,7 @@
     // Perguntas-chave
     if (M.revisaoRapida?.length) {
       h += `<section><div class="row between"><h2>❓ Perguntas-chave</h2><button class="link-btn" id="all" type="button">Mostrar todas</button></div>
-        <p class="lead">Tente responder de cabeça e depois confira. Se a questão fala de… qual é a resposta?</p>
+        <p class="lead">Tente responder de cabeça e depois confira.</p>
         <div class="qa-list">${M.revisaoRapida.map(x => pergunta(md(x.se), md(x.entao))).join("")}</div></section>`;
     }
 

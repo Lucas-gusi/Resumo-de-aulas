@@ -41,7 +41,7 @@ ficar pronta, troque `"status": "em-breve"` por `"status": "pronto"`.
   "quickView": [ { "topico": "…", "texto": "…" } ],   // 5 a 8 itens explicativos
   "comoCai":   [ { "parte": "", "formato": "", "peso": "", "dica": "" } ],  // OPCIONAL, só se souber como é a prova
   "secoes":    [ /* ver abaixo */ ],
-  "revisaoRapida": [ { "se": "Se a questão fala de…", "entao": "a resposta provavelmente é…" } ],  // 8 a 16 linhas
+  "revisaoRapida": [ { "se": "Pergunta completa, terminando em ?", "entao": "resposta curta" } ],  // 8 a 16 perguntas
   "miniProvas": [ { "id": "mp1", "titulo": "Mini prova 1: <tema>", "secoes": ["id1","id2"], "questoes": [ … ] } ],
   "simulado":   { "titulo": "Simulado P1 completo", "descricao": "…", "questoes": [ … ] },
   "materiais":  [ { "nome": "", "arquivo": "arquivos/<arquivo>", "descricao": "" } ]   // opcional

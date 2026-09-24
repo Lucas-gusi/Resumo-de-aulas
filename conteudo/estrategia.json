@@ -641,67 +641,67 @@
   ],
   "revisaoRapida": [
     {
-      "se": "Tenta ser barato e diferenciado, lucro baixo",
-      "entao": "Preso no meio (Porter)"
+      "se": "Uma empresa tenta ser barata e diferenciada ao mesmo tempo e lucra abaixo da média. Como Porter chama isso?",
+      "entao": "Preso no meio (stuck in the middle)"
     },
     {
-      "se": "Todos copiam as melhores práticas",
-      "entao": "Eficácia Operacional, não estratégia"
+      "se": "Todas as empresas do setor copiam as melhores práticas umas das outras. Isso é estratégia?",
+      "entao": "Não. É Eficácia Operacional: fazer o mesmo melhor, e todos copiam"
     },
     {
-      "se": "Nicho, trade-offs, atividades que se encaixam",
-      "entao": "Posicionamento Estratégico"
+      "se": "Nicho, trade-offs e atividades que se encaixam são características de quê?",
+      "entao": "Posicionamento Estratégico (Porter)"
     },
     {
-      "se": "Compras de insumos",
-      "entao": "Atividade de SUPORTE"
+      "se": "Na Cadeia de Valor, compras de insumos é atividade primária ou de suporte?",
+      "entao": "Suporte (aquisição)"
     },
     {
-      "se": "Entrega ao cliente final",
-      "entao": "Atividade PRIMÁRIA (logística externa)"
+      "se": "Na Cadeia de Valor, entregar o produto ao cliente final é o quê?",
+      "entao": "Atividade primária: logística externa"
     },
     {
-      "se": "Contratou os executivos e não conseguiu copiar",
-      "entao": "Ambiguidade causal / complexidade social (VRIO: I)"
+      "se": "A concorrente contratou os executivos-chave e mesmo assim não conseguiu copiar. Por quê?",
+      "entao": "Ambiguidade causal / complexidade social: o recurso é inimitável (VRIO: I)"
     },
     {
-      "se": "Estratégia surge da prática, tentativa e erro",
-      "entao": "Escola do Aprendizado (emergente)"
+      "se": "Qual escola de Mintzberg diz que a estratégia surge da prática, na tentativa e erro?",
+      "entao": "Escola do Aprendizado (estratégia emergente)"
     },
     {
-      "se": "Força que virou fraqueza",
-      "entao": "Crítica de Mintzberg à SWOT estática"
+      "se": "Uma força da empresa virou fraqueza quando o mercado mudou. Qual crítica isso ilustra?",
+      "entao": "A crítica de Mintzberg à SWOT: ela é estática"
     },
     {
-      "se": "IA, nuvem, automação",
-      "entao": "PESTEL: Tecnológico"
+      "se": "IA, nuvem e automação entram em qual letra do PESTEL?",
+      "entao": "Tecnológico"
     },
     {
-      "se": "LGPD / lei",
-      "entao": "PESTEL: Legal"
+      "se": "Uma lei como a LGPD entra em qual letra do PESTEL?",
+      "entao": "Legal"
     },
     {
-      "se": "Cliente com dificuldade de migrar",
-      "entao": "Custo de troca: reduz o poder dos compradores"
+      "se": "O cliente tem dificuldade de migrar para o concorrente. Qual das 5 Forças isso enfraquece?",
+      "entao": "O poder de barganha dos compradores (custo de troca alto)"
     },
     {
-      "se": "Auditoria externa, conselho independente",
-      "entao": "Custo de MONITORAMENTO (paga o Principal)"
+      "se": "Auditoria externa e conselho independente são que tipo de custo de agência? Quem paga?",
+      "entao": "Custo de monitoramento, pago pelo Principal"
     },
     {
-      "se": "Seguro D&O, clawback aceito pelo executivo",
-      "entao": "Custo de GARANTIA / bonding (paga o Agente)"
+      "se": "Seguro D&O e clawback aceito pelo executivo são que tipo de custo? Quem paga?",
+      "entao": "Custo de garantia (bonding), pago pelo Agente"
     },
     {
-      "se": "Prejuízo mesmo com controles",
+      "se": "Como se chama o prejuízo que sobra mesmo com todos os controles?",
       "entao": "Perda residual"
     },
     {
-      "se": "Quem / o quê / como",
+      "se": "Qual modelo define o negócio por quem, o quê e como?",
       "entao": "Modelo triaxial de Abell"
     },
     {
-      "se": "Conta com WTP, P e C",
+      "se": "Quais são as 3 fórmulas com WTP, P e C?",
       "entao": "VEC = WTP − C · Excedente = WTP − P · Margem = P − C"
     }
   ],
